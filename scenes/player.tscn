@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://cr7hmkjqmiocr"]
+[gd_scene load_steps=39 format=3 uid="uid://cr7hmkjqmiocr"]
 
 [ext_resource type="Texture2D" uid="uid://ce1f0244af4to" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 03.png" id="1_hybas"]
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_qlxdl"]
@@ -24,9 +24,12 @@
 [ext_resource type="Texture2D" uid="uid://cxtu67mjlt451" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/07-Dead Hit/Dead Hit 02.png" id="22_60bqh"]
 [ext_resource type="Texture2D" uid="uid://u1bspmor2w3i" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/07-Dead Hit/Dead Hit 03.png" id="23_y0w22"]
 [ext_resource type="Texture2D" uid="uid://ckepphabhape0" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/07-Dead Hit/Dead Hit 04.png" id="24_ol424"]
+[ext_resource type="Texture2D" uid="uid://bjah1jpstao3t" path="res://assets/player/Captain Clown Nose/Captain Clown Nose with Sword/17-Attack 3/Attack 3 01.png" id="25_2hbf2"]
+[ext_resource type="Texture2D" uid="uid://b1axancxwv1eo" path="res://assets/player/Captain Clown Nose/Captain Clown Nose with Sword/17-Attack 3/Attack 3 02.png" id="26_bpohi"]
+[ext_resource type="Texture2D" uid="uid://cccc5u6edapia" path="res://assets/player/Captain Clown Nose/Captain Clown Nose with Sword/17-Attack 3/Attack 3 03.png" id="27_5ntxp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b44rg"]
-size = Vector2(21, 22.5)
+size = Vector2(6, 22.5)
 
 [sub_resource type="Animation" id="Animation_g235a"]
 resource_name = "idle"
@@ -62,10 +65,22 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/path = NodePath("HitboxCollisionShape2D:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Area2D/AttackCollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -157,7 +172,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/path = NodePath("HitboxCollisionShape2D:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -167,9 +182,38 @@ tracks/1/keys = {
 "values": [true]
 }
 
+[sub_resource type="Animation" id="Animation_kf1jk"]
+resource_name = "attack"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("25_2hbf2"), ExtResource("26_bpohi"), ExtResource("27_5ntxp")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/AttackCollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gk0ga"]
 _data = {
 "RESET": SubResource("Animation_iyr8b"),
+"attack": SubResource("Animation_kf1jk"),
 "dead": SubResource("Animation_btaj4"),
 "fall": SubResource("Animation_6nwcp"),
 "hit": SubResource("Animation_qnhtp"),
@@ -178,11 +222,14 @@ _data = {
 "run": SubResource("Animation_2nw73")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a3pii"]
+size = Vector2(17, 29)
+
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_qlxdl")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 0.75)
+[node name="HitboxCollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.75)
 shape = SubResource("RectangleShape2D_b44rg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -196,3 +243,11 @@ autoplay = "idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="AttackCollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(19.5, -4.5)
+shape = SubResource("RectangleShape2D_a3pii")
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_finished"]
