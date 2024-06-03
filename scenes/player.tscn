@@ -1,19 +1,198 @@
-[gd_scene load_steps=4 format=3 uid="uid://cr7hmkjqmiocr"]
+[gd_scene load_steps=34 format=3 uid="uid://cr7hmkjqmiocr"]
 
 [ext_resource type="Texture2D" uid="uid://ce1f0244af4to" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 03.png" id="1_hybas"]
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_qlxdl"]
+[ext_resource type="Texture2D" uid="uid://dk1wg4rpo3ph1" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="3_s3v1d"]
+[ext_resource type="Texture2D" uid="uid://qv2sbqqd5yfr" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 02.png" id="4_sm0m6"]
+[ext_resource type="Texture2D" uid="uid://cxy7ws7f504jl" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 04.png" id="5_a3l4o"]
+[ext_resource type="Texture2D" uid="uid://dqr15khugu4uu" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 05.png" id="6_1ffqc"]
+[ext_resource type="Texture2D" uid="uid://ddto27yb7jj4l" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 01.png" id="7_kekru"]
+[ext_resource type="Texture2D" uid="uid://dubgqpwmpndb8" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 02.png" id="8_kg70u"]
+[ext_resource type="Texture2D" uid="uid://pb53q6nf7cw3" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 03.png" id="9_icgcm"]
+[ext_resource type="Texture2D" uid="uid://b57klt81rwjoa" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 04.png" id="10_en6yn"]
+[ext_resource type="Texture2D" uid="uid://cxbeb87mogde5" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 05.png" id="11_wyosg"]
+[ext_resource type="Texture2D" uid="uid://dksldsgcw1bu8" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 06.png" id="12_lyo4p"]
+[ext_resource type="Texture2D" uid="uid://cgp3uy4mkx8sl" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/03-Jump/Jump 01.png" id="13_45dgu"]
+[ext_resource type="Texture2D" uid="uid://bwbk7n3jd48xp" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/03-Jump/Jump 02.png" id="14_dcx2q"]
+[ext_resource type="Texture2D" uid="uid://dqsh05jexwxep" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/03-Jump/Jump 03.png" id="15_d5cb6"]
+[ext_resource type="Texture2D" uid="uid://by6ofkk37jrd2" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/04-Fall/Fall 01.png" id="16_7ovep"]
+[ext_resource type="Texture2D" uid="uid://d2257knap6itd" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 01.png" id="17_2naqr"]
+[ext_resource type="Texture2D" uid="uid://dyya7mjm2oyxq" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 02.png" id="18_irknw"]
+[ext_resource type="Texture2D" uid="uid://gca7goxcn3oj" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 03.png" id="19_tru6h"]
+[ext_resource type="Texture2D" uid="uid://0y25j6vbqa71" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 04.png" id="20_hvpf5"]
+[ext_resource type="Texture2D" uid="uid://dxyi4cxyh4mmc" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/07-Dead Hit/Dead Hit 01.png" id="21_tpdqv"]
+[ext_resource type="Texture2D" uid="uid://cxtu67mjlt451" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/07-Dead Hit/Dead Hit 02.png" id="22_60bqh"]
+[ext_resource type="Texture2D" uid="uid://u1bspmor2w3i" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/07-Dead Hit/Dead Hit 03.png" id="23_y0w22"]
+[ext_resource type="Texture2D" uid="uid://ckepphabhape0" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/07-Dead Hit/Dead Hit 04.png" id="24_ol424"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b44rg"]
-size = Vector2(19, 21)
+size = Vector2(21, 22.5)
+
+[sub_resource type="Animation" id="Animation_g235a"]
+resource_name = "idle"
+length = 0.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_s3v1d"), ExtResource("4_sm0m6"), ExtResource("1_hybas"), ExtResource("5_a3l4o"), ExtResource("6_1ffqc")]
+}
+
+[sub_resource type="Animation" id="Animation_iyr8b"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_hybas")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_2nw73"]
+resource_name = "run"
+length = 1.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("7_kekru"), ExtResource("8_kg70u"), ExtResource("9_icgcm"), ExtResource("10_en6yn"), ExtResource("11_wyosg"), ExtResource("12_lyo4p")]
+}
+
+[sub_resource type="Animation" id="Animation_86f83"]
+resource_name = "jump"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("13_45dgu"), ExtResource("14_dcx2q"), ExtResource("15_d5cb6")]
+}
+
+[sub_resource type="Animation" id="Animation_6nwcp"]
+resource_name = "fall"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("16_7ovep")]
+}
+
+[sub_resource type="Animation" id="Animation_qnhtp"]
+resource_name = "hit"
+length = 0.7
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("17_2naqr"), ExtResource("18_irknw"), ExtResource("19_tru6h"), ExtResource("20_hvpf5")]
+}
+
+[sub_resource type="Animation" id="Animation_btaj4"]
+resource_name = "dead"
+length = 0.7
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("21_tpdqv"), ExtResource("22_60bqh"), ExtResource("23_y0w22"), ExtResource("24_ol424")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gk0ga"]
+_data = {
+"RESET": SubResource("Animation_iyr8b"),
+"dead": SubResource("Animation_btaj4"),
+"fall": SubResource("Animation_6nwcp"),
+"hit": SubResource("Animation_qnhtp"),
+"idle": SubResource("Animation_g235a"),
+"jump": SubResource("Animation_86f83"),
+"run": SubResource("Animation_2nw73")
+}
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(79, 63)
 script = ExtResource("1_qlxdl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -10.5)
+position = Vector2(-0.5, 0.75)
 shape = SubResource("RectangleShape2D_b44rg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -12)
 texture = ExtResource("1_hybas")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_gk0ga")
+}
+autoplay = "idle"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
