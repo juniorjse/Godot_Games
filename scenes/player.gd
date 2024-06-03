@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 200.0
 const JUMP_VELOCITY = -350.0
+const ATTACK_COLLISION_SHAPE_OFFSET: int = 22
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction: float
@@ -9,6 +10,7 @@ var is_attacking: bool
 
 @onready var animation: AnimationPlayer = $AnimationPlayer
 @onready var sprite: Sprite2D = $Sprite2D
+@onready var attack_collision_shape: CollisionShape2D = $Area2D/AttackCollisionShape2D
 
 func _process(delta) -> void:
 	animate()
@@ -47,8 +49,10 @@ func attack() -> void:
 func face_toward_movement() -> void:
 	if direction < 0:
 		sprite.scale.x = -1
+		attack_collision_shape.position.x = -ATTACK_COLLISION_SHAPE_OFFSET
 	elif direction > 0:
 		sprite.scale.x = 1
+		attack_collision_shape.position.x = ATTACK_COLLISION_SHAPE_OFFSET
 	
 func move() -> void:
 	velocity.x = direction * SPEED

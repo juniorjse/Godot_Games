@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://dby8wagxhabqb"]
+
+[ext_resource type="Texture2D" uid="uid://btppm516xepep" path="res://assets/enviroment/Background/Water Reflect Big 01.png" id="1_dcn0m"]
+[ext_resource type="Texture2D" uid="uid://fv4k07lgyv2j" path="res://assets/enviroment/Background/Water Reflect Big 02.png" id="2_1i64x"]
+[ext_resource type="Texture2D" uid="uid://xtyoiic62xs1" path="res://assets/enviroment/Background/Water Reflect Big 03.png" id="3_jitvi"]
+[ext_resource type="Texture2D" uid="uid://ujdo1rft1nmt" path="res://assets/enviroment/Background/Water Reflect Big 04.png" id="4_0rfcm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_unnvk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dcn0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1i64x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jitvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0rfcm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="WaterReflectBig" type="AnimatedSprite2D"]
+z_index = -1
+sprite_frames = SubResource("SpriteFrames_unnvk")
+autoplay = "default"

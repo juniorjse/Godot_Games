@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://lgvfgfcvt5ue"]
+
+[ext_resource type="Texture2D" uid="uid://dinm257g8bacn" path="res://assets/enviroment/Front Palm Trees/Front Palm Tree Top 01.png" id="1_fqh71"]
+[ext_resource type="Texture2D" uid="uid://u72cdr57eb4k" path="res://assets/enviroment/Front Palm Trees/Front Palm Tree Top 02.png" id="2_7803c"]
+[ext_resource type="Texture2D" uid="uid://cekwr1qakvmrk" path="res://assets/enviroment/Front Palm Trees/Front Palm Tree Top 03.png" id="3_s3jrx"]
+[ext_resource type="Texture2D" uid="uid://cv1ve0ykeq8hv" path="res://assets/enviroment/Front Palm Trees/Front Palm Tree Top 04.png" id="4_gb5uk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x1rnl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fqh71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7803c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_s3jrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gb5uk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="FrontPalmTree" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_x1rnl")
+autoplay = "default"
