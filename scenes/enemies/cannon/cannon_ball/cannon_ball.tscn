@@ -1,0 +1,94 @@
+[gd_scene load_steps=14 format=3 uid="uid://q4sff7745v84"]
+
+[ext_resource type="Texture2D" uid="uid://h4n574piecy7" path="res://assets/enemies/Cannon/Cannon Ball Idle/1.png" id="1_2bq60"]
+[ext_resource type="Script" path="res://scenes/enemies/cannon/cannon_ball/cannon_ball.gd" id="1_k1wyy"]
+[ext_resource type="Texture2D" uid="uid://b0gs537gft8ag" path="res://assets/enemies/Cannon/Cannon Ball Explosion/1.png" id="3_kphrm"]
+[ext_resource type="Texture2D" uid="uid://c61gkx8t78dlt" path="res://assets/enemies/Cannon/Cannon Ball Explosion/2.png" id="4_jd2pw"]
+[ext_resource type="Texture2D" uid="uid://b6aytqujybgwj" path="res://assets/enemies/Cannon/Cannon Ball Explosion/3.png" id="5_ruhm6"]
+[ext_resource type="Texture2D" uid="uid://dgwngfahhg8sp" path="res://assets/enemies/Cannon/Cannon Ball Explosion/4.png" id="6_7t8ki"]
+[ext_resource type="Texture2D" uid="uid://df13fqwuw2db5" path="res://assets/enemies/Cannon/Cannon Ball Explosion/5.png" id="7_af6lw"]
+[ext_resource type="Texture2D" uid="uid://dvr2x75v7l5sv" path="res://assets/enemies/Cannon/Cannon Ball Explosion/6.png" id="8_fuf82"]
+[ext_resource type="Texture2D" uid="uid://bqr755cukv6ww" path="res://assets/enemies/Cannon/Cannon Ball Explosion/7.png" id="9_gew81"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_85dnc"]
+radius = 7.0
+
+[sub_resource type="Animation" id="Animation_hovya"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_2bq60")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_xng44"]
+resource_name = "dead"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_kphrm"), ExtResource("4_jd2pw"), ExtResource("5_ruhm6"), ExtResource("6_7t8ki"), ExtResource("7_af6lw"), ExtResource("8_fuf82"), ExtResource("9_gew81")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qygv8"]
+_data = {
+"RESET": SubResource("Animation_hovya"),
+"dead": SubResource("Animation_xng44")
+}
+
+[node name="CannonBall" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_k1wyy")
+damage = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_85dnc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2bq60")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_qygv8")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_finished"]

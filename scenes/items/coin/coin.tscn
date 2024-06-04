@@ -1,0 +1,86 @@
+[gd_scene load_steps=14 format=3 uid="uid://db5j0nnkovuq8"]
+
+[ext_resource type="Script" path="res://scenes/items/coin/coin.gd" id="1_beray"]
+[ext_resource type="Texture2D" uid="uid://hfhxh2f7eplm" path="res://assets/items/Gold Coin/01.png" id="1_hc3mg"]
+[ext_resource type="Texture2D" uid="uid://dsllfhyy0txt8" path="res://assets/items/Gold Coin/02.png" id="2_7iln1"]
+[ext_resource type="Texture2D" uid="uid://cxgdidsrhbpjm" path="res://assets/items/Gold Coin/03.png" id="3_bqd7o"]
+[ext_resource type="Texture2D" uid="uid://ddwn5exvbuu6n" path="res://assets/items/Gold Coin/04.png" id="4_kkljl"]
+[ext_resource type="Texture2D" uid="uid://dc6n7g13lk1is" path="res://assets/items/Coin Effect/01.png" id="5_d8gnc"]
+[ext_resource type="Texture2D" uid="uid://byh4bxtdugo44" path="res://assets/items/Coin Effect/02.png" id="6_uykvf"]
+[ext_resource type="Texture2D" uid="uid://b7y8i7vh8yeea" path="res://assets/items/Coin Effect/03.png" id="7_ued48"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nmwk5"]
+radius = 6.0
+
+[sub_resource type="Animation" id="Animation_lw431"]
+resource_name = "idle"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_hc3mg"), ExtResource("2_7iln1"), ExtResource("3_bqd7o"), ExtResource("4_kkljl")]
+}
+
+[sub_resource type="Animation" id="Animation_uej3p"]
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_hc3mg")]
+}
+
+[sub_resource type="Animation" id="Animation_g544q"]
+resource_name = "pickup"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("5_d8gnc"), ExtResource("6_uykvf"), ExtResource("7_ued48")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jpona"]
+_data = {
+"RESET": SubResource("Animation_uej3p"),
+"idle": SubResource("Animation_lw431"),
+"pickup": SubResource("Animation_g544q")
+}
+
+[node name="Coin" type="Area2D" groups=["coins"]]
+script = ExtResource("1_beray")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hc3mg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_nmwk5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_jpona")
+}
+autoplay = "idle"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf15ne3pfvv7n"]
+
+[ext_resource type="Script" path="res://scenes/enemies/killzone/killzone.gd" id="1_l22tu"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_exvrj"]
+
+[node name="Killzone" type="Area2D"]
+light_mask = 0
+visibility_layer = 3
+script = ExtResource("1_l22tu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 0
+visibility_layer = 3
+shape = SubResource("WorldBoundaryShape2D_exvrj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
