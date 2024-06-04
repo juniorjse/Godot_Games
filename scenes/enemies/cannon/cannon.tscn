@@ -75,38 +75,6 @@ tracks/1/keys = {
 }]
 }
 
-[sub_resource type="Animation" id="Animation_8sijd"]
-resource_name = "idle"
-length = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("1_rfbio")]
-}
-
-[sub_resource type="Animation" id="Animation_0bmtn"]
-resource_name = "hit"
-length = 0.4
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("8_tag76"), ExtResource("9_3gr6w"), ExtResource("10_wr2ja"), ExtResource("11_r71o2")]
-}
-
 [sub_resource type="Animation" id="Animation_0mbf0"]
 resource_name = "destroyed"
 length = 0.4
@@ -135,6 +103,38 @@ tracks/1/keys = {
 "values": [Vector2(0, -10), Vector2(0, -13), Vector2(0, -7)]
 }
 
+[sub_resource type="Animation" id="Animation_0bmtn"]
+resource_name = "hit"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("8_tag76"), ExtResource("9_3gr6w"), ExtResource("10_wr2ja"), ExtResource("11_r71o2")]
+}
+
+[sub_resource type="Animation" id="Animation_8sijd"]
+resource_name = "idle"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_rfbio")]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jr0fi"]
 _data = {
 "RESET": SubResource("Animation_4n3br"),
@@ -148,7 +148,7 @@ _data = {
 size = Vector2(30, 23)
 
 [node name="Cannon" type="StaticBody2D"]
-collision_layer = 2
+collision_layer = 10
 script = ExtResource("1_fclo4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

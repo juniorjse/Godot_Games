@@ -3,7 +3,7 @@ extends Area2D
 @export var damage: int
 @onready var animation: AnimationPlayer = $AnimationPlayer
 
-const SPEED = 200.0
+const SPEED = 250.0
 
 var direction: int = 1
 var is_dead: bool = false
