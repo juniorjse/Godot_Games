@@ -2,6 +2,21 @@
 
 [ext_resource type="Script" path="res://scenes/transition/transition.gd" id="1_qlwwe"]
 
+[sub_resource type="Animation" id="Animation_t681r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.0156863, 0.0156863, 0.0156863, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_pjbqv"]
 resource_name = "fade_in"
 length = 0.4
@@ -16,21 +31,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(0.0142752, 0.0142752, 0.0142752, 1), Color(0.0156863, 0.0156863, 0.0156863, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_t681r"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ColorRect:color")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0.0142752, 0.0142752, 0.0142752, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_qf1cm"]
@@ -64,7 +64,8 @@ script = ExtResource("1_qlwwe")
 offset_left = -1368.0
 offset_right = 3848.0
 offset_bottom = 2026.0
-color = Color(0.0142752, 0.0142752, 0.0142752, 1)
+mouse_filter = 2
+color = Color(0.0156863, 0.0156863, 0.0156863, 0)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

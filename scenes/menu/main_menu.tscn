@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=3 uid="uid://bl87wn4fi5vrt"]
+
+[ext_resource type="Script" path="res://scenes/menu/main_menu.gd" id="1_gxr16"]
+[ext_resource type="Texture2D" uid="uid://c4n7d2wxu0flt" path="res://assets/ui/Big Banner/32.png" id="1_qnm8o"]
+[ext_resource type="FontFile" uid="uid://qgefkcx22p4e" path="res://assets/fonts/ThaleahFat.ttf" id="2_licp5"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gxr16")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_qnm8o")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -148.0
+offset_top = -50.5
+offset_right = 148.0
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 32
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_licp5")
+theme_override_font_sizes/font_size = 64
+text = "Sea Pirate!"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="PlayButton" type="Button" parent="VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_licp5")
+theme_override_font_sizes/font_size = 32
+text = "Play
+"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_licp5")
+theme_override_font_sizes/font_size = 32
+text = "quit"
+
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
