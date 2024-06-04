@@ -2,6 +2,7 @@ extends CharacterBody2D
 class_name Player
 
 @export var max_health: int
+@export var damage: int
 
 const SPEED = 200.0
 const JUMP_VELOCITY = -350.0
@@ -14,9 +15,10 @@ var is_taking_damage: bool
 var current_health: int 
 var is_dead: bool
 
+@onready var gpu_particles_2d = $GPUParticles2D
 @onready var animation: AnimationPlayer = $AnimationPlayer
 @onready var sprite: Sprite2D = $Sprite2D
-@onready var attack_collision_shape: CollisionShape2D = $Area2D/AttackCollisionShape2D
+@onready var attack_collision_shape: CollisionShape2D = $AttackArea/AttackCollisionShape2D
 
 signal health_changed(current_health: int, max_health: int)
 	
@@ -103,3 +105,8 @@ func take_damage(damage_amount: int):
 		is_dead = true
 	else:
 		is_taking_damage = true
+
+
+func _on_attack_area_body_entered(body):
+	if body.has_method("take_damage"):
+		body.take_damage(damage)

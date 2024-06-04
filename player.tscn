@@ -1,7 +1,8 @@
-[gd_scene load_steps=39 format=3 uid="uid://cr7hmkjqmiocr"]
+[gd_scene load_steps=40 format=3 uid="uid://cr7hmkjqmiocr"]
 
 [ext_resource type="Texture2D" uid="uid://ce1f0244af4to" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 03.png" id="1_hybas"]
 [ext_resource type="Script" path="res://player.gd" id="1_qlxdl"]
+[ext_resource type="PackedScene" uid="uid://i2rilt4u365d" path="res://scenes/effects/gpu_particles_2d.tscn" id="2_3ngiv"]
 [ext_resource type="Texture2D" uid="uid://dk1wg4rpo3ph1" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="3_s3v1d"]
 [ext_resource type="Texture2D" uid="uid://qv2sbqqd5yfr" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 02.png" id="4_sm0m6"]
 [ext_resource type="Texture2D" uid="uid://cxy7ws7f504jl" path="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 04.png" id="5_a3l4o"]
@@ -60,7 +61,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Area2D/AttackCollisionShape2D:disabled")
+tracks/2/path = NodePath("AttackArea/AttackCollisionShape2D:disabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -88,7 +89,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Area2D/AttackCollisionShape2D:disabled")
+tracks/1/path = NodePath("AttackArea/AttackCollisionShape2D:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -224,13 +225,16 @@ size = Vector2(17, 29)
 [node name="Player" type="CharacterBody2D"]
 z_index = 1
 position = Vector2(0, -4)
-collision_mask = 3
 script = ExtResource("1_qlxdl")
 max_health = 10
+damage = 5
 
 [node name="HitboxCollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0.75)
 shape = SubResource("RectangleShape2D_b44rg")
+
+[node name="GPUParticles2D" parent="." instance=ExtResource("2_3ngiv")]
+position = Vector2(0, 6)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_hybas")
@@ -241,9 +245,11 @@ libraries = {
 }
 autoplay = "idle"
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="AttackArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
 
-[node name="AttackCollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="AttackCollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
 position = Vector2(19.5, -4.5)
 shape = SubResource("RectangleShape2D_a3pii")
 
@@ -255,3 +261,4 @@ limit_smoothed = true
 position_smoothing_enabled = true
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_finished"]
+[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]

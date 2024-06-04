@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://beg55vn52ji5w"]
+
+[ext_resource type="Texture2D" uid="uid://djgnu0avm3fab" path="res://assets/tilemaps/Platforms (32x32).png" id="1_jhvge"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iff3c"]
+size = Vector2(125.5, 8.5)
+
+[node name="Platform" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jhvge")
+region_enabled = true
+region_rect = Rect2(32, 64, 128, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 0
+position = Vector2(-0.25, -2.25)
+shape = SubResource("RectangleShape2D_iff3c")
+one_way_collision = true

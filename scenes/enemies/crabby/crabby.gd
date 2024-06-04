@@ -1,13 +1,17 @@
 extends CharacterBody2D
 
 @export var damage: int
+@export var max_health: int
 
 @onready var animation = $AnimationPlayer
 @onready var attack_left_raycast = $AttackLeft
 @onready var attack_right_raycast = $AttackRight
 @onready var ground_check_raycast = $GroundCheck
+@onready var attack_coldown_timer = $AttackColdownTimer
+@onready var attack_area = $AttackArea # Certifique-se de que esta seja a área de ataque correta
 
 const SPEED = 25.0
+signal health_changed(current_health: int, max_health: int)
 
 var is_dead: bool = false
 var is_taking_damage: bool = false
@@ -15,29 +19,39 @@ var is_attacking: bool = false
 var is_charging: bool = false
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction: int = 1
+var current_health: int
 
 func _ready():
+	current_health = max_health
 	animation.connect("animation_finished", Callable(self, "_on_animation_finished"))
+	attack_area.connect("body_entered", Callable(self, "_on_attack_area_body_entered")) # Conecte o sinal aqui
 
 func _process(delta):
 	animate()
 
 func _physics_process(delta):
+	apply_gravity(delta)
+	patrol()
+	check_attack_range()
+
+func apply_gravity(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
-	velocity.x = SPEED * direction
-
-	move_and_slide()
-	check_attack_range()
+		
+func patrol():
 	ground_check()
-
+	velocity.x = SPEED * direction
+	move_and_slide()
+	
 func ground_check():
 	if not ground_check_raycast.is_colliding():
 		change_direction()
 	else:
-		print("Ground detected")
+		return
 
 func check_attack_range():
+	if not attack_coldown_timer.is_stopped():
+		return
 	if is_attacking:
 		return
 	if is_charging:
@@ -65,6 +79,7 @@ func animate():
 		return
 	if is_charging:
 		animation.play("antecipacion")
+		attack_coldown_timer.start()
 		return
 	if is_attacking:
 		animation.play("attack")
@@ -88,4 +103,12 @@ func _on_attack_area_body_entered(body):
 	if not body.has_method("take_damage"):
 		return
 	body.take_damage(damage)
-	change_direction()  # Muda de direção ao colidir com algo
+	change_direction()
+
+func take_damage(damage_amount: int):
+	current_health -= damage_amount
+	health_changed.emit(current_health, max_health)
+	if current_health <= 0:
+		is_dead = true
+	else:
+		is_taking_damage = true

@@ -233,8 +233,9 @@ _data = {
 size = Vector2(20, 14)
 
 [node name="Crabby" type="CharacterBody2D"]
-collision_layer = 2
 script = ExtResource("1_h0iby")
+damage = 2
+max_health = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_gahx3")
@@ -272,6 +273,9 @@ disabled = true
 position = Vector2(25, 0)
 shape = SubResource("RectangleShape2D_ip7wa")
 disabled = true
+
+[node name="AttackColdownTimer" type="Timer" parent="."]
+one_shot = true
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
