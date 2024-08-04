@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/enemy/template/enemy_template.gd" type="Script" id=1]
+[ext_resource path="res://scripts/enemy/template/detection_area.gd" type="Script" id=2]
+[ext_resource path="res://scripts/enemy/template/enemy_texture_template.gd" type="Script" id=3]
+[ext_resource path="res://scripts/enemy/template/collision_area.gd" type="Script" id=4]
+[ext_resource path="res://scenes/interface/general/boss_bar.tscn" type="PackedScene" id=5]
+
+[node name="EnemyTemplate" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="Texture" type="Sprite" parent="."]
+script = ExtResource( 3 )
+animation = NodePath("../Animation")
+enemy_ref = NodePath("..")
+attack_area_collision = NodePath("../AttackArea/Collision")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+
+[node name="DetectionArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+script = ExtResource( 2 )
+enemy = NodePath("..")
+
+[node name="Collision" type="CollisionShape2D" parent="DetectionArea"]
+
+[node name="CollisionArea" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 0
+script = ExtResource( 4 )
+enemy_bar = NodePath("../boss_bar")
+enemy_ref = NodePath("..")
+
+[node name="Collision" type="CollisionShape2D" parent="CollisionArea"]
+
+[node name="Timer" type="Timer" parent="CollisionArea"]
+
+[node name="AttackArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="Collision" type="CollisionShape2D" parent="AttackArea"]
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+
+[node name="FloorRay" type="RayCast2D" parent="."]
+
+[node name="boss_bar" parent="." instance=ExtResource( 5 )]
+visible = false
+
+[connection signal="body_entered" from="DetectionArea" to="DetectionArea" method="on_body_entered"]
+[connection signal="body_exited" from="DetectionArea" to="DetectionArea" method="on_body_exited"]
+[connection signal="area_entered" from="CollisionArea" to="CollisionArea" method="on_collision_area_entered"]
+[connection signal="timeout" from="CollisionArea/Timer" to="CollisionArea" method="on_timer_timeout"]
+[connection signal="animation_finished" from="Animation" to="Texture" method="on_animation_finished"]

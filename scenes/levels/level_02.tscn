@@ -1,14 +1,15 @@
-[gd_scene load_steps=15 format=3 uid="uid://den8fdxlsrq5u"]
+[gd_scene load_steps=16 format=3 uid="uid://den8fdxlsrq5u"]
 
 [ext_resource type="PackedScene" uid="uid://bluj1k8rd8xau" path="res://scenes/enviroment/tile_map.tscn" id="1_ut604"]
 [ext_resource type="PackedScene" uid="uid://bary0dxglrt4k" path="res://scenes/interface/interface.tscn" id="2_m075e"]
 [ext_resource type="PackedScene" uid="uid://beg55vn52ji5w" path="res://scenes/platform/platform.tscn" id="3_3tnyu"]
 [ext_resource type="PackedScene" uid="uid://411b72l2ev0w" path="res://scenes/enemies/crabby/crabby.tscn" id="4_xw8pg"]
 [ext_resource type="PackedScene" uid="uid://bdrkq5chhital" path="res://scenes/enemies/cannon/cannon.tscn" id="5_l4e8k"]
+[ext_resource type="PackedScene" uid="uid://b2ohwxj3belb5" path="res://scenes/enemies/cannons/cannons.tscn" id="6_02tjh"]
 [ext_resource type="PackedScene" uid="uid://db5j0nnkovuq8" path="res://scenes/items/coin/coin.tscn" id="6_86v5g"]
 [ext_resource type="Texture2D" uid="uid://duohlcpvdggch" path="res://assets/enviroment/Background/BG Image.png" id="6_lk32p"]
 [ext_resource type="PackedScene" uid="uid://up3a6s2eak6k" path="res://scenes/props/door/door.tscn" id="7_nkrot"]
-[ext_resource type="PackedScene" uid="uid://cr7hmkjqmiocr" path="res://player.tscn" id="8_cfqym"]
+[ext_resource type="PackedScene" uid="uid://cr7hmkjqmiocr" path="res://scenes/player/player.tscn" id="8_cfqym"]
 [ext_resource type="Texture2D" uid="uid://dig14631efhy6" path="res://assets/tilemaps/Terrain and Back Wall (32x32).png" id="9_kd0qx"]
 [ext_resource type="PackedScene" uid="uid://bl1y7r7wcnqr7" path="res://scenes/enviroment/back_palm_tree_regular.tscn" id="11_5sqyt"]
 [ext_resource type="PackedScene" uid="uid://bvtnk40071pfv" path="res://scenes/enviroment/back_palm_tree_right.tscn" id="12_717w4"]
@@ -66,6 +67,10 @@ position = Vector2(834, 90)
 
 [node name="Cannon" parent="Enemies" instance=ExtResource("5_l4e8k")]
 position = Vector2(425, 289)
+
+[node name="Cannons" parent="Enemies" instance=ExtResource("6_02tjh")]
+position = Vector2(795, 353)
+faceing_left = false
 
 [node name="Coin" type="Node" parent="."]
 

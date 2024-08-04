@@ -1,0 +1,654 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://scripts/env/background.gd" type="Script" id=1]
+[ext_resource path="res://assets/tile/parallax_background/noite.png" type="Texture" id=2]
+[ext_resource path="res://assets/tile/parallax_background/continue_noite.png" type="Texture" id=3]
+[ext_resource path="res://assets/enemy/captain_bod/captain.png" type="Texture" id=4]
+[ext_resource path="res://assets/effect/water/water_noite.png" type="Texture" id=5]
+[ext_resource path="res://assets/tile/parallax_background/noite_conti.png" type="Texture" id=6]
+[ext_resource path="res://assets/tile/parallax_background/nuvens_noite.png" type="Texture" id=7]
+[ext_resource path="res://scenes/player/levelcamera.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/env/dawn_mask.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/player/ship_mercante.png" type="Texture" id=10]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Texture:hframes")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 5 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Texture:vframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 5 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Texture:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 5 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath(".:collision_layer")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 4 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Texture:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 10 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Captain:hframes")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 7 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Captain:vframes")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 7 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Captain:texture")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 4 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Captain:frame")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_name = "attack_left"
+length = 0.3
+
+[sub_resource type="Animation" id=21]
+resource_name = "attack_right"
+length = 0.4
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "spawn_spell"
+} ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Texture:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 18, 19, 20, 21 ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "crouch"
+length = 0.45
+tracks/0/type = "value"
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 9, 10, 11, 12, 13 ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "dead"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 14, 15, 16, 22 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:collision_layer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=25]
+resource_name = "fall"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4 ]
+}
+
+[sub_resource type="Animation" id=24]
+resource_name = "hide"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "hit"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 14, 15, 16, 17 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "idle"
+length = 0.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:collision_layer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 4 ]
+}
+
+[sub_resource type="Animation" id=26]
+resource_name = "idle_antes"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 6, 7, 8, 9, 5, 6, 7, 8, 9, 5, 6, 7, 8, 9, 5, 6, 7, 8, 9 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Texture:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 10 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Texture:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 5 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Texture:vframes")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 5 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Captain:hframes")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 7 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Captain:vframes")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 7 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Captain:texture")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 4 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Captain:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5 ]
+}
+
+[sub_resource type="Animation" id=23]
+resource_name = "jump"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4 ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "landing"
+length = 0.15
+
+[sub_resource type="Animation" id=22]
+resource_name = "run_left"
+length = 0.5
+loop = true
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [ "res://scenes/effect/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
+"method": "spawn_effect"
+}, {
+"args": [ "res://scenes/effect/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
+"method": "spawn_effect"
+} ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "run_right"
+length = 0.5
+loop = true
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [ "res://scenes/effect/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
+"method": "spawn_effect"
+}, {
+"args": [ "res://scenes/effect/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
+"method": "spawn_effect"
+} ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Texture:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:collision_layer")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 4 ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "shield"
+length = 0.3
+
+[sub_resource type="Animation" id=15]
+resource_name = "wall_slide"
+length = 0.2
+loop = true
+
+[sub_resource type="AtlasTexture" id=56]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 170, 48 )
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 5 )
+region = Rect2( 170, 0, 170, 48 )
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 5 )
+region = Rect2( 340, 0, 170, 48 )
+
+[sub_resource type="AtlasTexture" id=59]
+atlas = ExtResource( 5 )
+region = Rect2( 510, 0, 170, 48 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Background" type="ParallaxBackground"]
+scale = Vector2( 0.5, 0.5 )
+transform = Transform2D( 0.5, 0, 0, 0.5, 0, 0 )
+script = ExtResource( 1 )
+can_process = true
+layer_speed = [ 0, 25, 20, 0 ]
+
+[node name="Layer4" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 740, 0 )
+
+[node name="Texture" type="TextureRect" parent="Layer4"]
+margin_left = -248.0
+margin_top = -4.0
+margin_right = 5292.0
+margin_bottom = 586.0
+texture = ExtResource( 6 )
+expand = true
+
+[node name="Texture3" type="TextureRect" parent="Layer4"]
+margin_left = -4.0
+margin_top = 442.0
+margin_right = 1121.0
+margin_bottom = 923.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Texture2" type="TextureRect" parent="Layer4"]
+margin_left = -62.0
+margin_top = 772.0
+margin_right = 1063.0
+margin_bottom = 1253.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="Layer3" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 1080, 0 )
+
+[node name="Texture" type="TextureRect" parent="Layer3"]
+margin_left = -30.0
+margin_top = 496.0
+margin_right = 1050.0
+margin_bottom = 930.0
+texture = ExtResource( 7 )
+expand = true
+
+[node name="Texture2" type="TextureRect" parent="Layer3"]
+margin_left = -38.0
+margin_top = 136.0
+margin_right = 1042.0
+margin_bottom = 570.0
+texture = ExtResource( 7 )
+expand = true
+
+[node name="Layer6" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 1080, 0 )
+
+[node name="captain" type="KinematicBody2D" parent="Layer6" groups=["player"]]
+position = Vector2( 134, 766 )
+scale = Vector2( 0.5, 0.5 )
+collision_layer = 4
+collision_mask = 35
+
+[node name="Texture" type="Sprite" parent="Layer6/captain"]
+position = Vector2( 8, -3 )
+texture = ExtResource( 10 )
+flip_h = true
+hframes = 5
+vframes = 5
+frame = 5
+
+[node name="Animation" type="AnimationPlayer" parent="Layer6/captain"]
+autoplay = "idle_antes"
+anims/RESET = SubResource( 1 )
+anims/attack_left = SubResource( 17 )
+anims/attack_right = SubResource( 21 )
+anims/crouch = SubResource( 12 )
+anims/dead = SubResource( 11 )
+anims/fall = SubResource( 25 )
+anims/hide = SubResource( 24 )
+anims/hit = SubResource( 10 )
+anims/idle = SubResource( 2 )
+anims/idle_antes = SubResource( 26 )
+anims/jump = SubResource( 23 )
+anims/landing = SubResource( 9 )
+anims/run_left = SubResource( 22 )
+anims/run_right = SubResource( 4 )
+anims/shield = SubResource( 13 )
+anims/wall_slide = SubResource( 15 )
+
+[node name="Captain" type="Sprite" parent="Layer6/captain"]
+position = Vector2( 30, -16 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+flip_h = true
+hframes = 7
+vframes = 7
+
+[node name="LevelCamera" parent="Layer6/captain" instance=ExtResource( 8 )]
+position = Vector2( 39, -19 )
+
+[node name="Layer5" type="ParallaxLayer" parent="."]
+z_index = -1
+motion_mirroring = Vector2( 200, 0 )
+
+[node name="water" type="AnimatedSprite" parent="Layer5"]
+modulate = Color( 1, 1, 1, 0.741176 )
+position = Vector2( 142.049, 799.159 )
+rotation = -0.00218014
+scale = Vector2( 1.17636, 1.12527 )
+frames = SubResource( 5 )
+frame = 1
+playing = true
+
+[node name="water2" type="AnimatedSprite" parent="Layer5"]
+modulate = Color( 1, 1, 1, 0.741176 )
+position = Vector2( 542.149, 798.796 )
+rotation = -0.00218014
+scale = Vector2( 1.17706, 1.11795 )
+frames = SubResource( 5 )
+frame = 1
+playing = true
+
+[node name="water3" type="AnimatedSprite" parent="Layer5"]
+modulate = Color( 1, 1, 1, 0.741176 )
+position = Vector2( 942.107, 798 )
+rotation = -0.00218014
+scale = Vector2( 1.17586, 1.09782 )
+frames = SubResource( 5 )
+frame = 1
+playing = true
+
+[node name="water4" type="AnimatedSprite" parent="Layer5"]
+modulate = Color( 1, 1, 1, 0.741176 )
+position = Vector2( 1341.92, 798.005 )
+rotation = -0.00218014
+scale = Vector2( 1.17591, 1.11961 )
+frames = SubResource( 5 )
+frame = 1
+playing = true
+
+[node name="water5" type="AnimatedSprite" parent="Layer5"]
+modulate = Color( 1, 1, 1, 0.741176 )
+position = Vector2( 1741.65, 798.026 )
+rotation = -0.00218014
+scale = Vector2( 1.17645, 1.08584 )
+frames = SubResource( 5 )
+frame = 1
+playing = true
+
+[node name="Mask" parent="." instance=ExtResource( 9 )]
+color = Color( 0.917647, 0.815686, 0.764706, 1 )
+
+[connection signal="animation_finished" from="Layer6/captain/Animation" to="Layer6/captain/Texture" method="on_animation_finished"]

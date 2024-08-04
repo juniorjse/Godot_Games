@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/enemy/enemy_bar/back_bar_boss.png" type="Texture" id=2]
+[ext_resource path="res://assets/enemy/enemy_bar/bar_boss.png" type="Texture" id=3]
+[ext_resource path="res://scripts/enemy/general/boss_bar.gd" type="Script" id=4]
+
+[node name="boss_bar" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+margin_bottom = -1.0
+script = ExtResource( 4 )
+
+[node name="BarBackground" type="TextureRect" parent="."]
+margin_right = 96.0
+margin_bottom = 17.0
+texture = ExtResource( 2 )
+
+[node name="HealthBar" type="TextureProgress" parent="BarBackground"]
+margin_left = 17.0
+margin_top = 7.0
+margin_right = 92.0
+margin_bottom = 9.0
+value = 100.0
+texture_progress = ExtResource( 3 )
+
+[node name="Tween" type="Tween" parent="."]

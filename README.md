@@ -1,6 +1,6 @@
 # Sea Pirate
 
-Sea Pirate é um jogo de plataforma desenvolvido em Godot 4.0. Neste jogo, você assume o papel de um pirata que deve navegar por diversos níveis, enfrentar inimigos e superar obstáculos para encontrar tesouros escondidos.
+Sea Pirate é um jogo de plataforma desenvolvido em Godot. Neste jogo, você assume o papel de um pirata que deve navegar por diversos níveis, enfrentar inimigos e superar obstáculos para encontrar tesouros escondidos.
 
 ## Sobre o Projeto
 
