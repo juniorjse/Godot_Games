@@ -1,0 +1,595 @@
+[gd_scene load_steps=47 format=2]
+
+[ext_resource path="res://resources/tile/floor.tres" type="TileSet" id=1]
+[ext_resource path="res://resources/tile/normal_size_decoration.tres" type="TileSet" id=2]
+[ext_resource path="res://scripts/env/background.gd" type="Script" id=3]
+[ext_resource path="res://scripts/game_menu/initial_screen.gd" type="Script" id=5]
+[ext_resource path="res://scenes/env/dawn_mask.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/interactable/water/water_top_animation.png" type="Texture" id=7]
+[ext_resource path="res://scenes/env/palmtree.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/env/flag_ship.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets/font/PressStart2P.ttf" type="DynamicFontData" id=11]
+[ext_resource path="res://scripts/game_menu/initial_container.gd" type="Script" id=12]
+[ext_resource path="res://assets/tile/parallax_background/céu.png" type="Texture" id=14]
+[ext_resource path="res://assets/tile/parallax_background/nuvens.png" type="Texture" id=15]
+[ext_resource path="res://assets/player/char_blue.png" type="Texture" id=16]
+[ext_resource path="res://assets/interactable/ship/ship_bottom.png" type="Texture" id=17]
+[ext_resource path="res://assets/decoration/Palm Tree.png" type="Texture" id=19]
+
+[sub_resource type="AtlasTexture" id=43]
+atlas = ExtResource( 19 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=44]
+atlas = ExtResource( 19 )
+region = Rect2( 64, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=45]
+atlas = ExtResource( 19 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=46]
+atlas = ExtResource( 19 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=47]
+animations = [ {
+"frames": [ SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 17 )
+region = Rect2( 0, 0, 80, 90 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 17 )
+region = Rect2( 80, 0, 80, 90 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 17 )
+region = Rect2( 160, 0, 80, 90 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 17 )
+region = Rect2( 240, 0, 80, 90 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 17 )
+region = Rect2( 320, 0, 80, 90 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 17 )
+region = Rect2( 400, 0, 80, 90 )
+
+[sub_resource type="SpriteFrames" id=61]
+animations = [ {
+"frames": [ SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 0, 180, 180 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 16 )
+region = Rect2( 180, 0, 180, 180 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 16 )
+region = Rect2( 360, 0, 180, 180 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 16 )
+region = Rect2( 540, 0, 180, 180 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 16 )
+region = Rect2( 720, 0, 180, 180 )
+
+[sub_resource type="SpriteFrames" id=33]
+animations = [ {
+"frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 96, 32 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 7 )
+region = Rect2( 96, 0, 96, 32 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 7 )
+region = Rect2( 192, 0, 96, 32 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 7 )
+region = Rect2( 288, 0, 96, 32 )
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=35]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ship:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 223, 152 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ship3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 239, 126 ) ]
+}
+
+[sub_resource type="Animation" id=34]
+resource_name = "mov"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("ship:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 223, 152 ), Vector2( 223, 154 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ship3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 239, 126 ), Vector2( 239, 128 ) ]
+}
+
+[sub_resource type="Environment" id=8]
+background_mode = 4
+glow_enabled = true
+glow_hdr_threshold = 1.5
+
+[sub_resource type="DynamicFont" id=37]
+size = 22
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 11 )
+
+[sub_resource type="DynamicFont" id=38]
+size = 9
+font_data = ExtResource( 11 )
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("InitialContainer/GameName:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("InitialContainer/ButtonsContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("InitialContainer/GameName:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("InitialContainer/ButtonsContainer:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("InitialContainer/GameName:rect_position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 10, 10 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("../ScreenDesign/ColorRect:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=40]
+tracks/0/type = "value"
+tracks/0/path = NodePath("InitialContainer/ButtonsContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("InitialContainer/ButtonsContainer:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("InitialContainer/GameName:rect_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 10, 10 ), Vector2( 126, 10 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../ScreenDesign/ColorRect:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.490196 ) ]
+}
+
+[sub_resource type="Animation" id=41]
+tracks/0/type = "value"
+tracks/0/path = NodePath("InitialContainer/GameName:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("InitialContainer/ButtonsContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("InitialContainer/ButtonsContainer:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[node name="InitialScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 5 )
+
+[node name="ScreenDesign" type="Node2D" parent="."]
+
+[node name="Terrain" type="Node2D" parent="ScreenDesign"]
+
+[node name="Terrain1" type="TileMap" parent="ScreenDesign/Terrain"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -2, 1, 0, -1, 1, 0, -65536, 1, 2, 65535, 1, 65536, 0, 1, 65538, 131071, 1, 65536, 65536, 1, 65538, 196607, 1, 65536, 131072, 1, 65538, 262143, 1, 65536, 196608, 1, 65538, 327678, 1, 0, 327679, 1, 0, 262144, 1, 65537, 262145, 1, 1, 262146, 1, 2, 393214, 1, 65536, 393215, 1, 65537, 327680, 1, 65537, 327681, 1, 65537, 327682, 1, 65538, 458750, 1, 131072, 458751, 1, 131073, 393216, 1, 131073, 393217, 1, 131073, 393218, 1, 131074 )
+
+[node name="Decoration" type="Node2D" parent="ScreenDesign"]
+
+[node name="Decoration" type="TileMap" parent="ScreenDesign/Decoration"]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 196610, 8, 0, 262144, 10, 0 )
+
+[node name="palmtree" parent="ScreenDesign/Decoration" instance=ExtResource( 8 )]
+
+[node name="palmtree2" type="AnimatedSprite" parent="ScreenDesign/Decoration"]
+position = Vector2( 48, 110 )
+frames = SubResource( 47 )
+frame = 3
+playing = true
+
+[node name="Background" type="ParallaxBackground" parent="ScreenDesign"]
+script = ExtResource( 3 )
+can_process = true
+layer_speed = [ 20, 15, 10, 5 ]
+
+[node name="Layer4" type="ParallaxLayer" parent="ScreenDesign/Background"]
+motion_scale = Vector2( 0.05, 1 )
+motion_mirroring = Vector2( 320, 0 )
+
+[node name="Texture" type="TextureRect" parent="ScreenDesign/Background/Layer4"]
+margin_left = -49.0
+margin_top = -2.0
+margin_right = 854.0
+margin_bottom = 224.0
+texture = ExtResource( 14 )
+expand = true
+
+[node name="Layer3" type="ParallaxLayer" parent="ScreenDesign/Background"]
+motion_scale = Vector2( 0.05, 1 )
+motion_mirroring = Vector2( 320, 0 )
+
+[node name="Texture" type="TextureRect" parent="ScreenDesign/Background/Layer3"]
+margin_left = -6.0
+margin_top = 36.0
+margin_right = 314.0
+margin_bottom = 217.0
+texture = ExtResource( 15 )
+expand = true
+
+[node name="Mask" parent="ScreenDesign/Background" instance=ExtResource( 6 )]
+color = Color( 0.917647, 0.815686, 0.764706, 1 )
+
+[node name="ship" type="AnimatedSprite" parent="ScreenDesign/Background"]
+position = Vector2( 223, 152 )
+frames = SubResource( 61 )
+frame = 5
+playing = true
+flip_h = true
+
+[node name="ship2" parent="ScreenDesign/Background/ship" instance=ExtResource( 10 )]
+position = Vector2( -19, -36 )
+frame = 1
+
+[node name="ship3" type="AnimatedSprite" parent="ScreenDesign/Background"]
+position = Vector2( 239, 126 )
+frames = SubResource( 33 )
+frame = 1
+playing = true
+flip_h = true
+
+[node name="water" type="AnimatedSprite" parent="ScreenDesign/Background"]
+position = Vector2( 48, 165 )
+frames = SubResource( 15 )
+frame = 1
+playing = true
+
+[node name="water2" type="AnimatedSprite" parent="ScreenDesign/Background"]
+position = Vector2( 144, 165 )
+frames = SubResource( 15 )
+frame = 1
+playing = true
+
+[node name="water3" type="AnimatedSprite" parent="ScreenDesign/Background"]
+position = Vector2( 240, 165 )
+frames = SubResource( 15 )
+frame = 2
+playing = true
+
+[node name="water4" type="AnimatedSprite" parent="ScreenDesign/Background"]
+position = Vector2( 336, 165 )
+frames = SubResource( 15 )
+frame = 1
+playing = true
+
+[node name="anim_mov" type="AnimationPlayer" parent="ScreenDesign/Background"]
+autoplay = "mov"
+anims/RESET = SubResource( 35 )
+anims/mov = SubResource( 34 )
+
+[node name="ColorRect" type="ColorRect" parent="ScreenDesign"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -30.0
+margin_top = -8.0
+margin_right = 388.0
+margin_bottom = 227.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Mask" parent="ScreenDesign" instance=ExtResource( 6 )]
+color = Color( 0.65098, 0.509804, 0.439216, 1 )
+
+[node name="GlowEnv" type="WorldEnvironment" parent="ScreenDesign"]
+environment = SubResource( 8 )
+
+[node name="GameMenu" type="CanvasLayer" parent="."]
+
+[node name="InitialContainer" type="Control" parent="GameMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 12 )
+animation = NodePath("../Animation")
+
+[node name="GameName" type="Label" parent="GameMenu/InitialContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 472.0
+margin_bottom = 57.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 37 )
+text = "Sea Pirate
+Adventures"
+valign = 1
+
+[node name="ButtonsContainer" type="VBoxContainer" parent="GameMenu/InitialContainer"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 15.0
+margin_top = 74.0
+margin_right = 85.0
+margin_bottom = 134.0
+custom_constants/separation = 0
+
+[node name="NewGame" type="Button" parent="GameMenu/InitialContainer/ButtonsContainer" groups=["button"]]
+margin_right = 70.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 70, 20 )
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+
+[node name="Play" type="Label" parent="GameMenu/InitialContainer/ButtonsContainer/NewGame"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -34.0
+margin_top = -7.5
+margin_right = 34.0
+margin_bottom = 7.5
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 38 )
+text = "Novo jogo"
+valign = 1
+
+[node name="Continue" type="Button" parent="GameMenu/InitialContainer/ButtonsContainer" groups=["button"]]
+margin_top = 20.0
+margin_right = 70.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 70, 20 )
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+
+[node name="Continue" type="Label" parent="GameMenu/InitialContainer/ButtonsContainer/Continue"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -34.0
+margin_top = -7.5
+margin_right = 34.0
+margin_bottom = 7.5
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 38 )
+text = "Continue"
+valign = 1
+
+[node name="Quit" type="Button" parent="GameMenu/InitialContainer/ButtonsContainer" groups=["button"]]
+margin_top = 60.0
+margin_right = 70.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 70, 20 )
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+
+[node name="Quit" type="Label" parent="GameMenu/InitialContainer/ButtonsContainer/Quit"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -34.0
+margin_top = -7.5
+margin_right = 34.0
+margin_bottom = 7.5
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 38 )
+text = "Sair"
+valign = 1
+
+[node name="Animation" type="AnimationPlayer" parent="GameMenu"]
+anims/RESET = SubResource( 4 )
+anims/character_select = SubResource( 40 )
+anims/show_container = SubResource( 41 )
+
+[connection signal="animation_finished" from="GameMenu/Animation" to="." method="on_animation_finished"]

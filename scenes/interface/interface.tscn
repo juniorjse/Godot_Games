@@ -14,46 +14,45 @@ script = ExtResource("1_ouqiu")
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 30.0
-offset_top = 20.0
-offset_right = 70.0
-offset_bottom = 60.0
+offset_left = -26.0
+offset_top = -19.0
+offset_right = 14.0
+offset_bottom = 21.0
 scale = Vector2(2.63506, 2.64065)
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="Control"]
 z_index = 1
 layout_mode = 0
-offset_left = 49.2824
-offset_top = 33.4669
-offset_right = 88.2824
-offset_bottom = 73.4669
-scale = Vector2(2.80321, 1.6793)
-value = 100.0
+offset_left = 47.8167
+offset_top = 27.266
+offset_right = 86.8168
+offset_bottom = 67.266
+scale = Vector2(2.703, 1.619)
+value = 95.0
 texture_progress = ExtResource("1_dkgq2")
 script = ExtResource("2_owu0v")
 
 [node name="BarLeft" type="Sprite2D" parent="Control"]
-position = Vector2(47.2824, 37.4083)
-scale = Vector2(2.125, 2.125)
+position = Vector2(47.4372, 30.2956)
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_24pst")
 
 [node name="BarRight" type="Sprite2D" parent="Control"]
-position = Vector2(114.282, 37.4083)
-scale = Vector2(2.125, 2.125)
+position = Vector2(105.121, 30.2956)
+scale = Vector2(2.10362, 1.5)
 texture = ExtResource("3_osjg7")
 
 [node name="Coin" type="Sprite2D" parent="Control"]
-position = Vector2(1293.33, 36.1182)
-scale = Vector2(3, 3)
+position = Vector2(33.3958, 57.5616)
+scale = Vector2(2, 2)
 texture = ExtResource("6_8om4c")
 
 [node name="Label" type="Label" parent="Control"]
 layout_mode = 0
-offset_left = 1234.89
-offset_top = 24.2365
-offset_right = 1273.89
-offset_bottom = 58.2365
+offset_left = 48.1962
+offset_top = 48.0942
+offset_right = 87.1962
+offset_bottom = 76.0942
 theme_override_fonts/font = ExtResource("7_ou1bp")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 24
 text = "0"
-horizontal_alignment = 2

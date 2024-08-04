@@ -1,0 +1,123 @@
+[gd_scene load_steps=10 format=3 uid="uid://m8tbrt3r5vlx"]
+
+[ext_resource type="Texture2D" uid="uid://b1lhuwts580gv" path="res://assets/enemies/Fierce Tooth/01-Idle/Idle 01.png" id="1_w0gu8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wx3er"]
+size = Vector2(16, 21)
+
+[sub_resource type="Animation" id="Animation_7x6ep"]
+resource_name = "attack"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_w0gu8")]
+}
+
+[sub_resource type="Animation" id="Animation_qcwe0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_w0gu8")]
+}
+
+[sub_resource type="Animation" id="Animation_qusd3"]
+resource_name = "idle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_w0gu8")]
+}
+
+[sub_resource type="Animation" id="Animation_mgxk4"]
+resource_name = "dead"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_w0gu8")]
+}
+
+[sub_resource type="Animation" id="Animation_2a1oa"]
+resource_name = "hit"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_w0gu8")]
+}
+
+[sub_resource type="Animation" id="Animation_aws8r"]
+resource_name = "run"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_w0gu8")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_scxaf"]
+_data = {
+"RESET": SubResource("Animation_qcwe0"),
+"attack": SubResource("Animation_7x6ep"),
+"dead": SubResource("Animation_mgxk4"),
+"hit": SubResource("Animation_2a1oa"),
+"idle": SubResource("Animation_qusd3"),
+"run": SubResource("Animation_aws8r")
+}
+
+[node name="Toothy" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 9
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -2.5)
+shape = SubResource("RectangleShape2D_wx3er")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -5)
+texture = ExtResource("1_w0gu8")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_scxaf")
+}

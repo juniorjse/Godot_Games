@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-const CANNON_BALL_SCENE = preload("res://scenes/enemies/cannon/cannon_ball/cannon_ball.tscn")
+const CANNON_BALL_SCENE = preload("./cannon_ball/cannon_ball.tscn")
 const LINE_OF_SIGHT_TARGET_POSITION: int = -200
 
 @onready var animation: AnimationPlayer = $AnimationPlayer

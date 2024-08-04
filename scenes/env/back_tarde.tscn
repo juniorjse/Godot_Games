@@ -1,0 +1,130 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/tile/parallax_background/nuvens.png" type="Texture" id=1]
+[ext_resource path="res://scenes/env/dawn_mask.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/env/background.gd" type="Script" id=3]
+[ext_resource path="res://assets/tile/parallax_background/entardecer.png" type="Texture" id=4]
+[ext_resource path="res://assets/tile/parallax_background/céu_para_level.png" type="Texture" id=5]
+[ext_resource path="res://assets/effect/water/water_entardecer.png" type="Texture" id=6]
+[ext_resource path="res://assets/tile/parallax_background/agua.png" type="Texture" id=7]
+
+[sub_resource type="AtlasTexture" id=71]
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 170, 48 )
+
+[sub_resource type="AtlasTexture" id=72]
+atlas = ExtResource( 6 )
+region = Rect2( 170, 0, 170, 48 )
+
+[sub_resource type="AtlasTexture" id=73]
+atlas = ExtResource( 6 )
+region = Rect2( 340, 0, 170, 48 )
+
+[sub_resource type="AtlasTexture" id=74]
+atlas = ExtResource( 6 )
+region = Rect2( 510, 0, 170, 48 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 71 ), SubResource( 72 ), SubResource( 73 ), SubResource( 74 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Background" type="ParallaxBackground"]
+scale = Vector2( 0.5, 0.5 )
+transform = Transform2D( 0.5, 0, 0, 0.5, 0, 0 )
+script = ExtResource( 3 )
+can_process = true
+layer_speed = [ 0, 25, 20, 0 ]
+
+[node name="Layer4" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 740, 0 )
+
+[node name="Texture" type="TextureRect" parent="Layer4"]
+margin_left = 2.0
+margin_top = 194.0
+margin_right = 1127.0
+margin_bottom = 675.0
+texture = ExtResource( 5 )
+expand = true
+
+[node name="Texture2" type="TextureRect" parent="Layer4"]
+margin_left = -228.0
+margin_top = 524.0
+margin_right = 1800.0
+margin_bottom = 2488.0
+texture = ExtResource( 7 )
+expand = true
+
+[node name="Texture3" type="TextureRect" parent="Layer4"]
+margin_left = -288.0
+margin_top = -264.0
+margin_right = 2186.0
+margin_bottom = 350.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="Layer3" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 1080, 0 )
+
+[node name="Texture" type="TextureRect" parent="Layer3"]
+margin_left = -24.0
+margin_top = 248.0
+margin_right = 1056.0
+margin_bottom = 684.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="Layer5" type="ParallaxLayer" parent="."]
+z_index = -1
+motion_mirroring = Vector2( 200, 0 )
+
+[node name="water" type="AnimatedSprite" parent="Layer5"]
+modulate = Color( 1, 1, 1, 0.741176 )
+position = Vector2( 148.049, 551.159 )
+rotation = -0.00218014
+scale = Vector2( 1.17636, 1.12527 )
+frames = SubResource( 5 )
+frame = 2
+playing = true
+
+[node name="water2" type="AnimatedSprite" parent="Layer5"]
+modulate = Color( 1, 1, 1, 0.741176 )
+position = Vector2( 548.149, 550.796 )
+rotation = -0.00218014
+scale = Vector2( 1.17706, 1.11795 )
+frames = SubResource( 5 )
+frame = 1
+playing = true
+
+[node name="water3" type="AnimatedSprite" parent="Layer5"]
+modulate = Color( 1, 1, 1, 0.741176 )
+position = Vector2( 948.107, 550 )
+rotation = -0.00218014
+scale = Vector2( 1.17586, 1.09782 )
+frames = SubResource( 5 )
+frame = 2
+playing = true
+
+[node name="water4" type="AnimatedSprite" parent="Layer5"]
+modulate = Color( 1, 1, 1, 0.741176 )
+position = Vector2( 1347.92, 550.005 )
+rotation = -0.00218014
+scale = Vector2( 1.17591, 1.11961 )
+frames = SubResource( 5 )
+frame = 2
+playing = true
+
+[node name="water5" type="AnimatedSprite" parent="Layer5"]
+modulate = Color( 1, 1, 1, 0.741176 )
+position = Vector2( 1747.65, 550.026 )
+rotation = -0.00218014
+scale = Vector2( 1.17645, 1.08584 )
+frames = SubResource( 5 )
+frame = 2
+playing = true
+
+[node name="Mask" type="CanvasModulate" parent="." instance=ExtResource( 2 )]
+color = Color( 0.917647, 0.815686, 0.764706, 1 )

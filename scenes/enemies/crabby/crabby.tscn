@@ -233,6 +233,8 @@ _data = {
 size = Vector2(20, 14)
 
 [node name="Crabby" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 9
 script = ExtResource("1_h0iby")
 damage = 2
 max_health = 10
@@ -261,6 +263,7 @@ target_position = Vector2(50, 0)
 [node name="GroundCheck" type="RayCast2D" parent="."]
 position = Vector2(-12, 4)
 target_position = Vector2(0, 10)
+collision_mask = 8
 
 [node name="AttackArea" type="Area2D" parent="."]
 
@@ -277,5 +280,6 @@ disabled = true
 [node name="AttackColdownTimer" type="Timer" parent="."]
 one_shot = true
 
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_finished"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]

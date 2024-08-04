@@ -1,9 +1,8 @@
 [remap]
 
 importer="texture"
-type="CompressedTexture2D"
-uid="uid://dyqt8wj4msqvr"
-path="res://.godot/imported/Dead Ground 04.png-66a1d2a6e0a35ae46c2d1ca71df507bb.ctex"
+type="StreamTexture"
+path="res://.import/Dead Ground 04.png-66a1d2a6e0a35ae46c2d1ca71df507bb.stex"
 metadata={
 "vram_texture": false
 }
@@ -11,24 +10,26 @@ metadata={
 [deps]
 
 source_file="res://assets/player/Captain Clown Nose/Captain Clown Nose without Sword/08-Dead Ground/Dead Ground 04.png"
-dest_files=["res://.godot/imported/Dead Ground 04.png-66a1d2a6e0a35ae46c2d1ca71df507bb.ctex"]
+dest_files=[ "res://.import/Dead Ground 04.png-66a1d2a6e0a35ae46c2d1ca71df507bb.stex" ]
 
 [params]
 
 compress/mode=0
-compress/high_quality=false
 compress/lossy_quality=0.7
-compress/hdr_compression=1
+compress/hdr_mode=0
+compress/bptc_ldr=0
 compress/normal_map=0
-compress/channel_pack=0
-mipmaps/generate=false
-mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
 process/normal_map_invert_y=false
-process/hdr_as_srgb=false
-process/hdr_clamp_exposure=false
-process/size_limit=0
-detect_3d/compress_to=1
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

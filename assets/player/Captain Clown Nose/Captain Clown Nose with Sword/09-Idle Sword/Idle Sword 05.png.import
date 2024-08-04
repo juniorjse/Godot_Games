@@ -1,9 +1,8 @@
 [remap]
 
 importer="texture"
-type="CompressedTexture2D"
-uid="uid://u710m8v6o6qx"
-path="res://.godot/imported/Idle Sword 05.png-bf02ed54e3e369e301bd0b97c203a4ae.ctex"
+type="StreamTexture"
+path="res://.import/Idle Sword 05.png-bf02ed54e3e369e301bd0b97c203a4ae.stex"
 metadata={
 "vram_texture": false
 }
@@ -11,24 +10,26 @@ metadata={
 [deps]
 
 source_file="res://assets/player/Captain Clown Nose/Captain Clown Nose with Sword/09-Idle Sword/Idle Sword 05.png"
-dest_files=["res://.godot/imported/Idle Sword 05.png-bf02ed54e3e369e301bd0b97c203a4ae.ctex"]
+dest_files=[ "res://.import/Idle Sword 05.png-bf02ed54e3e369e301bd0b97c203a4ae.stex" ]
 
 [params]
 
 compress/mode=0
-compress/high_quality=false
 compress/lossy_quality=0.7
-compress/hdr_compression=1
+compress/hdr_mode=0
+compress/bptc_ldr=0
 compress/normal_map=0
-compress/channel_pack=0
-mipmaps/generate=false
-mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
 process/normal_map_invert_y=false
-process/hdr_as_srgb=false
-process/hdr_clamp_exposure=false
-process/size_limit=0
-detect_3d/compress_to=1
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -6,57 +6,504 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=5
+config_version=4
+
+_global_script_classes=[ {
+"base": "TextureRect",
+"class": "ArmorContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/inventory/armor_container.gd"
+}, {
+"base": "Control",
+"class": "BarContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/stats/bar_container.gd"
+}, {
+"base": "FireSpell",
+"class": "Canhao",
+"language": "GDScript",
+"path": "res://scripts/player/cannon_spell.gd"
+}, {
+"base": "InteractableTemplate",
+"class": "Checkpoint",
+"language": "GDScript",
+"path": "res://scripts/interactable/general/checkpoint.gd"
+}, {
+"base": "Area2D",
+"class": "CollisionArea",
+"language": "GDScript",
+"path": "res://scripts/enemy/template/collision_area.gd"
+}, {
+"base": "TextureRect",
+"class": "ConsumableContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/inventory/consumable_container.gd"
+}, {
+"base": "EnemyTemplate",
+"class": "Crabby",
+"language": "GDScript",
+"path": "res://scripts/enemy/crabby/crabby.gd"
+}, {
+"base": "EnemyTexture",
+"class": "CrabbyTexture",
+"language": "GDScript",
+"path": "res://scripts/enemy/crabby/crabby_texture.gd"
+}, {
+"base": "Area2D",
+"class": "DestructableInteractable",
+"language": "GDScript",
+"path": "res://scripts/interactable/initial/destructable_interactable.gd"
+}, {
+"base": "Area2D",
+"class": "DetectionArea",
+"language": "GDScript",
+"path": "res://scripts/enemy/template/detection_area.gd"
+}, {
+"base": "Control",
+"class": "DialogContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/general/dialog_container.gd"
+}, {
+"base": "Control",
+"class": "Dice",
+"language": "GDScript",
+"path": "res://scripts/env/roll_dice.gd"
+}, {
+"base": "AnimatedSprite",
+"class": "EffectTemplate",
+"language": "GDScript",
+"path": "res://scripts/env/effect_template.gd"
+}, {
+"base": "Control",
+"class": "EnemyHealthBar",
+"language": "GDScript",
+"path": "res://scripts/enemy/template/enemy_health_bar.gd"
+}, {
+"base": "Node2D",
+"class": "EnemySpawner",
+"language": "GDScript",
+"path": "res://scripts/env/enemy_spawner.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "EnemyTemplate",
+"language": "GDScript",
+"path": "res://scripts/enemy/template/enemy_template.gd"
+}, {
+"base": "Sprite",
+"class": "EnemyTexture",
+"language": "GDScript",
+"path": "res://scripts/enemy/template/enemy_texture_template.gd"
+}, {
+"base": "Control",
+"class": "EquipmentContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/inventory/equipment_container.gd"
+}, {
+"base": "Area2D",
+"class": "FireSpell",
+"language": "GDScript",
+"path": "res://scripts/player/fire_spell.gd"
+}, {
+"base": "Label",
+"class": "FloatText",
+"language": "GDScript",
+"path": "res://scripts/env/floating_text.gd"
+}, {
+"base": "Node2D",
+"class": "GameLevel",
+"language": "GDScript",
+"path": "res://scripts/management/level.gd"
+}, {
+"base": "InteractableTemplate",
+"class": "InitialCheckpoint",
+"language": "GDScript",
+"path": "res://scripts/interactable/initial/initial_checkpoint.gd"
+}, {
+"base": "Control",
+"class": "InitialContainer",
+"language": "GDScript",
+"path": "res://scripts/game_menu/initial_container.gd"
+}, {
+"base": "Control",
+"class": "InitialScreen",
+"language": "GDScript",
+"path": "res://scripts/game_menu/initial_screen.gd"
+}, {
+"base": "InteractableTemplate",
+"class": "InitialSign",
+"language": "GDScript",
+"path": "res://scripts/interactable/initial/initial_sign.gd"
+}, {
+"base": "Area2D",
+"class": "InteractableTemplate",
+"language": "GDScript",
+"path": "res://scripts/interactable/initial/interactable_template.gd"
+}, {
+"base": "Control",
+"class": "InventoryContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/inventory/inventory_container.gd"
+}, {
+"base": "HBoxContainer",
+"class": "ItemContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/buy_container/item_container.gd"
+}, {
+"base": "TextureRect",
+"class": "LeftSellContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/sell_container/left_container.gd"
+}, {
+"base": "Camera2D",
+"class": "LevelCamera",
+"language": "GDScript",
+"path": "res://scripts/env/level_camera.gd"
+}, {
+"base": "Node2D",
+"class": "LevelLimit",
+"language": "GDScript",
+"path": "res://scripts/env/level_limit.gd"
+}, {
+"base": "RigidBody2D",
+"class": "PhysicItem",
+"language": "GDScript",
+"path": "res://scripts/interactable/general/physic_item.gd"
+}, {
+"base": "EnemyTemplate",
+"class": "PinkStar",
+"language": "GDScript",
+"path": "res://scripts/enemy/pink_star/pink_star.gd"
+}, {
+"base": "EnemyTexture",
+"class": "PinkStarTexture",
+"language": "GDScript",
+"path": "res://scripts/enemy/pink_star/pink_star_texture.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Player",
+"language": "GDScript",
+"path": "res://scripts/player/player.gd"
+}, {
+"base": "TextureRect",
+"class": "PointsInfo",
+"language": "GDScript",
+"path": "res://scripts/interface/stats/points_info.gd"
+}, {
+"base": "TextureRect",
+"class": "RightSellContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/sell_container/right_container.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "SHIPFLY",
+"language": "GDScript",
+"path": "res://scripts/player/ship_fly.gd"
+}, {
+"base": "Control",
+"class": "SelectCharacter",
+"language": "GDScript",
+"path": "res://scripts/game_menu/select_character.gd"
+}, {
+"base": "Control",
+"class": "SellContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/sell_container/sell_container.gd"
+}, {
+"base": "HBoxContainer",
+"class": "SellItemContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/sell_container/sell_item_container.gd"
+}, {
+"base": "InteractableTemplate",
+"class": "Ship",
+"language": "GDScript",
+"path": "res://scripts/interactable/general/ship.gd"
+}, {
+"base": "InteractableTemplate",
+"class": "Shopping",
+"language": "GDScript",
+"path": "res://scripts/interactable/general/shop.gd"
+}, {
+"base": "Control",
+"class": "ShoppingContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/buy_container/shopping_container.gd"
+}, {
+"base": "InteractableTemplate",
+"class": "Sign",
+"language": "GDScript",
+"path": "res://scripts/interactable/general/sign.gd"
+}, {
+"base": "RigidBody2D",
+"class": "Slice",
+"language": "GDScript",
+"path": "res://scripts/env/slice.gd"
+}, {
+"base": "Node",
+"class": "Stats",
+"language": "GDScript",
+"path": "res://scripts/player/stats.gd"
+}, {
+"base": "Control",
+"class": "StatsContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/stats/stats_container.gd"
+}, {
+"base": "TextureRect",
+"class": "StatsInfo",
+"language": "GDScript",
+"path": "res://scripts/interface/stats/stats_info.gd"
+}, {
+"base": "TextureRect",
+"class": "StatsLeftContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/stats/left_container.gd"
+}, {
+"base": "TextureRect",
+"class": "StatsRightContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/stats/right_container.gd"
+}, {
+"base": "Area2D",
+"class": "Tesouro",
+"language": "GDScript",
+"path": "res://scripts/interactable/coletaveis/diamond.gd"
+}, {
+"base": "CanvasLayer",
+"class": "Transition",
+"language": "GDScript",
+"path": "res://scenes/transition/transition.gd"
+}, {
+"base": "Control",
+"class": "VirtualJoystick",
+"language": "GDScript",
+"path": "res://virtual/joystick/virtual_joystick.gd"
+}, {
+"base": "InteractableTemplate",
+"class": "Water",
+"language": "GDScript",
+"path": "res://scripts/interactable/general/water.gd"
+}, {
+"base": "TextureRect",
+"class": "WeaponContainer",
+"language": "GDScript",
+"path": "res://scripts/interface/inventory/weapon_container.gd"
+}, {
+"base": "EnemyTemplate",
+"class": "Whale",
+"language": "GDScript",
+"path": "res://scripts/enemy/whale/whale.gd"
+}, {
+"base": "EnemyTexture",
+"class": "WhaleTexture",
+"language": "GDScript",
+"path": "res://scripts/enemy/whale/whale_texture.gd"
+} ]
+_global_script_class_icons={
+"ArmorContainer": "",
+"BarContainer": "",
+"Canhao": "",
+"Checkpoint": "",
+"CollisionArea": "",
+"ConsumableContainer": "",
+"Crabby": "",
+"CrabbyTexture": "",
+"DestructableInteractable": "",
+"DetectionArea": "",
+"DialogContainer": "",
+"Dice": "",
+"EffectTemplate": "",
+"EnemyHealthBar": "",
+"EnemySpawner": "",
+"EnemyTemplate": "",
+"EnemyTexture": "",
+"EquipmentContainer": "",
+"FireSpell": "",
+"FloatText": "",
+"GameLevel": "",
+"InitialCheckpoint": "",
+"InitialContainer": "",
+"InitialScreen": "",
+"InitialSign": "",
+"InteractableTemplate": "",
+"InventoryContainer": "",
+"ItemContainer": "",
+"LeftSellContainer": "",
+"LevelCamera": "",
+"LevelLimit": "",
+"PhysicItem": "",
+"PinkStar": "",
+"PinkStarTexture": "",
+"Player": "",
+"PointsInfo": "",
+"RightSellContainer": "",
+"SHIPFLY": "",
+"SelectCharacter": "",
+"SellContainer": "",
+"SellItemContainer": "",
+"Ship": "",
+"Shopping": "",
+"ShoppingContainer": "",
+"Sign": "",
+"Slice": "",
+"Stats": "",
+"StatsContainer": "",
+"StatsInfo": "",
+"StatsLeftContainer": "",
+"StatsRightContainer": "",
+"Tesouro": "",
+"Transition": "",
+"VirtualJoystick": "",
+"Water": "",
+"WeaponContainer": "",
+"Whale": "",
+"WhaleTexture": ""
+}
 
 [application]
 
-config/name="Pirate-Go"
-run/main_scene="res://scenes/menu/main_menu.tscn"
-config/features=PackedStringArray("4.2", "Mobile")
-config/icon="res://icon.svg"
+config/name="Flux"
+run/main_scene="res://scenes/interface/game_screen/initial_screen.tscn"
+config/icon="res://icon.png"
 
 [autoload]
 
-GlobalTransition="*res://scenes/transition/transition.tscn"
+TransitionScreen="*res://scenes/env/transition_screen.tscn"
+DataManagement="*res://scripts/management/data_management.gd"
 
-[dotnet]
+[display]
 
-project/assembly_name="Pirate-Go"
+window/size/width=320
+window/size/height=180
+window/size/resizable=false
+window/size/borderless=true
+window/size/test_width=1366
+window/size/test_height=768
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/godot-plugin-refresher/plugin.cfg" )
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 0,
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d": false,
+"flags/anisotropic": false,
+"flags/filter": false,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/invert_color": false,
+"process/normal_map_invert_y": false,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
 
 [input]
 
-move_left={
+ui_select={
 "deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":97,"echo":false,"script":null)
-, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194319,"key_label":0,"unicode":0,"echo":false,"script":null)
-]
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":3,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
 }
-move_right={
+ui_left={
 "deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"echo":false,"script":null)
-, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194321,"key_label":0,"unicode":0,"echo":false,"script":null)
-]
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777231,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":14,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
 }
-jump={
+ui_right={
 "deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"key_label":0,"unicode":119,"echo":false,"script":null)
-, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":32,"echo":false,"script":null)
-, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194320,"key_label":0,"unicode":0,"echo":false,"script":null)
-]
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777233,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":15,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ui_up={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777232,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":12,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ui_down={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777234,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":13,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
 }
 attack={
 "deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":88,"key_label":0,"unicode":120,"echo":false,"script":null)
-, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
-]
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":81,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
 }
+defense={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+crouch={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777234,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+interact={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":69,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+click={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+inventory={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":73,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+stats={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":67,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+magic_attack={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":82,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [layer_names]
 
-2d_physics/layer_1="Player"
-2d_physics/layer_2="Enemies"
+2d_physics/layer_1="Tile"
+2d_physics/layer_2="SlideTile"
+2d_physics/layer_3="Player"
+2d_physics/layer_4="Enemy"
+2d_physics/layer_5="Itens"
 
-[rendering]
+[physics]
 
-textures/canvas_textures/default_texture_filter=0
-renderer/rendering_method="mobile"
+common/enable_pause_aware_picking=true
