@@ -423,7 +423,7 @@ color = Color( 0.917647, 0.815686, 0.764706, 1 )
 [node name="ship" type="AnimatedSprite" parent="ScreenDesign/Background"]
 position = Vector2( 223, 152 )
 frames = SubResource( 61 )
-frame = 5
+frame = 3
 playing = true
 flip_h = true
 
@@ -434,7 +434,7 @@ frame = 1
 [node name="ship3" type="AnimatedSprite" parent="ScreenDesign/Background"]
 position = Vector2( 239, 126 )
 frames = SubResource( 33 )
-frame = 1
+frame = 4
 playing = true
 flip_h = true
 
