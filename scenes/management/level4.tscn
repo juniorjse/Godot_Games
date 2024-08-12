@@ -2024,1221 +2024,1238 @@ position = Vector2( 51, 0 )
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -1635, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water2" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -1539, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water3" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -1443, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water4" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -1347, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water5" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -1251, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water6" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -1155, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water7" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -1059, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water8" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -963, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water9" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -867, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water10" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -771, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water11" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -675, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water12" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -579, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water13" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -483, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water14" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -387, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water15" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -291, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water16" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -195, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water17" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -99, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water18" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( -3, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water19" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 93, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water20" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 189, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water21" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 285, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water22" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 381, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water23" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 477, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water24" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 573, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water25" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 669, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water26" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 765, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water27" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 861, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water28" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 957, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water29" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 1053, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water30" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 1149, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water31" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 1245, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water32" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 1341, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water33" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 1437, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water34" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 1533, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water35" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 1629, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water36" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 1725, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water37" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 1821, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water38" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 1917, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water39" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 2013, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water40" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 2109, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water41" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 2205, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water42" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 2301, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water43" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 2397, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water44" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 2493, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water45" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 2589, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water46" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 2685, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water47" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 2781, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water48" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 2877, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water49" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 2973, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water50" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 3069, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water51" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 3165, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water52" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 3261, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water53" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 3357, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water54" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 3453, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water55" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 3549, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water56" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 3645, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water57" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 3741, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water58" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 3837, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water59" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 3933, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water60" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 4029, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water61" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 4125, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water62" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 4221, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water63" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 4317, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water64" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 4413, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water65" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 4509, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water66" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 4605, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water67" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 4701, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water68" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 4797, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water69" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 4893, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water70" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 4989, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water71" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 5085, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water72" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 5181, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water73" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 5277, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water74" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 5373, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water75" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 5469, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water76" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 5565, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water77" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 5661, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water78" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 5757, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water79" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 5853, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water80" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 5949, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water81" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 6045, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water82" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 6141, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water83" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 6237, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water84" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 6333, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water85" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 6429, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water86" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 6525, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water87" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 6621, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water88" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 6717, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water89" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 6813, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water90" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 6909, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water91" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 7005, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water92" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 7101, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water93" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 7197, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water94" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 7293, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water95" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 7389, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water96" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 7485, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water97" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 7581, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water98" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 7677, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water99" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 7773, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water100" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 7869, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water101" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 7965, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water102" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 8061, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water103" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 8157, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water104" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 8253, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water105" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 8349, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water106" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 8445, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water107" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 8541, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water108" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 8637, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water109" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 8733, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water110" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 8829, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water111" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 8925, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water112" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 9021, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water113" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 9117, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water114" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 9213, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water115" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 9309, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water116" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 9405, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water117" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 9501, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water118" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 9597, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water119" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 9693, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water120" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 9789, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water121" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 9885, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water122" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 9981, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water123" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 10077, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water125" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 10173, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water126" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 10269, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water127" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 10365, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water128" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 10461, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water129" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 10557, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water130" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 10653, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water131" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 10749, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water132" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 10845, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water133" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 10941, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water134" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 11037, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water135" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 11133, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water136" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 11229, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water137" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 11325, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water138" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 11421, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water139" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 11517, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water140" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 11613, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water141" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 11709, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water142" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 11805, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water143" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 11901, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water124" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 11997, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water144" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 12093, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water145" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 12189, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water146" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 12285, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water147" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 12381, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water148" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 12477, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water149" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 12573, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water150" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 12669, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water151" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 12765, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water152" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 12861, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water153" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 12957, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water154" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 13053, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water155" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 13149, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water156" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 13245, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water157" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 13341, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water158" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 13437, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water159" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 13533, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water160" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 13629, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water161" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 13725, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water162" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 13821, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water163" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 13917, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water164" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 14013, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water165" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 14109, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water166" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 14205, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water167" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 14301, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water168" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 14397, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water169" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 14493, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water170" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 14589, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water171" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 14685, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water172" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 14781, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water173" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 14877, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water174" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 14973, 206 )
 frames = SubResource( 39 )
+frame = 3
 playing = true
 
 [node name="water175" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 15069, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water176" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 15165, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water177" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 15261, 206 )
 frames = SubResource( 39 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="water178" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 15357, 206 )
 frames = SubResource( 39 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water179" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 15453, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water180" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 15549, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water181" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 15645, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="water182" type="AnimatedSprite" parent="LevelDesign/Water"]
 modulate = Color( 1, 1, 1, 0.654902 )
 position = Vector2( 15741, 206 )
 frames = SubResource( 39 )
-frame = 1
 playing = true
 
 [node name="Background" type="ParallaxBackground" parent="LevelDesign"]
@@ -3288,7 +3305,6 @@ position = Vector2( 148.049, 551.159 )
 rotation = -0.00218014
 scale = Vector2( 1.17636, 1.12527 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="water2" type="AnimatedSprite" parent="LevelDesign/Background/Layer5"]
@@ -3297,6 +3313,7 @@ position = Vector2( 548.149, 550.796 )
 rotation = -0.00218014
 scale = Vector2( 1.17706, 1.11795 )
 frames = SubResource( 5 )
+frame = 3
 playing = true
 
 [node name="water3" type="AnimatedSprite" parent="LevelDesign/Background/Layer5"]
@@ -3305,7 +3322,7 @@ position = Vector2( 948.107, 550 )
 rotation = -0.00218014
 scale = Vector2( 1.17586, 1.09782 )
 frames = SubResource( 5 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water4" type="AnimatedSprite" parent="LevelDesign/Background/Layer5"]
@@ -3314,7 +3331,7 @@ position = Vector2( 1347.92, 550.005 )
 rotation = -0.00218014
 scale = Vector2( 1.17591, 1.11961 )
 frames = SubResource( 5 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water5" type="AnimatedSprite" parent="LevelDesign/Background/Layer5"]
@@ -3323,7 +3340,7 @@ position = Vector2( 1747.65, 550.026 )
 rotation = -0.00218014
 scale = Vector2( 1.17645, 1.08584 )
 frames = SubResource( 5 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="Mask" parent="LevelDesign/Background" instance=ExtResource( 17 )]
@@ -3586,6 +3603,7 @@ position = Vector2( 1186, -4 )
 [node name="Whale" parent="." instance=ExtResource( 26 )]
 position = Vector2( -1755, 160 )
 scale = Vector2( 2, 2 )
+z_index = -1
 speed = 240
 
 [node name="Collision" parent="Whale/DetectionArea" index="0"]
@@ -3609,13 +3627,15 @@ margin_bottom = 37.0
 [node name="Enemies" type="Node" parent="."]
 
 [node name="ShipPig" parent="Enemies" instance=ExtResource( 12 )]
-position = Vector2( 2697, 385 )
+position = Vector2( 2696, 392 )
+z_index = -1
 
 [node name="Collision" parent="Enemies/ShipPig/DetectionArea" index="0"]
 position = Vector2( -92.469, -27 )
 
 [node name="ShipPig4" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 5887, 375 )
+z_index = -1
 
 [node name="Collision" parent="Enemies/ShipPig4/DetectionArea" index="0"]
 position = Vector2( -92.469, -27 )
@@ -3631,6 +3651,7 @@ anims/run = SubResource( 67 )
 
 [node name="ShipPig5" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 10230, 383 )
+z_index = -1
 
 [node name="Collision" parent="Enemies/ShipPig5/DetectionArea" index="0"]
 position = Vector2( -92.469, -27 )
@@ -3645,7 +3666,8 @@ anims/kill = SubResource( 74 )
 anims/run = SubResource( 75 )
 
 [node name="ShipPig2" parent="Enemies" instance=ExtResource( 12 )]
-position = Vector2( 340, 376 )
+position = Vector2( 340, 385 )
+z_index = -1
 
 [node name="Collision" parent="Enemies/ShipPig2/DetectionArea" index="0"]
 position = Vector2( -92.469, -27 )
@@ -3661,6 +3683,7 @@ anims/run = SubResource( 52 )
 
 [node name="ShipPig3" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 1232, 382 )
+z_index = -1
 
 [node name="Collision" parent="Enemies/ShipPig3/DetectionArea" index="0"]
 position = Vector2( -92.469, -27 )
@@ -3676,6 +3699,7 @@ anims/run = SubResource( 60 )
 
 [node name="ShipPig6" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 11560, 380 )
+z_index = -1
 
 [node name="Collision" parent="Enemies/ShipPig6/DetectionArea" index="0"]
 position = Vector2( -92.469, -27 )

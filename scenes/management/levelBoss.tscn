@@ -2044,7 +2044,7 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_vertical_guides_": [  ]
 }
-target_level = "res://scenes/cutscenes/cutscene_rabisco.tscn"
+target_level = "res://scenes/cutscenes/cutscene_figura.tscn"
 
 [node name="Background" parent="." instance=ExtResource( 1 )]
 

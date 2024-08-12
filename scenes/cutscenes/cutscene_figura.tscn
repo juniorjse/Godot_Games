@@ -146,7 +146,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id=35]
-resource_name = "rabisco"
+resource_name = "figura"
 length = 8.0
 tracks/0/type = "animation"
 tracks/0/path = NodePath("letras")
@@ -679,7 +679,7 @@ margin_top = 90.0
 margin_right = 13.0
 margin_bottom = 90.0
 script = ExtResource( 11 )
-target_level = "res://scenes/cutscenes/cutscene_rabisco_morto.tscn"
+target_level = "res://scenes/cutscenes/cutscene_figura_dead.tscn"
 
 [node name="dialog" type="CanvasLayer" parent="."]
 
@@ -707,7 +707,7 @@ anims/RESET = SubResource( 34 )
 
 [node name="cutscene" type="AnimationPlayer" parent="dialog"]
 anims/RESET = SubResource( 36 )
-anims/rabisco = SubResource( 35 )
+anims/figura = SubResource( 35 )
 
 [node name="EnemyCaptain" type="Sprite" parent="dialog"]
 modulate = Color( 1, 1, 1, 0 )
@@ -776,136 +776,163 @@ position = Vector2( 39, -19 )
 [node name="water" type="AnimatedSprite" parent="water"]
 position = Vector2( -66, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water2" type="AnimatedSprite" parent="water"]
 position = Vector2( 30, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water3" type="AnimatedSprite" parent="water"]
 position = Vector2( 126, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water25" type="AnimatedSprite" parent="water"]
 position = Vector2( -354, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water26" type="AnimatedSprite" parent="water"]
 position = Vector2( -258, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water27" type="AnimatedSprite" parent="water"]
 position = Vector2( -162, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water4" type="AnimatedSprite" parent="water"]
 position = Vector2( 222, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water5" type="AnimatedSprite" parent="water"]
 position = Vector2( 318, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water6" type="AnimatedSprite" parent="water"]
 position = Vector2( 414, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water7" type="AnimatedSprite" parent="water"]
 position = Vector2( 510, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water8" type="AnimatedSprite" parent="water"]
 position = Vector2( 606, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water9" type="AnimatedSprite" parent="water"]
 position = Vector2( 702, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water10" type="AnimatedSprite" parent="water"]
 position = Vector2( 798, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water11" type="AnimatedSprite" parent="water"]
 position = Vector2( 894, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water12" type="AnimatedSprite" parent="water"]
 position = Vector2( 990, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water13" type="AnimatedSprite" parent="water"]
 position = Vector2( 1086, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water14" type="AnimatedSprite" parent="water"]
 position = Vector2( 1182, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water15" type="AnimatedSprite" parent="water"]
 position = Vector2( 1278, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water16" type="AnimatedSprite" parent="water"]
 position = Vector2( 1374, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water17" type="AnimatedSprite" parent="water"]
 position = Vector2( 1470, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water18" type="AnimatedSprite" parent="water"]
 position = Vector2( 1566, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water19" type="AnimatedSprite" parent="water"]
 position = Vector2( 1662, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water20" type="AnimatedSprite" parent="water"]
 position = Vector2( 1758, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water21" type="AnimatedSprite" parent="water"]
 position = Vector2( 1854, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water22" type="AnimatedSprite" parent="water"]
 position = Vector2( 1950, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water23" type="AnimatedSprite" parent="water"]
 position = Vector2( 2046, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="water24" type="AnimatedSprite" parent="water"]
 position = Vector2( 2142, 344 )
 frames = SubResource( 32 )
+frame = 2
 playing = true
 
 [node name="Mask" parent="." instance=ExtResource( 10 )]

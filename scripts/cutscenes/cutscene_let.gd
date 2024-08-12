@@ -9,7 +9,7 @@ export(Vector2) var player_position
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$dialog/cutscene.play("rabisco")
+	$dialog/cutscene.play("figura")
 
 
 func _on_cutscene_animation_finished(_anim_name):
