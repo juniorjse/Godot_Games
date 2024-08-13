@@ -1189,7 +1189,7 @@ margin_top = 90.0
 margin_right = 13.0
 margin_bottom = 90.0
 script = ExtResource( 11 )
-target_level = "res://scenes/management/level12.tscn"
+target_level = "res://scenes/management/level6.tscn"
 
 [node name="dialog" type="CanvasLayer" parent="."]
 

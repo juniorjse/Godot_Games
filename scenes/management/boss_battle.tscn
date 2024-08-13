@@ -642,309 +642,303 @@ tile_data = PoolIntArray( 65515, 1, 0, 65516, 1, 1, 65517, 1, 1, 65518, 1, 1, 65
 
 [node name="SmallChain" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 193, 170 )
-frame = 7
+frame = 2
 
 [node name="SmallChain3" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( -139, 174 )
-frame = 6
 
 [node name="SmallChain4" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 414, 293 )
-frame = 6
 
 [node name="Candle" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( -193, 129 )
-frame = 0
+frame = 1
 
 [node name="Candle2" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 351, 195 )
-frame = 0
+frame = 1
 
 [node name="Candle12" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( -64, 410 )
-frame = 0
+frame = 1
 
 [node name="Candle13" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 103, 440 )
-frame = 0
+frame = 1
 
 [node name="Candle14" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( -297, 457 )
-frame = 5
+frame = 0
 
 [node name="Candle3" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 567, 274 )
-frame = 0
+frame = 1
 
 [node name="Candle4" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 726, 271 )
+frame = 3
 
 [node name="Candle5" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 847, 316 )
-frame = 1
 
 [node name="Candle6" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 995, 316 )
-frame = 1
 
 [node name="Candle7" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 1276, 333 )
-frame = 0
+frame = 1
 
 [node name="Candle8" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 1422, 333 )
-frame = 0
+frame = 1
 
 [node name="Candle9" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 1701, 370 )
-frame = 0
+frame = 1
 
 [node name="Candle10" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 1907, 391 )
-frame = 0
+frame = 1
 
 [node name="Candle15" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( -140, 637 )
-frame = 5
+frame = 0
 
 [node name="Candle16" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 90, 638 )
-frame = 5
+frame = 0
 
 [node name="Candle17" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( -148, 897 )
-frame = 4
+frame = 5
 
 [node name="Candle20" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 648, 835 )
-frame = 4
+frame = 5
 
 [node name="Candle21" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 488, 1047 )
-frame = 4
+frame = 5
 
 [node name="Candle22" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 603, 1017 )
-frame = 0
+frame = 1
 
 [node name="Candle23" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 689, 987 )
+frame = 3
 
 [node name="Candle24" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 944, 871 )
-frame = 1
 
 [node name="Candle25" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 1194, 870 )
-frame = 1
 
 [node name="Candle26" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 1440, 910 )
-frame = 0
+frame = 1
 
 [node name="Candle27" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 1789, 796 )
-frame = 0
+frame = 1
 
 [node name="Candle28" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 1548, 795 )
-frame = 0
+frame = 1
 
 [node name="Candle29" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 2077, 728 )
-frame = 0
+frame = 1
 
 [node name="Candle30" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 2375, 714 )
-frame = 0
+frame = 1
 
 [node name="Candle31" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 2659, 714 )
-frame = 5
+frame = 0
 
 [node name="Candle32" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 2992, 709 )
-frame = 5
+frame = 0
 
 [node name="Candle33" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 1691, 656 )
-frame = 5
+frame = 0
 
 [node name="Candle18" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 13, 899 )
-frame = 0
+frame = 1
 
 [node name="Candle19" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 145, 898 )
-frame = 0
+frame = 1
 
 [node name="Candle11" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 2095, 378 )
-frame = 5
+frame = 0
 
 [node name="Window" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 194, 143 )
-frame = 12
+frame = 33
 
 [node name="SmallChain2" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( -150, 504 )
-frame = 7
+frame = 2
 
 [node name="Window10" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( -149, 477 )
-frame = 12
+frame = 33
 
 [node name="SmallChain12" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 319, 797 )
-frame = 6
 
 [node name="Window12" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 320, 770 )
-frame = 11
+frame = 32
 
 [node name="SmallChain13" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 527, 799 )
-frame = 5
+frame = 0
 
 [node name="Window13" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 528, 772 )
-frame = 10
+frame = 31
 
 [node name="SmallChain14" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( -213, 692 )
-frame = 5
+frame = 0
 
 [node name="Window14" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( -212, 665 )
-frame = 10
+frame = 31
 
 [node name="SmallChain15" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 179, 697 )
-frame = 4
+frame = 7
 
 [node name="Window15" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 180, 670 )
-frame = 9
+frame = 30
 
 [node name="SmallChain16" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 830, 922 )
-frame = 4
+frame = 7
 
 [node name="Window16" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 831, 895 )
-frame = 9
+frame = 30
 
 [node name="SmallChain17" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 1069, 901 )
-frame = 4
+frame = 7
 
 [node name="Window17" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 1070, 874 )
-frame = 9
+frame = 30
 
 [node name="SmallChain18" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 1318, 916 )
-frame = 4
+frame = 7
 
 [node name="Window18" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 1319, 889 )
-frame = 9
+frame = 30
 
 [node name="SmallChain19" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 1691, 825 )
-frame = 4
+frame = 7
 
 [node name="Window19" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 1692, 798 )
-frame = 9
+frame = 30
 
 [node name="SmallChain20" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 1923, 764 )
-frame = 4
+frame = 7
 
 [node name="Window20" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 1924, 737 )
-frame = 9
+frame = 30
 
 [node name="SmallChain21" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 2230, 731 )
-frame = 3
+frame = 6
 
 [node name="Window21" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 2231, 704 )
-frame = 8
+frame = 29
 
 [node name="SmallChain22" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 2520, 728 )
-frame = 3
+frame = 6
 
 [node name="Window22" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 2521, 701 )
-frame = 8
+frame = 29
 
 [node name="SmallChain23" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 2815, 725 )
-frame = 3
+frame = 6
 
 [node name="Window23" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 2816, 698 )
-frame = 8
+frame = 29
 
 [node name="Window2" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( -139, 145 )
-frame = 12
+frame = 33
 
 [node name="SmallChain9" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( -367, 445 )
-frame = 6
 
 [node name="Window8" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( -367, 416 )
-frame = 12
+frame = 33
 
 [node name="SmallChain10" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 29, 506 )
-frame = 5
+frame = 0
 
 [node name="Window9" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 29, 477 )
-frame = 11
+frame = 32
 
 [node name="Window3" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 414, 264 )
-frame = 11
+frame = 32
 
 [node name="SmallChain5" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 1155, 354 )
-frame = 5
+frame = 0
 
 [node name="Window4" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 1155, 325 )
-frame = 11
+frame = 32
 
 [node name="SmallChain7" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 889, 250 )
-frame = 5
+frame = 0
 
 [node name="Window6" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 889, 221 )
-frame = 11
+frame = 32
 
 [node name="SmallChain6" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 1552, 362 )
-frame = 5
+frame = 0
 
 [node name="Window5" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 1552, 333 )
-frame = 11
+frame = 32
 
 [node name="SmallChain8" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 2235, 418 )
-frame = 4
+frame = 7
 
 [node name="Window7" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 2235, 389 )
-frame = 10
+frame = 31
 
 [node name="helmet" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 11 )]
 position = Vector2( 166, 522 )

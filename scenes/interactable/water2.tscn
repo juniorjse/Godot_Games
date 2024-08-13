@@ -59,3 +59,6 @@ shape = SubResource( 3 )
 autoplay = "water_animation"
 anims/RESET = SubResource( 1 )
 anims/water_animation = SubResource( 2 )
+
+[node name="DialogIcon" parent="." index="3"]
+frame = 1

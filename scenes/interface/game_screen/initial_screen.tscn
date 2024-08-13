@@ -381,12 +381,12 @@ format = 1
 tile_data = PoolIntArray( 196610, 8, 0, 262144, 10, 0 )
 
 [node name="palmtree" parent="ScreenDesign/Decoration" instance=ExtResource( 8 )]
-frame = 2
+frame = 3
 
 [node name="palmtree2" type="AnimatedSprite" parent="ScreenDesign/Decoration"]
 position = Vector2( 48, 110 )
 frames = SubResource( 47 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="Background" type="ParallaxBackground" parent="ScreenDesign"]
@@ -424,40 +424,39 @@ color = Color( 0.917647, 0.815686, 0.764706, 1 )
 [node name="ship" type="AnimatedSprite" parent="ScreenDesign/Background"]
 position = Vector2( 223, 152 )
 frames = SubResource( 61 )
-frame = 3
 playing = true
 flip_h = true
 
 [node name="ship2" parent="ScreenDesign/Background/ship" instance=ExtResource( 10 )]
 position = Vector2( -19, -36 )
+frame = 0
 
 [node name="ship3" type="AnimatedSprite" parent="ScreenDesign/Background"]
 position = Vector2( 239, 126 )
 frames = SubResource( 33 )
+frame = 1
 playing = true
 flip_h = true
 
 [node name="water" type="AnimatedSprite" parent="ScreenDesign/Background"]
 position = Vector2( 48, 165 )
 frames = SubResource( 15 )
-frame = 3
 playing = true
 
 [node name="water2" type="AnimatedSprite" parent="ScreenDesign/Background"]
 position = Vector2( 144, 165 )
 frames = SubResource( 15 )
-frame = 3
 playing = true
 
 [node name="water3" type="AnimatedSprite" parent="ScreenDesign/Background"]
 position = Vector2( 240, 165 )
 frames = SubResource( 15 )
+frame = 1
 playing = true
 
 [node name="water4" type="AnimatedSprite" parent="ScreenDesign/Background"]
 position = Vector2( 336, 165 )
 frames = SubResource( 15 )
-frame = 3
 playing = true
 
 [node name="anim_mov" type="AnimationPlayer" parent="ScreenDesign/Background"]

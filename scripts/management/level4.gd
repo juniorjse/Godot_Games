@@ -1,51 +1,31 @@
 extends GameLevel
-onready var boss: KinematicBody2D = get_node("Whale")
 export(String) var target_level
 export(Vector2) var player_position
 
+
 func _ready():
 	get_tree().call_group("hud", "hide_containers")
-	boss.set_physics_process(false)
 	player.set_physics_process(false)
-	$LevelDesign/cutscene.play("inicial")
-func _on_Area2D_body_entered(body):
-	if body.is_in_group("player"):
-		player.speed = 0
+	$Interactable/Ship/Camera.current = true
+	$cutscene.play("cut")
 
 
 func _on_cutscene_animation_finished(anim_name):
-	if anim_name == "inicial":
+	if anim_name == "cut":
 		get_tree().call_group("hud", "normal_state")
-		boss.set_physics_process(true)
 		player.set_physics_process(true)
-		
-	if anim_name == "final":
-			
-			player.set_physics_process(true)
-			DataManagement.data_dictionary["current_level_path"] = target_level
-			DataManagement.data_dictionary["player_position"] = player_position
-			DataManagement.save_data()
-			TransitionScreen.fade_in("res://scenes/management/leve5.tscn", true)
-		
-
-
-func _on_Area2D2_body_entered(body):
-	if body.is_in_group("player"):
-		player.speed = 0
-
-
-
-func _on_ShipPig2_kill():
-	player.speed = 120
-
-
-func _on_ShipPig_kill():
-	player.speed = 120
+		$Player/LevelCamera.current = true
 
 
 func _on_teleport_body_entered(body):
 	if body.is_in_group("player"):
-		get_tree().call_group("hud", "hide_containers")
-		boss.set_physics_process(false)
-#	$cutscene.play("final")
-	
+		$LevelCamera2.current = true
+
+
+func _on_teleport2_body_entered(body):
+	if body.is_in_group("player"):
+			
+			DataManagement.data_dictionary["current_level_path"] = target_level
+			DataManagement.data_dictionary["player_position"] = player_position
+			DataManagement.save_data()
+			TransitionScreen.fade_in(target_level, true)
