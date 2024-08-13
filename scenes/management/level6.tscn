@@ -1208,330 +1208,353 @@ position = Vector2( -51, 0 )
 
 [node name="spike" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 1587, 144 )
-frame = 0
+frame = 2
 
 [node name="spike2" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 1618, 144 )
-frame = 0
+frame = 2
 
 [node name="spike3" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 721, 144 )
-frame = 0
+frame = 2
 
 [node name="spike4" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 752, 144 )
-frame = 0
+frame = 2
 
 [node name="spike5" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 3319, -48 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike6" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 3350, -48 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike7" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 3381, -48 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike8" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 3412, -48 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike9" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 3443, -48 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike10" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 3474, -48 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike11" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 3505, -48 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike12" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 3536, -48 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike13" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 3567, -48 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike14" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 3598, -48 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike15" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 3629, -48 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike16" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 3723, 81 )
+frame = 0
 
 [node name="spike17" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 3754, 81 )
-frame = 0
+frame = 2
 
 [node name="spike18" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 7056, 144 )
+frame = 0
 
 [node name="spike22" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 6528, 15 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike23" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 6559, 15 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike24" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 6590, 15 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike25" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 6621, 15 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike26" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 6652, 15 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike27" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 6683, 15 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike28" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 6714, 15 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike29" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 6745, 15 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike30" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 6776, 15 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike32" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 7505, 15 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike33" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 7536, 15 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike34" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 7567, 15 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike35" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 7598, 15 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike36" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 7629, 15 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike37" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 7660, 15 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike38" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 7691, 15 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike39" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 7722, 15 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike40" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 7753, 15 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike41" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 7784, 15 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike50" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 8631, -114 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike51" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 8662, -114 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike52" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 8693, -114 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike53" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 8724, -114 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike54" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 8755, -114 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike55" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 8786, -114 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike56" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 8817, -114 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike57" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 8848, -114 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike60" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 9784, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike61" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 9815, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike62" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 9846, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike63" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 9877, -17 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike64" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 9908, -17 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike65" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 9939, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike66" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 9970, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike67" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 10001, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike68" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 10032, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike69" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 10063, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike70" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 10094, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike71" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 10125, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike72" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 10156, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike73" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 10187, -17 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike74" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 10218, -17 )
 rotation = 3.14159
+frame = 0
 
 [node name="spike75" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 10249, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike76" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 10280, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike77" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 10311, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike78" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 10342, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike79" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 10373, -17 )
 rotation = 3.14159
-frame = 0
+frame = 2
 
 [node name="spike19" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 7087, 144 )
+frame = 0
 
 [node name="spike20" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 7118, 144 )
+frame = 0
 
 [node name="spike42" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 8140, 145 )
+frame = 0
 
 [node name="spike43" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 8171, 145 )
-frame = 0
+frame = 2
 
 [node name="spike44" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 8202, 145 )
-frame = 0
+frame = 2
 
 [node name="spike46" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 9009, 49 )
-frame = 0
+frame = 2
 
 [node name="spike47" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 9040, 49 )
-frame = 0
+frame = 2
 
 [node name="spike48" parent="LevelDesign/Traps" instance=ExtResource( 22 )]
 position = Vector2( 9071, 49 )
-frame = 0
+frame = 2
 
 [node name="Terrain" type="Node2D" parent="LevelDesign"]
 
