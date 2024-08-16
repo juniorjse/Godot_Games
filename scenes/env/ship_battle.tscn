@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scripts/interactable/general/shop_physics_collision.gd" type="Script" id=1]
-[ext_resource path="res://assets/decoration/Chest/Platforms (32x32).png" type="Texture" id=2]
+[ext_resource path="res://assets/interactable/ship/Idle/1.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 47, 6.5 )
@@ -18,7 +18,7 @@ script = ExtResource( 1 )
 position = Vector2( 0, 4 )
 texture = ExtResource( 2 )
 region_enabled = true
-region_rect = Rect2( 32, 32, 96, 15 )
+region_rect = Rect2( 0.589554, 1.36362, 78.3996, 23.4973 )
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2( 0, 3 )

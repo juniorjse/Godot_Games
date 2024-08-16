@@ -362,9 +362,11 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Flux"
+config/name="Sea-Pirate-Adventures"
 run/main_scene="res://scenes/interface/game_screen/initial_screen.tscn"
-config/icon="res://icon.png"
+config/icon="res://assets/items/Gold Coin/01.png"
+boot_splash/icon="res://icon.png"
+boot_splash/name="Flux"
 
 [autoload]
 
