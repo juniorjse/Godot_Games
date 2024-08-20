@@ -23,9 +23,6 @@ func define_initial_texture() -> void:
 	if file.file_exists("user://save.dat"):
 		DataManagement.load_data()
 		
-		print("------------ Dados carregados ------------")
-		
-		
 		
 func animate(velocity: Vector2) -> void:
 	verify_position(velocity)
@@ -36,9 +33,6 @@ func animate(velocity: Vector2) -> void:
 		action_behavior()
 	elif velocity.y != 0:
 		vertical_behavior(velocity)
-#	elif player_ref.landing:
-#		animation.play("landing")
-#		player_ref.set_physics_process(false)
 	else:
 		horizontal_behavior(velocity)
 		
@@ -107,10 +101,6 @@ func verify_position(velocity: Vector2) -> void:
 		
 func on_animation_finished(anim_name: String) -> void:
 	match anim_name:
-#		"landing":
-#			player_ref.landing = false
-#			player_ref.set_physics_process(true)
-			
 		"attack_left":
 			normal_attack = false
 			player_ref.attacking = false

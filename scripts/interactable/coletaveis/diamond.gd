@@ -2,6 +2,8 @@ extends Area2D
 class_name Tesouro
 export var score = 1
 signal pegou_map
+export(PackedScene) var mapa_scene
+
 
 func _on_coletaveis_body_entered(_body: Node) -> void:
 	$anim.play("colected")

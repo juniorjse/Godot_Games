@@ -141,14 +141,13 @@ motion_mirroring = Vector2( 1080, 0 )
 position = Vector2( 346, 522 )
 scale = Vector2( 0.4, 0.4 )
 frames = SubResource( 20 )
-frame = 5
 playing = true
 
 [node name="ship" parent="Layer6" instance=ExtResource( 4 )]
 position = Vector2( 246.286, 519.714 )
 scale = Vector2( 0.5, 0.5 )
 z_index = -1
-frame = 2
+frame = 5
 
 [node name="Layer5" type="ParallaxLayer" parent="."]
 z_index = -1
@@ -160,7 +159,6 @@ position = Vector2( 148.049, 551.159 )
 rotation = -0.00218014
 scale = Vector2( 1.17636, 1.12527 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="water2" type="AnimatedSprite" parent="Layer5"]
@@ -169,6 +167,7 @@ position = Vector2( 548.149, 550.796 )
 rotation = -0.00218014
 scale = Vector2( 1.17706, 1.11795 )
 frames = SubResource( 5 )
+frame = 3
 playing = true
 
 [node name="water3" type="AnimatedSprite" parent="Layer5"]
@@ -177,7 +176,7 @@ position = Vector2( 948.107, 550 )
 rotation = -0.00218014
 scale = Vector2( 1.17586, 1.09782 )
 frames = SubResource( 5 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water4" type="AnimatedSprite" parent="Layer5"]
@@ -186,7 +185,7 @@ position = Vector2( 1347.92, 550.005 )
 rotation = -0.00218014
 scale = Vector2( 1.17591, 1.11961 )
 frames = SubResource( 5 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="water5" type="AnimatedSprite" parent="Layer5"]
@@ -195,7 +194,7 @@ position = Vector2( 1747.65, 550.026 )
 rotation = -0.00218014
 scale = Vector2( 1.17645, 1.08584 )
 frames = SubResource( 5 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="Mask" parent="." instance=ExtResource( 6 )]

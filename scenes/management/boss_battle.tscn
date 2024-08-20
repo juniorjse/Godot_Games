@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=2]
+[gd_scene load_steps=69 format=2]
 
 [ext_resource path="res://assets/tile/terrain/ship_floor_autotile.png" type="Texture" id=1]
 [ext_resource path="res://resources/tile/ship_background.tres" type="TileSet" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://scenes/enemy/pig.tscn" type="PackedScene" id=18]
 [ext_resource path="res://scenes/env/collision_platforms.tscn" type="PackedScene" id=19]
 [ext_resource path="res://assets/interactable/barrel/barrel_idle.png" type="Texture" id=20]
+[ext_resource path="res://scenes/interactable/coletaveis/map.tscn" type="PackedScene" id=21]
 [ext_resource path="res://assets/interactable/npcs/marujo.png" type="Texture" id=29]
 [ext_resource path="res://assets/font/PressStart2P.ttf" type="DynamicFontData" id=30]
 [ext_resource path="res://assets/interactable/npcs/portrait_marujo.png" type="Texture" id=31]
@@ -616,69 +617,80 @@ tile_data = PoolIntArray( 65515, 1, 0, 65516, 1, 1, 65517, 1, 1, 65518, 1, 1, 65
 
 [node name="SmallChain" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 193, 170 )
-frame = 3
 
 [node name="SmallChain3" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( -139, 174 )
-frame = 2
+frame = 0
 
 [node name="SmallChain4" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 414, 293 )
-frame = 2
+frame = 0
 
 [node name="Candle" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( -193, 129 )
+frame = 4
 
 [node name="Candle2" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 351, 195 )
+frame = 4
 
 [node name="Candle12" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( -64, 410 )
+frame = 4
 
 [node name="Candle13" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 103, 440 )
+frame = 4
 
 [node name="Candle14" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( -297, 457 )
-frame = 1
+frame = 3
 
 [node name="Candle3" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 567, 274 )
+frame = 4
 
 [node name="Candle4" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 726, 271 )
-frame = 4
+frame = 0
 
 [node name="Window" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 194, 143 )
-frame = 28
+frame = 36
 
 [node name="SmallChain2" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( -150, 504 )
-frame = 3
 
 [node name="Window10" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
-position = Vector2( -149, 477 )
-frame = 28
+position = Vector2( -148, 490 )
+frame = 36
 
 [node name="Window2" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( -139, 145 )
-frame = 28
+frame = 36
 
 [node name="SmallChain9" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( -367, 445 )
-frame = 2
+frame = 0
 
 [node name="Window8" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( -367, 416 )
-frame = 28
+frame = 36
 
 [node name="helmet" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 11 )]
 position = Vector2( 166, 522 )
 scale = Vector2( 1.5, 1.5 )
 
 [node name="PhysicCollision" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 19 )]
-position = Vector2( -275, 504 )
+position = Vector2( -275, 513 )
+
+[node name="BarrelIdle" type="Sprite" parent="LevelDesign/Terrain/Decoration"]
+position = Vector2( -499, 371 )
+texture = ExtResource( 20 )
+
+[node name="BarrelIdle2" type="Sprite" parent="LevelDesign/Terrain/Decoration"]
+position = Vector2( -146, 625 )
+texture = ExtResource( 20 )
 
 [node name="Terrain" type="TileMap" parent="LevelDesign/Terrain" groups=["tile"]]
 z_index = 1
@@ -697,13 +709,13 @@ format = 1
 [node name="Interactable" type="Node2D" parent="LevelDesign"]
 
 [node name="PhysicCollision" parent="LevelDesign/Interactable" instance=ExtResource( 19 )]
-position = Vector2( -149, 570 )
+position = Vector2( -149, 575 )
 
 [node name="PhysicCollision2" parent="LevelDesign/Interactable" instance=ExtResource( 19 )]
-position = Vector2( -267, 398 )
+position = Vector2( -268, 387 )
 
 [node name="PhysicCollision3" parent="LevelDesign/Interactable" instance=ExtResource( 19 )]
-position = Vector2( -153, 450 )
+position = Vector2( -152, 469 )
 
 [node name="PhysicCollision4" parent="LevelDesign/Interactable" instance=ExtResource( 19 )]
 position = Vector2( -496, 336 )
@@ -725,6 +737,9 @@ position = Vector2( 75, 351 )
 
 [node name="PhysicCollision10" parent="LevelDesign/Interactable" instance=ExtResource( 19 )]
 position = Vector2( 74, 307 )
+
+[node name="PhysicCollision11" parent="LevelDesign/Interactable" instance=ExtResource( 19 )]
+position = Vector2( -152, 426 )
 
 [node name="Mask" parent="." instance=ExtResource( 4 )]
 color = Color( 0.435294, 0.470588, 0.517647, 1 )
@@ -812,14 +827,6 @@ position = Vector2( -2, 2 )
 current = true
 zoom = Vector2( 1.5, 1.5 )
 
-[node name="BarrelIdle" type="Sprite" parent="Player"]
-position = Vector2( -176, -252 )
-texture = ExtResource( 20 )
-
-[node name="BarrelIdle2" type="Sprite" parent="Player"]
-position = Vector2( -15, 4 )
-texture = ExtResource( 20 )
-
 [node name="LevelCamera" parent="." instance=ExtResource( 7 )]
 visible = true
 position = Vector2( -64, 449 )
@@ -834,13 +841,14 @@ position = Vector2( 694, 674 )
 position = Vector2( -1, 543 )
 
 [node name="bobao2" parent="Enemies" instance=ExtResource( 17 )]
-position = Vector2( -330, 704 )
+position = Vector2( -429, 704 )
 
 [node name="pig" parent="Enemies" instance=ExtResource( 18 )]
 position = Vector2( -322, 540 )
 
 [node name="pig2" parent="Enemies" instance=ExtResource( 18 )]
-position = Vector2( -248, 846 )
+position = Vector2( -198, 986 )
+speed = 91
 
 [node name="pig3" parent="Enemies" instance=ExtResource( 18 )]
 position = Vector2( 191, 731 )
@@ -849,12 +857,15 @@ position = Vector2( 191, 731 )
 position = Vector2( 296, 729 )
 
 [node name="Crabby2" parent="Enemies" instance=ExtResource( 14 )]
-position = Vector2( -427, 730 )
+position = Vector2( -532, 602 )
 
 [node name="Crabby3" parent="Enemies" instance=ExtResource( 14 )]
 position = Vector2( -59, 570 )
 
 [node name="Crabby4" parent="Enemies" instance=ExtResource( 14 )]
 position = Vector2( 501, 697 )
+
+[node name="map" parent="." instance=ExtResource( 21 )]
+position = Vector2( -401, 285 )
 
 [editable path="Player"]

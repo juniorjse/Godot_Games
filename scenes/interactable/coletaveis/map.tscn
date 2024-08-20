@@ -78,6 +78,7 @@ tracks/0/keys = {
 }
 
 [node name="map" instance=ExtResource( 1 )]
+mapa_scene = null
 
 [node name="colison" parent="." index="0"]
 position = Vector2( 0, -5 )

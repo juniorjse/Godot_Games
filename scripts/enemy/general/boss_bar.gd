@@ -13,16 +13,12 @@ func init_bar(bar_value: int) -> void:
 	health_bar.max_value = bar_value
 	health_bar.value = bar_value
 	current_health = bar_value
-#	update_life_label(current_health)
+	
 
 func update_bar(value: int) -> void:
 	call_tween(current_health, value)
 	current_health = value
-#	update_life_label(current_health)
-
-#func update_life_label(value: int) -> void:
-#	life_label.text = str(value)  # Atualiza o texto do Label com o valor atual da vida
-#	life_label.visible = true     # Torna o Label visível
+	
 
 func call_tween(old_value: int, new_value: int) -> void:
 	var _interpolate_value: bool = tween.interpolate_property(

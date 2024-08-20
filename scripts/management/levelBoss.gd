@@ -6,12 +6,8 @@ export(Vector2) var player_position
 
 
 var reset_target: String = "res://scenes/management/levelBoss.tscn"
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	$Whale.set_physics_process(false)
 	$player2/LevelCamera.current = true
@@ -94,7 +90,6 @@ func _on_Whale_kill():
 			DataManagement.data_dictionary["player_position"] = player_position
 			DataManagement.save_data()
 			TransitionScreen.fade_in(target_level, true)
-		
 
 
 func _on_primeiracoliso4_body_entered(body):
@@ -113,7 +108,6 @@ func _on_final_animation_finished(anim_name):
 		yield(get_tree().create_timer(10.0), "timeout")
 		$Player.set_physics_process(false)
 		$Whale.set_physics_process(false)
-	
 		$final.play("final2")
 	if anim_name == "final2":
 		$Player.set_physics_process(true)

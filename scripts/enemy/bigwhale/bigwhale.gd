@@ -7,11 +7,11 @@ func _ready() -> void:
 	randomize()
 	drop_list = {
 		"Heal Potion": [
-			"res://assets/item/consumable/health_potion.png", #Image Path Type
-			20,                                               #Drop Probability
-			"Health",                                         #Type
-			5,                                                #Value
-			2                                                 #Sell Price
+			"res://assets/item/consumable/health_potion.png",
+			20,                                               
+			"Health",                                         
+			5,                                                
+			2                                                 
 		], 
 		
 		"Mana Potion": [

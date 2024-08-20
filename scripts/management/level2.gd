@@ -4,8 +4,6 @@ onready var enemy: KinematicBody2D = get_node("EnemiesSpawnerList/Crabby")
 
 func _ready():
 	get_tree().call_group("hud", "hide_containers")
-	
-	#enemy.set_physics_process(false)
 	player.set_physics_process(false)
 	$Interactable/Ship/Camera.current = true
 	$LevelDesign/cutscene.play("cut")
