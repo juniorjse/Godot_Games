@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://scripts/enemy/template/enemy_template.gd" type="Script" id=1]
-[ext_resource path="res://scripts/enemy/template/detection_area.gd" type="Script" id=2]
-[ext_resource path="res://scripts/enemy/template/enemy_texture_template.gd" type="Script" id=3]
-[ext_resource path="res://scripts/enemy/template/collision_area.gd" type="Script" id=4]
+[ext_resource path="res://scripts/enemies/template/enemy_template.gd" type="Script" id=1]
+[ext_resource path="res://scripts/enemies/template/detection_area.gd" type="Script" id=2]
+[ext_resource path="res://scripts/enemies/template/enemy_texture_template.gd" type="Script" id=3]
+[ext_resource path="res://scripts/enemies/template/collision_area.gd" type="Script" id=4]
 [ext_resource path="res://scenes/interface/general/boss_bar.tscn" type="PackedScene" id=5]
 
 [node name="EnemyTemplate" type="KinematicBody2D"]

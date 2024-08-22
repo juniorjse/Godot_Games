@@ -12,12 +12,12 @@
 [ext_resource path="res://scenes/props/window.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/interactable/helmet.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/props/small_chain.tscn" type="PackedScene" id=12]
-[ext_resource path="res://scenes/enemies/captain.tscn" type="PackedScene" id=13]
-[ext_resource path="res://scenes/enemies/crabby.tscn" type="PackedScene" id=14]
-[ext_resource path="res://scenes/enemies/bobao.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/enemies/pirate/captain.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/enemies/crabby/crabby2.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/enemies/pirate/pirate.tscn" type="PackedScene" id=15]
 [ext_resource path="res://scenes/env/levellimit.tscn" type="PackedScene" id=16]
-[ext_resource path="res://scenes/enemies/pink.tscn" type="PackedScene" id=17]
-[ext_resource path="res://scenes/enemies/pig.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/enemies/whale/pink.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/enemies/pig/pig.tscn" type="PackedScene" id=18]
 [ext_resource path="res://scenes/env/collision_platforms.tscn" type="PackedScene" id=19]
 [ext_resource path="res://assets/interactable/barrel/barrel_idle.png" type="Texture" id=20]
 [ext_resource path="res://scenes/interactable/coletaveis/map.tscn" type="PackedScene" id=21]
@@ -837,10 +837,10 @@ current = false
 [node name="Captain" parent="Enemies" instance=ExtResource( 13 )]
 position = Vector2( 694, 674 )
 
-[node name="bobao" parent="Enemies" instance=ExtResource( 15 )]
+[node name="pirate" parent="Enemies" instance=ExtResource( 15 )]
 position = Vector2( -1, 543 )
 
-[node name="bobao2" parent="Enemies" instance=ExtResource( 17 )]
+[node name="pirate2" parent="Enemies" instance=ExtResource( 17 )]
 position = Vector2( -429, 704 )
 
 [node name="pig" parent="Enemies" instance=ExtResource( 18 )]

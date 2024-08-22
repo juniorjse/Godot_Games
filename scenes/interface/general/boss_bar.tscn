@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/enemies/enemy_bar/back_bar_boss.png" type="Texture" id=2]
 [ext_resource path="res://assets/enemies/enemy_bar/bar_boss.png" type="Texture" id=3]
-[ext_resource path="res://scripts/enemy/general/boss_bar.gd" type="Script" id=4]
+[ext_resource path="res://scripts/enemies/general/boss_bar.gd" type="Script" id=4]
 
 [node name="boss_bar" type="Control"]
 anchor_right = 1.0

@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://scenes/enemies/enemy_template.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scripts/enemy/pig_cannon/pig_cannon.gd" type="Script" id=2]
+[ext_resource path="res://scripts/enemies/pig_cannon/pig_cannon.gd" type="Script" id=2]
 [ext_resource path="res://assets/enemies/pig_all_frames/pig_all.png" type="Texture" id=3]
 [ext_resource path="res://assets/enemies/pig_all_frames/cannon_pig/cannon.png" type="Texture" id=4]
 [ext_resource path="res://scenes/enemies/projeteis_enemys/cannon_ball.tscn" type="PackedScene" id=5]

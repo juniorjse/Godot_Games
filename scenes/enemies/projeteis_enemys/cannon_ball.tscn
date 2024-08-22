@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/enemies/pig_all_frames/cannon_pig/cannon.png" type="Texture" id=1]
-[ext_resource path="res://scripts/enemy/pig_cannon/cannon_ball.gd" type="Script" id=2]
+[ext_resource path="res://scripts/enemies/pig_cannon/cannon_ball.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 7.0

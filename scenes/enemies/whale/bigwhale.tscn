@@ -1,14 +1,14 @@
 [gd_scene load_steps=22 format=2]
 
-[ext_resource path="res://scripts/enemy/template/collision_area.gd" type="Script" id=1]
+[ext_resource path="res://scripts/enemies/template/collision_area.gd" type="Script" id=1]
 [ext_resource path="res://assets/enemies/whale/idle.png" type="Texture" id=2]
-[ext_resource path="res://scripts/enemy/bigwhale/texture.gd" type="Script" id=3]
-[ext_resource path="res://scripts/enemy/bigwhale/bigwhale.gd" type="Script" id=4]
+[ext_resource path="res://scripts/enemies/bigwhale/texture.gd" type="Script" id=3]
+[ext_resource path="res://scripts/enemies/bigwhale/bigwhale.gd" type="Script" id=4]
 [ext_resource path="res://assets/enemies/whale/run.png" type="Texture" id=5]
 [ext_resource path="res://assets/enemies/whale/attack.png" type="Texture" id=6]
 [ext_resource path="res://assets/enemies/whale/hit.png" type="Texture" id=7]
 [ext_resource path="res://assets/enemies/whale/dead.png" type="Texture" id=8]
-[ext_resource path="res://scripts/enemy/template/detection_area.gd" type="Script" id=9]
+[ext_resource path="res://scripts/enemies/template/detection_area.gd" type="Script" id=9]
 [ext_resource path="res://scenes/interface/general/boss_bar.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=3]

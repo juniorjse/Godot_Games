@@ -32,7 +32,7 @@ _global_script_classes=[ {
 "base": "Area2D",
 "class": "CollisionArea",
 "language": "GDScript",
-"path": "res://scripts/enemy/template/collision_area.gd"
+"path": "res://scripts/enemies/template/collision_area.gd"
 }, {
 "base": "TextureRect",
 "class": "ConsumableContainer",
@@ -42,12 +42,12 @@ _global_script_classes=[ {
 "base": "EnemyTemplate",
 "class": "Crabby",
 "language": "GDScript",
-"path": "res://scripts/enemy/crabby/crabby.gd"
+"path": "res://scripts/enemies/crabby/crabby.gd"
 }, {
 "base": "EnemyTexture",
 "class": "CrabbyTexture",
 "language": "GDScript",
-"path": "res://scripts/enemy/crabby/crabby_texture.gd"
+"path": "res://scripts/enemies/crabby/crabby_texture.gd"
 }, {
 "base": "Area2D",
 "class": "DestructableInteractable",
@@ -57,7 +57,7 @@ _global_script_classes=[ {
 "base": "Area2D",
 "class": "DetectionArea",
 "language": "GDScript",
-"path": "res://scripts/enemy/template/detection_area.gd"
+"path": "res://scripts/enemies/template/detection_area.gd"
 }, {
 "base": "Control",
 "class": "DialogContainer",
@@ -77,7 +77,7 @@ _global_script_classes=[ {
 "base": "Control",
 "class": "EnemyHealthBar",
 "language": "GDScript",
-"path": "res://scripts/enemy/template/enemy_health_bar.gd"
+"path": "res://scripts/enemies/template/enemy_health_bar.gd"
 }, {
 "base": "Node2D",
 "class": "EnemySpawner",
@@ -87,12 +87,12 @@ _global_script_classes=[ {
 "base": "KinematicBody2D",
 "class": "EnemyTemplate",
 "language": "GDScript",
-"path": "res://scripts/enemy/template/enemy_template.gd"
+"path": "res://scripts/enemies/template/enemy_template.gd"
 }, {
 "base": "Sprite",
 "class": "EnemyTexture",
 "language": "GDScript",
-"path": "res://scripts/enemy/template/enemy_texture_template.gd"
+"path": "res://scripts/enemies/template/enemy_texture_template.gd"
 }, {
 "base": "Control",
 "class": "EquipmentContainer",
@@ -172,12 +172,12 @@ _global_script_classes=[ {
 "base": "EnemyTemplate",
 "class": "PinkStar",
 "language": "GDScript",
-"path": "res://scripts/enemy/pink_star/pink_star.gd"
+"path": "res://scripts/enemies/pink_star/pink_star.gd"
 }, {
 "base": "EnemyTexture",
 "class": "PinkStarTexture",
 "language": "GDScript",
-"path": "res://scripts/enemy/pink_star/pink_star_texture.gd"
+"path": "res://scripts/enemies/pink_star/pink_star_texture.gd"
 }, {
 "base": "KinematicBody2D",
 "class": "Player",
@@ -292,12 +292,12 @@ _global_script_classes=[ {
 "base": "EnemyTemplate",
 "class": "Whale",
 "language": "GDScript",
-"path": "res://scripts/enemy/whale/whale.gd"
+"path": "res://scripts/enemies/whale/whale.gd"
 }, {
 "base": "EnemyTexture",
 "class": "WhaleTexture",
 "language": "GDScript",
-"path": "res://scripts/enemy/whale/whale_texture.gd"
+"path": "res://scripts/enemies/whale/whale_texture.gd"
 } ]
 _global_script_class_icons={
 "ArmorContainer": "",
