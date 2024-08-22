@@ -7,7 +7,7 @@ func _ready() -> void:
 	randomize()
 	drop_list = {
 		"Heal Potion": [
-			"res://assets/item/consumable/health_potion.png", #Image Path Type
+			"res://assets/items/consumable/health_potion.png", #Image Path Type
 			15,                                               #Drop Probability
 			"Health",                                         #Type
 			5,                                                #Value
@@ -15,7 +15,7 @@ func _ready() -> void:
 		], 
 		
 		"Mana Potion": [
-			"res://assets/item/consumable/mana_potion.png", 
+			"res://assets/items/consumable/mana_potion.png", 
 			8, 
 			"Mana", 
 			5, 
@@ -23,7 +23,7 @@ func _ready() -> void:
 		],
 		
 		"Crabby Eye": [
-			"res://assets/item/resource/crabby/crab_eye.png",
+			"res://assets/items/resource/crabby/crab_eye.png",
 			35,
 			"Resource",
 			{},
@@ -31,7 +31,7 @@ func _ready() -> void:
 		],
 		
 		"Crabby Pincers": [
-			"res://assets/item/resource/crabby/crab_pincers.png",
+			"res://assets/items/resource/crabby/crab_pincers.png",
 			10,
 			"Resource",
 			{},
@@ -39,7 +39,7 @@ func _ready() -> void:
 		],
 		
 		"Crabby Belt": [
-			"res://assets/item/equipment/crabby_belt.png",
+			"res://assets/items/equipment/crabby_belt.png",
 			5, 
 			"Equipment",
 			{
@@ -50,7 +50,7 @@ func _ready() -> void:
 		],
 		
 		"Crabby Axe": [
-			"res://assets/item/equipment/crabby_axe.png",
+			"res://assets/items/equipment/crabby_axe.png",
 			2,
 			"Weapon",
 			{

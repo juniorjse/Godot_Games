@@ -269,10 +269,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "values": [ {
-"args": [ "res://scenes/effect/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
+"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
 "method": "spawn_effect"
 }, {
-"args": [ "res://scenes/effect/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
+"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
 "method": "spawn_effect"
 } ]
 }

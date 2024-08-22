@@ -15,7 +15,7 @@ var dialog_list: Dictionary = {
 
 var shop_list: Dictionary = {
 	"Heal Potion": [
-		"res://assets/item/consumable/health_potion.png", 
+		"res://assets/items/consumable/health_potion.png", 
 		5, 
 		"Health", 
 		5, 
@@ -23,7 +23,7 @@ var shop_list: Dictionary = {
 	],
 	 
 	"Mana Potion": [
-		"res://assets/item/consumable/mana_potion.png", 
+		"res://assets/items/consumable/mana_potion.png", 
 		15, 
 		"Mana", 
 		5, 
@@ -31,7 +31,7 @@ var shop_list: Dictionary = {
 	],
 	
 	"Crabby Belt": [
-			"res://assets/item/equipment/crabby_belt.png",
+			"res://assets/items/equipment/crabby_belt.png",
 			90,
 			"Equipment",
 			{
@@ -42,7 +42,7 @@ var shop_list: Dictionary = {
 		],
 		
 	"Crabby Axe": [
-			"res://assets/item/equipment/crabby_axe.png",
+			"res://assets/items/equipment/crabby_axe.png",
 			120,
 			"Weapon",
 			{
@@ -53,7 +53,7 @@ var shop_list: Dictionary = {
 		],
 		
 	"Whale Mask": [
-			"res://assets/item/equipment/whale_mask.png",
+			"res://assets/items/equipment/whale_mask.png",
 			90,
 			"Equipment",
 			{

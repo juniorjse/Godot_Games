@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://assets/item/consumable/+1_health_potion.png" type="Texture" id=1]
+[ext_resource path="res://assets/items/consumable/+1_health_potion.png" type="Texture" id=1]
 [ext_resource path="res://assets/interface/stats/icon/increase_stats_icon.png" type="Texture" id=2]
 [ext_resource path="res://assets/interface/stats/icon/decrease_stats_icon.png" type="Texture" id=3]
 [ext_resource path="res://scripts/interface/sell_container/sell_item_container.gd" type="Script" id=4]

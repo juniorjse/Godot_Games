@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=2]
 
-[ext_resource path="res://assets/font/thaleah_fat.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/fonts/thaleah_fat.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scripts/interface/sell_container/sell_container.gd" type="Script" id=2]
 [ext_resource path="res://assets/interface/shopping/vertical_list.png" type="Texture" id=3]
 [ext_resource path="res://scripts/interface/sell_container/right_container.gd" type="Script" id=4]

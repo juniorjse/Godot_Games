@@ -8,7 +8,7 @@ func _ready() -> void:
 	randomize()
 	drop_list = {
 		"Heal Potion": [
-			"res://assets/item/consumable/health_potion.png", #Image Path Type
+			"res://assets/items/consumable/health_potion.png", #Image Path Type
 			25,                                               #Drop Probability
 			"Health",                                         #Type
 			5,                                                #Value
@@ -16,7 +16,7 @@ func _ready() -> void:
 		], 
 		
 		"Mana Potion": [
-			"res://assets/item/consumable/mana_potion.png", 
+			"res://assets/items/consumable/mana_potion.png", 
 			12, 
 			"Mana", 
 			5, 
@@ -24,7 +24,7 @@ func _ready() -> void:
 		],
 		
 		"Pink Star Mouth": [
-			"res://assets/item/resource/pink_star/pink_star_mouth.png",
+			"res://assets/items/resource/pink_star/pink_star_mouth.png",
 			47,
 			"Resource",
 			{},
@@ -32,7 +32,7 @@ func _ready() -> void:
 		],
 		
 		"Pink Star Bow": [
-			"res://assets/item/equipment/pink_star_bow.png",
+			"res://assets/items/equipment/pink_star_bow.png",
 			1,
 			"Weapon",
 			{
@@ -42,7 +42,7 @@ func _ready() -> void:
 		],
 		
 		"Pink Star Belt": [
-			"res://assets/item/equipment/pink_star_belt.png",
+			"res://assets/items/equipment/pink_star_belt.png",
 			3, 
 			"Equipment",
 			{
@@ -53,7 +53,7 @@ func _ready() -> void:
 		],
 		
 		"Pink Star Shield": [
-			"res://assets/item/equipment/pink_star_shield.png",
+			"res://assets/items/equipment/pink_star_shield.png",
 			1,
 			"Weapon",
 			{

@@ -112,7 +112,7 @@ _global_script_classes=[ {
 "base": "Node2D",
 "class": "GameLevel",
 "language": "GDScript",
-"path": "res://scripts/management/level.gd"
+"path": "res://scripts/levels/level.gd"
 }, {
 "base": "InteractableTemplate",
 "class": "InitialCheckpoint",
@@ -371,7 +371,7 @@ boot_splash/name="Flux"
 [autoload]
 
 TransitionScreen="*res://scenes/env/transition_screen.tscn"
-DataManagement="*res://scripts/management/data_management.gd"
+DataManagement="*res://scripts/levels/data_management.gd"
 
 [display]
 

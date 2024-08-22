@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bluj1k8rd8xau" path="res://scenes/enviroment/tile_map.tscn" id="1_ut604"]
 [ext_resource type="PackedScene" uid="uid://bary0dxglrt4k" path="res://scenes/interface/interface.tscn" id="2_m075e"]
-[ext_resource type="PackedScene" uid="uid://beg55vn52ji5w" path="res://scenes/platform/platform.tscn" id="3_3tnyu"]
+[ext_resource type="PackedScene" uid="uid://beg55vn52ji5w" path="res://scenes/interactable/platform/platform.tscn" id="3_3tnyu"]
 [ext_resource type="PackedScene" uid="uid://411b72l2ev0w" path="res://scenes/enemies/crabby/crabby.tscn" id="4_xw8pg"]
 [ext_resource type="PackedScene" uid="uid://bdrkq5chhital" path="res://scenes/enemies/cannon/cannon.tscn" id="5_l4e8k"]
 [ext_resource type="PackedScene" uid="uid://b2ohwxj3belb5" path="res://scenes/enemies/cannons/cannons.tscn" id="6_02tjh"]

@@ -2,7 +2,7 @@ extends DestructableInteractable
 
 var drop_list: Dictionary = {
 	"Heal Potion": [
-		"res://assets/item/consumable/health_potion.png", #Image Path Type
+		"res://assets/items/consumable/health_potion.png", #Image Path Type
 		35,                                               #Drop Probability
 		"Health",                                         #Type
 		5,                                                #Value
@@ -10,7 +10,7 @@ var drop_list: Dictionary = {
 	], 
 	
 	"Mana Potion": [
-		"res://assets/item/consumable/mana_potion.png", 
+		"res://assets/items/consumable/mana_potion.png", 
 		8, 
 		"Mana", 
 		5, 

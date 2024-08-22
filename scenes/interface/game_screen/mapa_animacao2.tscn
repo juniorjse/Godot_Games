@@ -95,7 +95,7 @@ margin_top = -6.0
 margin_right = 331.0
 margin_bottom = 193.0
 script = ExtResource( 3 )
-target_level = "res://scenes/management/level5.tscn"
+target_level = "res://scenes/levels/level5.tscn"
 player_position = Vector2( -1723, 185 )
 
 [node name="BackgroundMapa" type="Sprite" parent="."]

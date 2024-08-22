@@ -4,7 +4,7 @@ class_name SelectCharacter
 onready var character_container: HBoxContainer = get_node("CharacterSelectContainer")
 
 var can_click: bool = false
-var target_level_path: String = "res://scenes/management/level.tscn"
+var target_level_path: String = "res://scenes/levels/level.tscn"
 
 func connect_buttons() -> void:
 	for container in character_container.get_children():

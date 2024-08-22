@@ -2,7 +2,7 @@
 
 [ext_resource path="res://scripts/env/background.gd" type="Script" id=1]
 [ext_resource path="res://assets/effect/water/water_noite.png" type="Texture" id=2]
-[ext_resource path="res://resources/tile/floor.tres" type="TileSet" id=3]
+[ext_resource path="res://assets/resources/tile/floor.tres" type="TileSet" id=3]
 [ext_resource path="res://scripts/cutscenes/cutscene_boss.gd" type="Script" id=4]
 [ext_resource path="res://assets/tile/parallax_background/noite.png" type="Texture" id=5]
 [ext_resource path="res://assets/tile/parallax_background/nuvens_noite.png" type="Texture" id=6]
@@ -14,12 +14,12 @@
 [ext_resource path="res://assets/interactable/npcs/portrait_marujo.png" type="Texture" id=13]
 [ext_resource path="res://scenes/env/dawn_mask.tscn" type="PackedScene" id=17]
 [ext_resource path="res://scenes/env/levellimit.tscn" type="PackedScene" id=19]
-[ext_resource path="res://assets/font/PressStart2P.ttf" type="DynamicFontData" id=20]
+[ext_resource path="res://assets/fonts/PressStart2P.ttf" type="DynamicFontData" id=20]
 [ext_resource path="res://scenes/env/world_env.tscn" type="PackedScene" id=21]
 [ext_resource path="res://assets/interface/dialog/dialog_background.png" type="Texture" id=25]
 [ext_resource path="res://assets/player/ship_mercante.png" type="Texture" id=26]
 [ext_resource path="res://scenes/player/levelcamera.tscn" type="PackedScene" id=27]
-[ext_resource path="res://assets/enemy/captain_bod/captain.png" type="Texture" id=28]
+[ext_resource path="res://assets/enemies/captain_bod/captain.png" type="Texture" id=28]
 [ext_resource path="res://assets/interactable/npcs/enemy_captain.png" type="Texture" id=29]
 
 [sub_resource type="Animation" id=44]
@@ -793,10 +793,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "values": [ {
-"args": [ "res://scenes/effect/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
+"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
 "method": "spawn_effect"
 }, {
-"args": [ "res://scenes/effect/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
+"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
 "method": "spawn_effect"
 } ]
 }
@@ -815,10 +815,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "values": [ {
-"args": [ "res://scenes/effect/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
+"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
 "method": "spawn_effect"
 }, {
-"args": [ "res://scenes/effect/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
+"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
 "method": "spawn_effect"
 } ]
 }
@@ -910,7 +910,7 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_vertical_guides_": [  ]
 }
-target_level = "res://scenes/management/boss_battle.tscn"
+target_level = "res://scenes/levels/boss_battle.tscn"
 
 [node name="LevelLimit" parent="." instance=ExtResource( 19 )]
 position = Vector2( -602, 708 )

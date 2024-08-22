@@ -5,7 +5,7 @@ func _ready() -> void:
 	randomize()
 	drop_list = {
 		"Heal Potion": [
-			"res://assets/item/consumable/health_potion.png", #Image Path Type
+			"res://assets/items/consumable/health_potion.png", #Image Path Type
 			20,                                               #Drop Probability
 			"Health",                                         #Type
 			5,                                                #Value
@@ -13,7 +13,7 @@ func _ready() -> void:
 		], 
 		
 		"Mana Potion": [
-			"res://assets/item/consumable/mana_potion.png", 
+			"res://assets/items/consumable/mana_potion.png", 
 			15, 
 			"Mana", 
 			5, 
@@ -21,7 +21,7 @@ func _ready() -> void:
 		],
 		
 		"Whale Mouth": [
-			"res://assets/item/resource/whale/whale_mouth.png",
+			"res://assets/items/resource/whale/whale_mouth.png",
 			45,
 			"Resource",
 			{},
@@ -29,7 +29,7 @@ func _ready() -> void:
 		],
 		
 		"Whale Eye": [
-			"res://assets/item/resource/whale/whale_eye.png",
+			"res://assets/items/resource/whale/whale_eye.png",
 			15,
 			"Resource",
 			{},
@@ -37,7 +37,7 @@ func _ready() -> void:
 		],
 		
 		"Whale Tail": [
-			"res://assets/item/resource/whale/whale_tail.png",
+			"res://assets/items/resource/whale/whale_tail.png",
 			3, 
 			"Resource",
 			{},
@@ -45,7 +45,7 @@ func _ready() -> void:
 		],
 		
 		"Whale Mask": [
-			"res://assets/item/equipment/whale_mask.png",
+			"res://assets/items/equipment/whale_mask.png",
 			3, 
 			"Equipment",
 			{

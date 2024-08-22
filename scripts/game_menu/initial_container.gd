@@ -5,7 +5,7 @@ onready var buttons_container: VBoxContainer = get_node("ButtonsContainer")
 onready var continue_button = $ButtonsContainer/Continue
 
 var can_click: bool = false
-var target_level_path: String = "res://scenes/management/level.tscn"
+var target_level_path: String = "res://scenes/levels/level.tscn"
 
 export(NodePath) onready var animation = get_node(animation) as AnimationPlayer
 

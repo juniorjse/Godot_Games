@@ -11,27 +11,27 @@ var can_start_timer: bool = true
 var current_dice_value: int
 
 var dice_path_list: Array = [
-	"res://assets/dice/00.png",
-	"res://assets/dice/01.png",
-	"res://assets/dice/02.png",
-	"res://assets/dice/03.png",
-	"res://assets/dice/04.png",
-	"res://assets/dice/05.png",
-	"res://assets/dice/06.png",
-	"res://assets/dice/07.png",
-	"res://assets/dice/08.png",
-	"res://assets/dice/09.png",
-	"res://assets/dice/10.png",
-	"res://assets/dice/11.png",
-	"res://assets/dice/12.png",
-	"res://assets/dice/13.png",
-	"res://assets/dice/14.png",
-	"res://assets/dice/15.png",
-	"res://assets/dice/16.png",
-	"res://assets/dice/17.png",
-	"res://assets/dice/18.png",
-	"res://assets/dice/19.png",
-	"res://assets/dice/20.png"
+	"res://assets/items/dice/00.png",
+	"res://assets/items/dice/01.png",
+	"res://assets/items/dice/02.png",
+	"res://assets/items/dice/03.png",
+	"res://assets/items/dice/04.png",
+	"res://assets/items/dice/05.png",
+	"res://assets/items/dice/06.png",
+	"res://assets/items/dice/07.png",
+	"res://assets/items/dice/08.png",
+	"res://assets/items/dice/09.png",
+	"res://assets/items/dice/10.png",
+	"res://assets/items/dice/11.png",
+	"res://assets/items/dice/12.png",
+	"res://assets/items/dice/13.png",
+	"res://assets/items/dice/14.png",
+	"res://assets/items/dice/15.png",
+	"res://assets/items/dice/16.png",
+	"res://assets/items/dice/17.png",
+	"res://assets/items/dice/18.png",
+	"res://assets/items/dice/19.png",
+	"res://assets/items/dice/20.png"
 ]
 
 func _ready() -> void:

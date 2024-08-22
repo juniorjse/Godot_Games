@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/dice/00.png" type="Texture" id=1]
+[ext_resource path="res://assets/items/dice/00.png" type="Texture" id=1]
 [ext_resource path="res://scripts/env/roll_dice.gd" type="Script" id=2]
 
 [sub_resource type="Animation" id=1]

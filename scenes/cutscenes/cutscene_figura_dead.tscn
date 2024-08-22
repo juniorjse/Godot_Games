@@ -4,18 +4,18 @@
 [ext_resource path="res://assets/interactable/npcs/enemy_captain.png" type="Texture" id=2]
 [ext_resource path="res://assets/player/ship_mercante.png" type="Texture" id=3]
 [ext_resource path="res://scripts/env/background.gd" type="Script" id=4]
-[ext_resource path="res://assets/font/PressStart2P.ttf" type="DynamicFontData" id=5]
-[ext_resource path="res://resources/tile/floor.tres" type="TileSet" id=6]
-[ext_resource path="res://assets/enemy/captain_bod/captain.png" type="Texture" id=7]
+[ext_resource path="res://assets/fonts/PressStart2P.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://assets/resources/tile/floor.tres" type="TileSet" id=6]
+[ext_resource path="res://assets/enemies/captain_bod/captain.png" type="Texture" id=7]
 [ext_resource path="res://assets/interactable/water/water_top_bottom.png" type="Texture" id=8]
 [ext_resource path="res://scenes/player/levelcamera.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/env/dawn_mask.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scripts/cutscenes/cutscene_let.gd" type="Script" id=11]
-[ext_resource path="res://assets/enemy/whale/run.png" type="Texture" id=12]
-[ext_resource path="res://assets/enemy/whale/idle.png" type="Texture" id=13]
-[ext_resource path="res://assets/enemy/whale/attack.png" type="Texture" id=14]
-[ext_resource path="res://assets/enemy/whale/hit.png" type="Texture" id=15]
-[ext_resource path="res://assets/enemy/whale/dead.png" type="Texture" id=16]
+[ext_resource path="res://assets/enemies/whale/run.png" type="Texture" id=12]
+[ext_resource path="res://assets/enemies/whale/idle.png" type="Texture" id=13]
+[ext_resource path="res://assets/enemies/whale/attack.png" type="Texture" id=14]
+[ext_resource path="res://assets/enemies/whale/hit.png" type="Texture" id=15]
+[ext_resource path="res://assets/enemies/whale/dead.png" type="Texture" id=16]
 [ext_resource path="res://assets/player/interrogation.png" type="Texture" id=17]
 [ext_resource path="res://assets/tile/parallax_background/noite.png" type="Texture" id=18]
 [ext_resource path="res://assets/tile/parallax_background/continue_noite.png" type="Texture" id=19]
@@ -1070,10 +1070,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "values": [ {
-"args": [ "res://scenes/effect/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
+"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
 "method": "spawn_effect"
 }, {
-"args": [ "res://scenes/effect/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
+"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
 "method": "spawn_effect"
 } ]
 }
@@ -1092,10 +1092,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "values": [ {
-"args": [ "res://scenes/effect/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
+"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
 "method": "spawn_effect"
 }, {
-"args": [ "res://scenes/effect/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
+"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
 "method": "spawn_effect"
 } ]
 }
@@ -1189,7 +1189,7 @@ margin_top = 90.0
 margin_right = 13.0
 margin_bottom = 90.0
 script = ExtResource( 11 )
-target_level = "res://scenes/management/level6.tscn"
+target_level = "res://scenes/levels/level6.tscn"
 
 [node name="dialog" type="CanvasLayer" parent="."]
 
