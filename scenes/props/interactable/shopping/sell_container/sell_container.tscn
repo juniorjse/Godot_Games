@@ -1,10 +1,10 @@
 [gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://assets/fonts/thaleah_fat.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://scripts/interface/sell_container/sell_container.gd" type="Script" id=2]
+[ext_resource path="res://scripts/interactable/sell_container/sell_container.gd" type="Script" id=2]
 [ext_resource path="res://assets/props/interactable/shopping/vertical_list.png" type="Texture" id=3]
-[ext_resource path="res://scripts/interface/sell_container/right_container.gd" type="Script" id=4]
-[ext_resource path="res://scripts/interface/sell_container/left_container.gd" type="Script" id=5]
+[ext_resource path="res://scripts/interactable/sell_container/right_container.gd" type="Script" id=4]
+[ext_resource path="res://scripts/interactable/sell_container/left_container.gd" type="Script" id=5]
 [ext_resource path="res://scenes/props/interactable/shopping/sell_container/sell_item_container.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/props/interactable/shopping/big_button.png" type="Texture" id=7]
 [ext_resource path="res://assets/props/interactable/shopping/close_button.png" type="Texture" id=8]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://scripts/interface/general/dialog_container.gd" type="Script" id=1]
+[ext_resource path="res://scripts/interactable/general/dialog_container.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/PressStart2P.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://assets/props/interactable/npcs/portrait_marujo.png" type="Texture" id=3]
 [ext_resource path="res://assets/props/interactable/intentory/item_background/type_1.png" type="Texture" id=4]
