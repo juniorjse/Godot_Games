@@ -1,8 +1,8 @@
 extends KinematicBody2D
 signal kill
 
-const FLOATING_TEXT: PackedScene = preload("res://scenes/env/floating_text.tscn")
-const PHYSIC_ITEM: PackedScene = preload("res://scenes/interactable/physic_item.tscn")
+const FLOATING_TEXT: PackedScene = preload("res://scenes/enviroment/floating_text.tscn")
+const PHYSIC_ITEM: PackedScene = preload("res://scenes/props/interactable/physic_item.tscn")
 
 onready var texture: Sprite = get_node("Texture")
 onready var floor_ray: RayCast2D = get_node("FloorRay")

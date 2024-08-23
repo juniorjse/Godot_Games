@@ -7,11 +7,11 @@ onready var stat_texture: TextureRect = get_node("Stat")
 onready var target_stat_texture: TextureRect = get_node("TargetStat")
 
 var stat_image_list: Dictionary = {
-	"attack": "res://assets/interface/stats/text/stats_text/small/attack.png",
-	"defense": "res://assets/interface/stats/text/stats_text/small/defense.png",
-	"health": "res://assets/interface/stats/text/stats_text/small/health.png",
-	"magic attack": "res://assets/interface/stats/text/stats_text/small/magic_attack.png",
-	"mana": "res://assets/interface/stats/text/stats_text/small/mana.png"
+	"attack": "res://assets/props/interactable/stats/text/stats_text/small/attack.png",
+	"defense": "res://assets/props/interactable/stats/text/stats_text/small/defense.png",
+	"health": "res://assets/props/interactable/stats/text/stats_text/small/health.png",
+	"magic attack": "res://assets/props/interactable/stats/text/stats_text/small/magic_attack.png",
+	"mana": "res://assets/props/interactable/stats/text/stats_text/small/mana.png"
 }
 
 func update_container(stat: String) -> void:

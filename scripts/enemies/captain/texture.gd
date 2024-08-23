@@ -3,7 +3,7 @@ extends EnemyTexture
 var mapa_scene: PackedScene
 
 func _ready():
-	mapa_scene = load("res://scenes/interactable/coletaveis/map.tscn")
+	mapa_scene = load("res://scenes/props/interactable/coletaveis/map.tscn")
 	if mapa_scene:
 		print("MAPA CARREGADO")
 	else:

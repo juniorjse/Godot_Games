@@ -1,9 +1,9 @@
 extends Area2D
 class_name DestructableInteractable
 
-const PHYSIC_ITEM: PackedScene = preload("res://scenes/interactable/physic_item.tscn")
-const FLOATING_TEXT: PackedScene = preload("res://scenes/env/floating_text.tscn")
-const SLICE: PackedScene = preload("res://scenes/env/slice.tscn")
+const PHYSIC_ITEM: PackedScene = preload("res://scenes/props/interactable/physic_item.tscn")
+const FLOATING_TEXT: PackedScene = preload("res://scenes/enviroment/floating_text.tscn")
+const SLICE: PackedScene = preload("res://scenes/enviroment/slice.tscn")
 
 onready var timer: Timer = get_node("Timer")
 onready var animation: AnimationPlayer = get_node("Animation")

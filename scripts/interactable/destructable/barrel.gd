@@ -19,10 +19,10 @@ var drop_list: Dictionary = {
 }
 
 var barrel_slice: Array = [
-	"res://assets/interactable/barrel/destroyed_barrel_1.png",
-	"res://assets/interactable/barrel/destroyed_barrel_2.png",
-	"res://assets/interactable/barrel/destroyed_barrel_3.png",
-	"res://assets/interactable/barrel/destroyed_barrel_4.png"
+	"res://assets/props/interactable/barrel/destroyed_barrel_1.png",
+	"res://assets/props/interactable/barrel/destroyed_barrel_2.png",
+	"res://assets/props/interactable/barrel/destroyed_barrel_3.png",
+	"res://assets/props/interactable/barrel/destroyed_barrel_4.png"
 ]
 
 export(int) var dice_amount

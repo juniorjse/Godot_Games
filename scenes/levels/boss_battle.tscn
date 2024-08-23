@@ -1,30 +1,30 @@
 [gd_scene load_steps=69 format=2]
 
 [ext_resource path="res://assets/tile/terrain/ship_floor_autotile.png" type="Texture" id=1]
-[ext_resource path="res://assets/resources/tile/ship_background.tres" type="TileSet" id=2]
+[ext_resource path="res://assets/tile/tile/ship_background.tres" type="TileSet" id=2]
 [ext_resource path="res://scenes/player/player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/env/dawn_mask.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/interface/general/hud.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/env/world_env.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/enviroment/dawn_mask.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/props/interactable/general/hud.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/enviroment/world_env.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/player/levelcamera.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scripts/levels/boss_final.gd" type="Script" id=8]
 [ext_resource path="res://scenes/props/candle.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/props/window.tscn" type="PackedScene" id=10]
-[ext_resource path="res://scenes/interactable/helmet.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/props/interactable/helmet.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/props/small_chain.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/enemies/pirate/captain.tscn" type="PackedScene" id=13]
 [ext_resource path="res://scenes/enemies/crabby/crabby2.tscn" type="PackedScene" id=14]
 [ext_resource path="res://scenes/enemies/pirate/pirate.tscn" type="PackedScene" id=15]
-[ext_resource path="res://scenes/env/levellimit.tscn" type="PackedScene" id=16]
-[ext_resource path="res://scenes/enemies/whale/pink.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/enviroment/levellimit.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/enemies/pirate/pink.tscn" type="PackedScene" id=17]
 [ext_resource path="res://scenes/enemies/pig/pig.tscn" type="PackedScene" id=18]
-[ext_resource path="res://scenes/env/collision_platforms.tscn" type="PackedScene" id=19]
-[ext_resource path="res://assets/interactable/barrel/barrel_idle.png" type="Texture" id=20]
-[ext_resource path="res://scenes/interactable/coletaveis/map.tscn" type="PackedScene" id=21]
-[ext_resource path="res://assets/interactable/npcs/marujo.png" type="Texture" id=29]
+[ext_resource path="res://scenes/enviroment/collision_platforms.tscn" type="PackedScene" id=19]
+[ext_resource path="res://assets/props/interactable/barrel/barrel_idle.png" type="Texture" id=20]
+[ext_resource path="res://scenes/props/interactable/coletaveis/map.tscn" type="PackedScene" id=21]
+[ext_resource path="res://assets/props/interactable/npcs/marujo.png" type="Texture" id=29]
 [ext_resource path="res://assets/fonts/PressStart2P.ttf" type="DynamicFontData" id=30]
-[ext_resource path="res://assets/interactable/npcs/portrait_marujo.png" type="Texture" id=31]
-[ext_resource path="res://assets/interface/dialog/dialog_background.png" type="Texture" id=38]
+[ext_resource path="res://assets/props/interactable/npcs/portrait_marujo.png" type="Texture" id=31]
+[ext_resource path="res://assets/props/interactable/dialog/dialog_background.png" type="Texture" id=38]
 [ext_resource path="res://assets/tile/ship_boss/Tileset.png" type="Texture" id=39]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
@@ -617,65 +617,63 @@ tile_data = PoolIntArray( 65515, 1, 0, 65516, 1, 1, 65517, 1, 1, 65518, 1, 1, 65
 
 [node name="SmallChain" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 193, 170 )
+frame = 6
 
 [node name="SmallChain3" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( -139, 174 )
-frame = 0
+frame = 5
 
 [node name="SmallChain4" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 414, 293 )
-frame = 0
+frame = 5
 
 [node name="Candle" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( -193, 129 )
-frame = 4
+frame = 1
 
 [node name="Candle2" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 351, 195 )
-frame = 4
+frame = 1
 
 [node name="Candle12" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( -64, 410 )
-frame = 4
+frame = 1
 
 [node name="Candle13" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 103, 440 )
-frame = 4
+frame = 1
 
 [node name="Candle14" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( -297, 457 )
-frame = 3
+frame = 0
 
 [node name="Candle3" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 567, 274 )
-frame = 4
+frame = 1
 
 [node name="Candle4" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( 726, 271 )
-frame = 0
+frame = 3
 
 [node name="Window" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 194, 143 )
-frame = 36
 
 [node name="SmallChain2" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( -150, 504 )
+frame = 6
 
 [node name="Window10" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( -148, 490 )
-frame = 36
 
 [node name="Window2" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( -139, 145 )
-frame = 36
 
 [node name="SmallChain9" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( -367, 445 )
-frame = 0
+frame = 5
 
 [node name="Window8" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( -367, 416 )
-frame = 36
 
 [node name="helmet" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 11 )]
 position = Vector2( 166, 522 )

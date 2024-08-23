@@ -67,12 +67,12 @@ _global_script_classes=[ {
 "base": "Control",
 "class": "Dice",
 "language": "GDScript",
-"path": "res://scripts/env/roll_dice.gd"
+"path": "res://scripts/enviroment/roll_dice.gd"
 }, {
 "base": "AnimatedSprite",
 "class": "EffectTemplate",
 "language": "GDScript",
-"path": "res://scripts/env/effect_template.gd"
+"path": "res://scripts/enviroment/effect_template.gd"
 }, {
 "base": "Control",
 "class": "EnemyHealthBar",
@@ -82,7 +82,7 @@ _global_script_classes=[ {
 "base": "Node2D",
 "class": "EnemySpawner",
 "language": "GDScript",
-"path": "res://scripts/env/enemy_spawner.gd"
+"path": "res://scripts/enviroment/enemy_spawner.gd"
 }, {
 "base": "KinematicBody2D",
 "class": "EnemyTemplate",
@@ -107,7 +107,7 @@ _global_script_classes=[ {
 "base": "Label",
 "class": "FloatText",
 "language": "GDScript",
-"path": "res://scripts/env/floating_text.gd"
+"path": "res://scripts/enviroment/floating_text.gd"
 }, {
 "base": "Node2D",
 "class": "GameLevel",
@@ -157,12 +157,12 @@ _global_script_classes=[ {
 "base": "Camera2D",
 "class": "LevelCamera",
 "language": "GDScript",
-"path": "res://scripts/env/level_camera.gd"
+"path": "res://scripts/enviroment/level_camera.gd"
 }, {
 "base": "Node2D",
 "class": "LevelLimit",
 "language": "GDScript",
-"path": "res://scripts/env/level_limit.gd"
+"path": "res://scripts/enviroment/level_limit.gd"
 }, {
 "base": "RigidBody2D",
 "class": "PhysicItem",
@@ -237,7 +237,7 @@ _global_script_classes=[ {
 "base": "RigidBody2D",
 "class": "Slice",
 "language": "GDScript",
-"path": "res://scripts/env/slice.gd"
+"path": "res://scripts/enviroment/slice.gd"
 }, {
 "base": "Node",
 "class": "Stats",
@@ -363,14 +363,14 @@ _global_script_class_icons={
 [application]
 
 config/name="Sea-Pirate-Adventures"
-run/main_scene="res://scenes/interface/game_screen/initial_screen.tscn"
+run/main_scene="res://scenes/props/interactable/game_screen/initial_screen.tscn"
 config/icon="res://assets/items/Gold Coin/01.png"
 boot_splash/icon="res://icon.png"
 boot_splash/name="Flux"
 
 [autoload]
 
-TransitionScreen="*res://scenes/env/transition_screen.tscn"
+TransitionScreen="*res://scenes/enviroment/transition_screen.tscn"
 DataManagement="*res://scripts/levels/data_management.gd"
 
 [display]

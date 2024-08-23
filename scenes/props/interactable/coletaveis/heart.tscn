@@ -1,0 +1,66 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/props/interactable/coletaveis/diamond.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/props/interactable/treasure/heart.png" type="Texture" id=2]
+[ext_resource path="res://scripts/interactable/coletaveis/heart.gd" type="Script" id=4]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("PirateTreasure:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "colected"
+length = 0.35
+tracks/0/type = "value"
+tracks/0/path = NodePath("PirateTreasure:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 7, 8, 9, 10 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "idle"
+length = 0.65
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("PirateTreasure:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6 ]
+}
+
+[node name="heart" instance=ExtResource( 1 )]
+script = ExtResource( 4 )
+
+[node name="PirateTreasure" parent="." index="1"]
+texture = ExtResource( 2 )
+vframes = 1
+frame = 0
+
+[node name="anim" parent="." index="2"]
+anims/RESET = SubResource( 1 )
+anims/colected = SubResource( 2 )
+anims/idle = SubResource( 3 )

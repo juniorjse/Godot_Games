@@ -9,7 +9,7 @@
 [ext_resource path="res://assets/enemies/whale/hit.png" type="Texture" id=7]
 [ext_resource path="res://assets/enemies/whale/dead.png" type="Texture" id=8]
 [ext_resource path="res://scripts/enemies/template/detection_area.gd" type="Script" id=9]
-[ext_resource path="res://scenes/interface/general/boss_bar.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/props/interactable/general/boss_bar.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 36, 14.5 )

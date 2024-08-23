@@ -84,11 +84,11 @@ func _process(_delta: float) -> void:
 			match consumable_item_type:
 				"Health":
 					get_tree().call_group("player_stats", "update_health", "Increase", consumable_item_type_value)
-					get_tree().call_group("player", "spawn_effect", "res://scenes/effects/potion_effect.tscn")
+					get_tree().call_group("player", "spawn_effect", "res://scenes/particles/potion_effect.tscn")
 					
 				"Mana":
 					get_tree().call_group("player_stats", "update_mana", "Increase", consumable_item_type_value)
-					get_tree().call_group("player", "spawn_effect", "res://scenes/effects/potion_effect.tscn")
+					get_tree().call_group("player", "spawn_effect", "res://scenes/particles/potion_effect.tscn")
 					
 			consumable_item_amount -= 1
 			

@@ -3,7 +3,7 @@ class_name Shopping
 
 var dialog_list: Dictionary = {
 	"name": "Merchant",
-	"portrait": "res://assets/interface/dialog/merchant_portrait.png",
+	"portrait": "res://assets/props/interactable/dialog/merchant_portrait.png",
 	"dialog": [
 		"Hello, Adventurer... he he",
 		"What do you want?",

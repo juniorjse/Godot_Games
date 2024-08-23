@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=2]
-
-[ext_resource path="res://scripts/env/level_limit.gd" type="Script" id=1]
-
-[node name="LevelLimit" type="Node2D"]
-position = Vector2( 45, 241 )
-script = ExtResource( 1 )
-left_gap = -2000
-right_gap = 4000

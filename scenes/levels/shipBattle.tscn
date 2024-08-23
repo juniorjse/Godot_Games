@@ -1,20 +1,20 @@
 [gd_scene load_steps=76 format=2]
 
-[ext_resource path="res://scenes/env/dawn_mask.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/enviroment/dawn_mask.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/tile/parallax_background/noite_conti.png" type="Texture" id=2]
-[ext_resource path="res://assets/effect/water/water_noite.png" type="Texture" id=3]
-[ext_resource path="res://scripts/env/background.gd" type="Script" id=4]
+[ext_resource path="res://assets/particles/water/water_noite.png" type="Texture" id=3]
+[ext_resource path="res://scripts/enviroment/background.gd" type="Script" id=4]
 [ext_resource path="res://assets/player/char_blue.png" type="Texture" id=5]
 [ext_resource path="res://assets/tile/parallax_background/noite.png" type="Texture" id=6]
 [ext_resource path="res://assets/tile/parallax_background/nuvens_noite.png" type="Texture" id=7]
 [ext_resource path="res://assets/tile/parallax_background/continue_noite.png" type="Texture" id=8]
-[ext_resource path="res://assets/interactable/water/water_top_bottom.png" type="Texture" id=9]
+[ext_resource path="res://assets/props/interactable/water/water_top_bottom.png" type="Texture" id=9]
 [ext_resource path="res://scenes/player/player.tscn" type="PackedScene" id=10]
-[ext_resource path="res://scenes/env/ship_battle.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/enviroment/ship_battle.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/player/ship_mercante.png" type="Texture" id=12]
 [ext_resource path="res://scripts/player/texture.gd" type="Script" id=13]
-[ext_resource path="res://assets/resources/tile/floor.tres" type="TileSet" id=14]
-[ext_resource path="res://assets/interactable/water/water_bottom.png" type="Texture" id=15]
+[ext_resource path="res://assets/tile/tile/floor.tres" type="TileSet" id=14]
+[ext_resource path="res://assets/props/interactable/water/water_bottom.png" type="Texture" id=15]
 [ext_resource path="res://assets/tile/terrain/Terrain (32x32).png" type="Texture" id=16]
 
 [sub_resource type="AtlasTexture" id=88]
@@ -650,7 +650,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0.1 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
-"args": [ "res://scenes/effects/dust/dust_effect.tscn", Vector2( 0, 5 ), false ],
+"args": [ "res://scenes/particles/dust/dust_effect.tscn", Vector2( 0, 5 ), false ],
 "method": "spawn_effect"
 } ]
 }
@@ -705,10 +705,10 @@ tracks/3/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "values": [ {
-"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
+"args": [ "res://scenes/particles/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
 "method": "spawn_effect"
 }, {
-"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
+"args": [ "res://scenes/particles/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
 "method": "spawn_effect"
 } ]
 }
@@ -751,10 +751,10 @@ tracks/2/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "values": [ {
-"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
+"args": [ "res://scenes/particles/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
 "method": "spawn_effect"
 }, {
-"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
+"args": [ "res://scenes/particles/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
 "method": "spawn_effect"
 } ]
 }
@@ -1127,10 +1127,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "values": [ {
-"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
+"args": [ "res://scenes/particles/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
 "method": "spawn_effect"
 }, {
-"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
+"args": [ "res://scenes/particles/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
 "method": "spawn_effect"
 } ]
 }
@@ -1149,10 +1149,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "values": [ {
-"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
+"args": [ "res://scenes/particles/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
 "method": "spawn_effect"
 }, {
-"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
+"args": [ "res://scenes/particles/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
 "method": "spawn_effect"
 } ]
 }

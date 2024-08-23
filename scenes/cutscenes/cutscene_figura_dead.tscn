@@ -1,15 +1,15 @@
 [gd_scene load_steps=61 format=2]
 
-[ext_resource path="res://assets/interface/dialog/dialog_background.png" type="Texture" id=1]
-[ext_resource path="res://assets/interactable/npcs/enemy_captain.png" type="Texture" id=2]
+[ext_resource path="res://assets/props/interactable/dialog/dialog_background.png" type="Texture" id=1]
+[ext_resource path="res://assets/props/interactable/npcs/enemy_captain.png" type="Texture" id=2]
 [ext_resource path="res://assets/player/ship_mercante.png" type="Texture" id=3]
-[ext_resource path="res://scripts/env/background.gd" type="Script" id=4]
+[ext_resource path="res://scripts/enviroment/background.gd" type="Script" id=4]
 [ext_resource path="res://assets/fonts/PressStart2P.ttf" type="DynamicFontData" id=5]
-[ext_resource path="res://assets/resources/tile/floor.tres" type="TileSet" id=6]
+[ext_resource path="res://assets/tile/tile/floor.tres" type="TileSet" id=6]
 [ext_resource path="res://assets/enemies/captain_bod/captain.png" type="Texture" id=7]
-[ext_resource path="res://assets/interactable/water/water_top_bottom.png" type="Texture" id=8]
+[ext_resource path="res://assets/props/interactable/water/water_top_bottom.png" type="Texture" id=8]
 [ext_resource path="res://scenes/player/levelcamera.tscn" type="PackedScene" id=9]
-[ext_resource path="res://scenes/env/dawn_mask.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/enviroment/dawn_mask.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scripts/cutscenes/cutscene_let.gd" type="Script" id=11]
 [ext_resource path="res://assets/enemies/whale/run.png" type="Texture" id=12]
 [ext_resource path="res://assets/enemies/whale/idle.png" type="Texture" id=13]
@@ -20,7 +20,7 @@
 [ext_resource path="res://assets/tile/parallax_background/noite.png" type="Texture" id=18]
 [ext_resource path="res://assets/tile/parallax_background/continue_noite.png" type="Texture" id=19]
 [ext_resource path="res://assets/tile/parallax_background/noite_conti.png" type="Texture" id=20]
-[ext_resource path="res://assets/effect/water/water_noite.png" type="Texture" id=21]
+[ext_resource path="res://assets/particles/water/water_noite.png" type="Texture" id=21]
 [ext_resource path="res://assets/tile/parallax_background/nuvens_noite.png" type="Texture" id=22]
 
 [sub_resource type="DynamicFont" id=27]
@@ -1070,10 +1070,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "values": [ {
-"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
+"args": [ "res://scenes/particles/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
 "method": "spawn_effect"
 }, {
-"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
+"args": [ "res://scenes/particles/dust/run_particles.tscn", Vector2( 0, 5 ), true ],
 "method": "spawn_effect"
 } ]
 }
@@ -1092,10 +1092,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "values": [ {
-"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
+"args": [ "res://scenes/particles/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
 "method": "spawn_effect"
 }, {
-"args": [ "res://scenes/effects/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
+"args": [ "res://scenes/particles/dust/run_particles.tscn", Vector2( 0, 5 ), false ],
 "method": "spawn_effect"
 } ]
 }

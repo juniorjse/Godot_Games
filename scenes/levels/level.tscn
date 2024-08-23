@@ -1,39 +1,39 @@
 [gd_scene load_steps=69 format=2]
 
 [ext_resource path="res://scenes/player/player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/env/background.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/resources/tile/floor.tres" type="TileSet" id=3]
-[ext_resource path="res://assets/resources/tile/normal_size_decoration.tres" type="TileSet" id=4]
-[ext_resource path="res://scenes/env/palmtree.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/interactable/npcs/marujo.png" type="Texture" id=6]
+[ext_resource path="res://scenes/enviroment/background.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/tile/tile/floor.tres" type="TileSet" id=3]
+[ext_resource path="res://assets/tile/tile/normal_size_decoration.tres" type="TileSet" id=4]
+[ext_resource path="res://scenes/enviroment/palmtree.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/props/interactable/npcs/marujo.png" type="Texture" id=6]
 [ext_resource path="res://assets/enemies/traps/spikes.png" type="Texture" id=7]
 [ext_resource path="res://scripts/enemies/traps/collision.gd" type="Script" id=8]
 [ext_resource path="res://scenes/props/back_palm_tree_left.tscn" type="PackedScene" id=9]
-[ext_resource path="res://scenes/interface/general/hud.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/props/interactable/general/hud.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scripts/levels/level.gd" type="Script" id=11]
-[ext_resource path="res://scenes/interactable/sign.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/props/interactable/sign.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scripts/interactable/initial/initial_sign.gd" type="Script" id=13]
 [ext_resource path="res://scenes/props/back_palm_tree_right.tscn" type="PackedScene" id=14]
 [ext_resource path="res://scenes/props/back_palm_tree2.tscn" type="PackedScene" id=15]
 [ext_resource path="res://scenes/enemies/pig/pig_cannon.tscn" type="PackedScene" id=16]
-[ext_resource path="res://scenes/env/dawn_mask.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/enviroment/dawn_mask.tscn" type="PackedScene" id=17]
 [ext_resource path="res://assets/props/caule_back.png" type="Texture" id=18]
-[ext_resource path="res://scenes/env/levellimit.tscn" type="PackedScene" id=19]
-[ext_resource path="res://scenes/interactable/ship.tscn" type="PackedScene" id=20]
-[ext_resource path="res://scenes/env/world_env.tscn" type="PackedScene" id=21]
+[ext_resource path="res://scenes/enviroment/levellimit.tscn" type="PackedScene" id=19]
+[ext_resource path="res://scenes/props/interactable/ship.tscn" type="PackedScene" id=20]
+[ext_resource path="res://scenes/enviroment/world_env.tscn" type="PackedScene" id=21]
 [ext_resource path="res://assets/tile/decoration/Front Palm Bottom and Grass (32x32).png" type="Texture" id=22]
 [ext_resource path="res://assets/tile/terrain/floor_back.png" type="Texture" id=23]
 [ext_resource path="res://scenes/enemies/pig/pig.tscn" type="PackedScene" id=24]
-[ext_resource path="res://scenes/interactable/coletaveis/diamond.tscn" type="PackedScene" id=25]
-[ext_resource path="res://scenes/interactable/coletaveis/skull_teasure.tscn" type="PackedScene" id=26]
-[ext_resource path="res://scenes/interactable/coletaveis/rubi.tscn" type="PackedScene" id=27]
-[ext_resource path="res://scenes/interactable/coletaveis/map.tscn" type="PackedScene" id=28]
-[ext_resource path="res://scenes/interactable/coletaveis/heart.tscn" type="PackedScene" id=29]
-[ext_resource path="res://assets/interface/stats/background/map_back_3_map.png" type="Texture" id=30]
-[ext_resource path="res://assets/interface/stats/background/map_back_2_map.png" type="Texture" id=31]
-[ext_resource path="res://assets/interface/stats/background/map_back_1_map.png" type="Texture" id=32]
-[ext_resource path="res://scenes/env/palm_tree_impulse.tscn" type="PackedScene" id=34]
-[ext_resource path="res://scenes/env/spike.tscn" type="PackedScene" id=35]
+[ext_resource path="res://scenes/props/interactable/coletaveis/diamond.tscn" type="PackedScene" id=25]
+[ext_resource path="res://scenes/enviroment/barrel_impulse.tscn" type="PackedScene" id=26]
+[ext_resource path="res://scenes/props/interactable/coletaveis/rubi.tscn" type="PackedScene" id=27]
+[ext_resource path="res://scenes/props/interactable/coletaveis/heart.tscn" type="PackedScene" id=29]
+[ext_resource path="res://assets/props/interactable/stats/background/map_back_3_map.png" type="Texture" id=30]
+[ext_resource path="res://assets/props/interactable/stats/background/map_back_2_map.png" type="Texture" id=31]
+[ext_resource path="res://assets/props/interactable/stats/background/map_back_1_map.png" type="Texture" id=32]
+[ext_resource path="res://scenes/enemies/star/pink_star.tscn" type="PackedScene" id=33]
+[ext_resource path="res://scenes/enviroment/palm_tree_impulse.tscn" type="PackedScene" id=34]
+[ext_resource path="res://scenes/enviroment/spike.tscn" type="PackedScene" id=35]
 
 [sub_resource type="AtlasTexture" id=104]
 atlas = ExtResource( 6 )
@@ -429,7 +429,7 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -810, 144 )
+position = Vector2( -793, 140 )
 jump_speed = -200
 
 [node name="LevelCamera" parent="Player" index="9"]
@@ -456,7 +456,7 @@ atrás deles e recuperar o mapa !" ]
 position = Vector2( -1.70001, -4.70001 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 9 )
-frame = 7
+frame = 3
 playing = true
 
 [node name="LevelDesign" type="Node2D" parent="."]
@@ -507,7 +507,6 @@ anims/mostrarmapa3 = SubResource( 34 )
 [node name="spike" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -560, 208 )
 frames = SubResource( 13 )
-frame = 1
 playing = true
 
 [node name="Area2D" type="Area2D" parent="LevelDesign/Traps/spike"]
@@ -520,103 +519,124 @@ shape = SubResource( 14 )
 [node name="spike2" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -527, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike3" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -494, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike4" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -459, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike5" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -425, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike6" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -238, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike7" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -205, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike8" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -172, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike9" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -137, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike10" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -103, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike11" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -71, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike12" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -38, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike13" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 496, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike14" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 529, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike15" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 562, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike16" parent="LevelDesign/Traps" instance=ExtResource( 35 )]
+frame = 2
 
 [node name="spike17" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 631, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike18" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 663, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike19" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 696, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike20" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 730, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike21" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 762, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="spike22" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 795, 208 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 
 [node name="Terrain" type="Node2D" parent="LevelDesign"]
@@ -833,17 +853,20 @@ position = Vector2( 128, 87 )
 [node name="pig4" parent="EnemiesSpawnerList" instance=ExtResource( 24 )]
 position = Vector2( 291, 152 )
 
-[node name="pig5" parent="EnemiesSpawnerList" instance=ExtResource( 24 )]
-position = Vector2( 594, 89 )
-
-[node name="pig6" parent="EnemiesSpawnerList" instance=ExtResource( 24 )]
-position = Vector2( 820, 87 )
-
 [node name="pig7" parent="EnemiesSpawnerList" instance=ExtResource( 24 )]
 position = Vector2( 1002, 152 )
 
 [node name="pig8" parent="EnemiesSpawnerList" instance=ExtResource( 24 )]
 position = Vector2( 1116, 152 )
+
+[node name="PinkStar" parent="EnemiesSpawnerList" instance=ExtResource( 33 )]
+position = Vector2( -54, 145 )
+
+[node name="PinkStar2" parent="EnemiesSpawnerList" instance=ExtResource( 33 )]
+position = Vector2( 640, 83 )
+
+[node name="PinkStar3" parent="EnemiesSpawnerList" instance=ExtResource( 33 )]
+position = Vector2( 1233, 144 )
 
 [node name="Collectable" type="Node2D" parent="."]
 
@@ -931,26 +954,14 @@ position = Vector2( -95, 146 )
 [node name="rubi13" parent="Collectable" instance=ExtResource( 27 )]
 position = Vector2( -58, 146 )
 
-[node name="skull" parent="Collectable" instance=ExtResource( 26 )]
-position = Vector2( 1051, 62 )
-
-[node name="map" parent="Collectable" instance=ExtResource( 28 )]
-position = Vector2( -207, 101 )
-
-[node name="map2" parent="Collectable" instance=ExtResource( 28 )]
-position = Vector2( 716, 45 )
-
-[node name="map3" parent="Collectable" instance=ExtResource( 28 )]
-position = Vector2( 1462, 90 )
-
 [node name="heart" parent="Collectable" instance=ExtResource( 29 )]
-position = Vector2( 1278, 139 )
+position = Vector2( 598, -8 )
 
 [node name="LevelLimit" parent="." instance=ExtResource( 19 )]
 
+[node name="barrel_impulse" parent="." instance=ExtResource( 26 )]
+position = Vector2( 594, 76 )
+
 [connection signal="body_entered" from="LevelDesign/Traps/spike/Area2D" to="LevelDesign/Traps/spike/Area2D" method="_on_Area2D_body_entered"]
-[connection signal="pegou_map" from="Collectable/map" to="." method="_on_map_pegou_map"]
-[connection signal="pegou_map" from="Collectable/map2" to="." method="_on_map2_pegou_map"]
-[connection signal="pegou_map" from="Collectable/map3" to="." method="_on_map3_pegou_map"]
 
 [editable path="Player"]
