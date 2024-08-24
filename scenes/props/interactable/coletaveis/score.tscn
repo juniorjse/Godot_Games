@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://assets/fonts/thaleah_fat.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/fonts/ThaleahFat.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/props/interactable/treasure/PirateTreasure.png" type="Texture" id=2]
 [ext_resource path="res://scripts/interactable/coletaveis/score.gd" type="Script" id=3]
 

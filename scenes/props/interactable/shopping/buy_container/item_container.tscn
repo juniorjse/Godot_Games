@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/items/consumable/health_potion.png" type="Texture" id=1]
-[ext_resource path="res://assets/fonts/thaleah_fat.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/fonts/ThaleahFat.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://scripts/interactable/buy_container/item_container.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=4]
