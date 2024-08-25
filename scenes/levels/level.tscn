@@ -443,7 +443,7 @@ position = Vector2( 3254, 1006 )
 target_level = "res://scenes/levels/level2.tscn"
 
 [node name="Sign" parent="Interactable" instance=ExtResource( 12 )]
-position = Vector2( 907, 928 )
+position = Vector2( 836, 788 )
 script = ExtResource( 13 )
 list = [ "
 Capitão Rogi, os piratas Green
@@ -456,7 +456,7 @@ atrás deles e recuperar o mapa !" ]
 position = Vector2( -1.70001, -4.70001 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 9 )
-frame = 3
+frame = 4
 playing = true
 
 [node name="LevelDesign" type="Node2D" parent="."]
@@ -507,6 +507,7 @@ anims/mostrarmapa3 = SubResource( 34 )
 [node name="spike" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -560, 208 )
 frames = SubResource( 13 )
+frame = 1
 playing = true
 
 [node name="Area2D" type="Area2D" parent="LevelDesign/Traps/spike"]
@@ -519,124 +520,103 @@ shape = SubResource( 14 )
 [node name="spike2" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -527, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike3" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -494, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike4" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -459, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike5" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -425, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike6" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -238, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike7" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -205, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike8" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -172, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike9" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -137, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike10" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -103, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike11" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -71, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike12" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -38, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike13" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 496, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike14" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 529, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike15" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 562, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike16" parent="LevelDesign/Traps" instance=ExtResource( 35 )]
-frame = 2
 
 [node name="spike17" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 631, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike18" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 663, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike19" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 696, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike20" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 730, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike21" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 762, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="spike22" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( 795, 208 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 
 [node name="Terrain" type="Node2D" parent="LevelDesign"]
@@ -678,12 +658,12 @@ tile_data = PoolIntArray( 131043, 11, 0, 131075, 12, 0, 131077, 12, 0, 131078, 8
 [node name="palmtree" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 5 )]
 position = Vector2( -912, 79 )
 z_index = 1
-frame = 2
+frame = 3
 
 [node name="palmtree12" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 5 )]
 position = Vector2( 1392, 112 )
 z_index = 1
-frame = 1
+frame = 2
 
 [node name="palm_tree_impulse" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 34 )]
 position = Vector2( 1102, 102 )
@@ -691,150 +671,152 @@ position = Vector2( 1102, 102 )
 [node name="palmtree10" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 5 )]
 position = Vector2( 944, 79 )
 z_index = 1
-frame = 1
+frame = 2
 
 [node name="palmtree7" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 5 )]
 position = Vector2( 529, 79 )
 z_index = 1
-frame = 1
+frame = 2
 
 [node name="palmtree8" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 5 )]
 position = Vector2( 752, 79 )
 z_index = 1
-frame = 1
+frame = 2
 
 [node name="palmtree6" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 5 )]
 position = Vector2( 208, 49 )
 z_index = 1
-frame = 1
+frame = 2
 
 [node name="palmtree9" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 5 )]
 position = Vector2( 624, 48 )
 z_index = 1
+frame = 1
 
 [node name="palmtree5" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 5 )]
 z_index = 1
-frame = 2
+frame = 3
 
 [node name="palmtree3" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 5 )]
 position = Vector2( -336, 111 )
 z_index = 1
-frame = 1
+frame = 2
 
 [node name="palmtree4" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 5 )]
 position = Vector2( -304, 207 )
 z_index = 1
+frame = 1
 
 [node name="palmtree2" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 5 )]
 position = Vector2( -898, 35 )
 z_index = 1
-frame = 1
+frame = 2
 
 [node name="back_palm_tree" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 14 )]
 position = Vector2( -567, 151 )
-frame = 1
+frame = 2
 
 [node name="back_palm_tree24" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 14 )]
 position = Vector2( 1482, 147 )
-frame = 0
+frame = 1
 
 [node name="back_palm_tree10" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 14 )]
 position = Vector2( 745, 124 )
-frame = 1
+frame = 2
 
 [node name="back_palm_tree_left" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 9 )]
 position = Vector2( -434, 152 )
-frame = 2
 
 [node name="back_palm_tree_left4" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 9 )]
 position = Vector2( 87, 119 )
-frame = 2
 
 [node name="back_palm_tree_left2" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 9 )]
 position = Vector2( -52, 148 )
-frame = 2
 
 [node name="back_palm_tree_left3" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 9 )]
 position = Vector2( 537, 121 )
-frame = 2
 
 [node name="back_palm_tree2" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( -868, 131 )
-frame = 1
+frame = 2
 
 [node name="back_palm_tree9" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( 138, 66 )
-frame = 1
+frame = 2
 
 [node name="back_palm_tree20" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( 824, 32 )
-frame = 1
+frame = 2
 
 [node name="back_palm_tree21" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( 1016, 64 )
-frame = 0
+frame = 1
 
 [node name="back_palm_tree22" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( 1176, 96 )
+frame = 0
 
 [node name="back_palm_tree23" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( 1272, 64 )
+frame = 0
 
 [node name="back_palm_tree6" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( -392, 89 )
-frame = 1
+frame = 2
 
 [node name="back_palm_tree18" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( 568, 31 )
-frame = 1
+frame = 2
 
 [node name="back_palm_tree19" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( 696, 32 )
-frame = 0
+frame = 1
 
 [node name="back_palm_tree7" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( -264, 89 )
-frame = 0
+frame = 1
 
 [node name="back_palm_tree15" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( 313, 90 )
+frame = 0
 
 [node name="back_palm_tree17" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( 380, 137 )
-frame = 2
 
 [node name="back_palm_tree16" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( 440, 90 )
+frame = 0
 
 [node name="back_palm_tree8" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( 24, 58 )
-frame = 0
+frame = 1
 
 [node name="back_palm_tree3" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( -776, 89 )
-frame = 1
+frame = 2
 
 [node name="back_palm_tree11" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( -548, 207 )
-frame = 0
+frame = 1
 
 [node name="back_palm_tree12" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( -473, 197 )
+frame = 0
 
 [node name="back_palm_tree13" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( -220, 193 )
+frame = 0
 
 [node name="back_palm_tree14" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( -114, 207 )
-frame = 2
 
 [node name="back_palm_tree4" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( -680, 90 )
-frame = 0
+frame = 1
 
 [node name="back_palm_tree5" parent="LevelDesign/Decoration/Palmtree" instance=ExtResource( 15 )]
 position = Vector2( -616, 120 )
-frame = 0
+frame = 1
 
 [node name="Background" parent="LevelDesign" instance=ExtResource( 2 )]
 layer_speed = [ 0, 15, 10, 0 ]

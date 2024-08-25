@@ -110,7 +110,10 @@ func defense() -> void:
 		
 		
 func horizontal_movement_env() -> void:
-	var input_direction: float = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+	var input_direction = Input.get_axis("ui_left", "ui_right")
+
+	if input_direction != 0:
+		velocity.x = lerp(velocity.x, input_direction * speed, 0.5)
 	if not can_track_input or attacking:
 		velocity.x = 0
 		return

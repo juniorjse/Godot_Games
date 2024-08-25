@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/props/interactable/stats/bar/health_bar_background.png" type="Texture" id=1]
 [ext_resource path="res://assets/props/interactable/stats/bar/health_bar.png" type="Texture" id=2]
@@ -7,6 +7,14 @@
 [ext_resource path="res://scripts/interactable/stats/bar_container.gd" type="Script" id=5]
 [ext_resource path="res://assets/props/interactable/stats/bar/exp_bar_background.png" type="Texture" id=6]
 [ext_resource path="res://assets/props/interactable/stats/bar/exp_bar.png" type="Texture" id=7]
+[ext_resource path="res://assets/ui/Mobile Buttons/Mobile Buttons/4.png" type="Texture" id=8]
+[ext_resource path="res://assets/ui/Mobile Buttons/Mobile Buttons Cooldown/5.png" type="Texture" id=9]
+[ext_resource path="res://assets/ui/Mobile Buttons/Mobile Buttons/2.png" type="Texture" id=10]
+[ext_resource path="res://assets/ui/Mobile Buttons/Mobile Buttons Cooldown/2.png" type="Texture" id=11]
+[ext_resource path="res://assets/ui/Mobile Buttons/Mobile Buttons Cooldown/3.png" type="Texture" id=12]
+[ext_resource path="res://assets/ui/Mobile Buttons/Mobile Buttons/5.png" type="Texture" id=13]
+[ext_resource path="res://assets/ui/Mobile Buttons/Mobile Buttons/3.png" type="Texture" id=14]
+[ext_resource path="res://assets/ui/Mobile Buttons/Mobile Buttons Cooldown/4.png" type="Texture" id=15]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -119,3 +127,33 @@ texture_progress = ExtResource( 4 )
 anims/RESET = SubResource( 1 )
 anims/hide_container = SubResource( 2 )
 anims/show_container = SubResource( 3 )
+
+[node name="btn_up" type="TouchScreenButton" parent="."]
+position = Vector2( 275, 139 )
+rotation = -6.28319
+scale = Vector2( 0.6, 0.6 )
+normal = ExtResource( 10 )
+pressed = ExtResource( 11 )
+action = "ui_select"
+
+[node name="btn_attack" type="TouchScreenButton" parent="."]
+position = Vector2( 294, 120 )
+rotation = -6.28319
+scale = Vector2( 0.6, 0.6 )
+normal = ExtResource( 13 )
+pressed = ExtResource( 9 )
+action = "attack"
+
+[node name="btn_right" type="TouchScreenButton" parent="."]
+position = Vector2( 55, 139 )
+scale = Vector2( 0.6, 0.6 )
+normal = ExtResource( 8 )
+pressed = ExtResource( 15 )
+action = "ui_right"
+
+[node name="btn_left" type="TouchScreenButton" parent="."]
+position = Vector2( 33, 120 )
+scale = Vector2( 0.6, 0.6 )
+normal = ExtResource( 14 )
+pressed = ExtResource( 12 )
+action = "ui_left"
