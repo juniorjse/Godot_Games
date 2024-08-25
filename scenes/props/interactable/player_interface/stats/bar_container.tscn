@@ -104,6 +104,7 @@ texture_progress = ExtResource( 7 )
 fill_mode = 1
 
 [node name="ManaBarBackground" type="TextureRect" parent="."]
+visible = false
 margin_left = 5.0
 margin_top = 22.0
 margin_right = 161.0
