@@ -68,7 +68,7 @@ func vertical_behavior(velocity: Vector2) -> void:
 		player_ref.landing = true
 		animation.play("fall")
 	elif velocity.y < 0:
-		animation.play("jump")
+		(animation.play("jump")) and ($"../Jump".play())
 		
 		
 func horizontal_behavior(velocity: Vector2) -> void:

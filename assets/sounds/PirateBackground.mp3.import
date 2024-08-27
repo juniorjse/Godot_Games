@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/PirateBackground.mp3-80ca4632a521f96321a6f94097f1c429.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/PirateBackground.mp3"
+dest_files=[ "res://.import/PirateBackground.mp3-80ca4632a521f96321a6f94097f1c429.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

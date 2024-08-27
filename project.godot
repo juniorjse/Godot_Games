@@ -372,6 +372,7 @@ boot_splash/name="Flux"
 
 TransitionScreen="*res://scenes/enviroment/transition_screen.tscn"
 DataManagement="*res://scripts/levels/data_management.gd"
+BackgroundMusic="*res://scenes/props/sounds/background_music.tscn"
 
 [display]
 
