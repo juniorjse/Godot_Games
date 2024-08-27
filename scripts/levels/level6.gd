@@ -25,4 +25,4 @@ func _on_cutscene_animation_finished(anim_name):
 				DataManagement.data_dictionary["current_level_path"] = target_level
 				DataManagement.data_dictionary["player_position"] = player_position
 				DataManagement.save_data()
-				TransitionScreen.fade_in("res://scenes/levels/boss_battle.tscn", true)
+				TransitionScreen.fade_in("res://scenes/levels/end_game.tscn", true)

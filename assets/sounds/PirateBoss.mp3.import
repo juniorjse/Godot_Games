@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/PirateBoss.mp3-bc5a88bdaf428e7aafe44bf07f72c700.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/PirateBoss.mp3"
+dest_files=[ "res://.import/PirateBoss.mp3-bc5a88bdaf428e7aafe44bf07f72c700.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -43,7 +43,7 @@ animations = [ {
 } ]
 
 [node name="SmallChain" type="AnimatedSprite"]
+z_index = 1
 frames = SubResource( 9 )
 animation = "idle"
-frame = 1
 playing = true

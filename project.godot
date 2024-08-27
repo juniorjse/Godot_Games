@@ -506,3 +506,8 @@ pointing/emulate_touch_from_mouse=true
 [physics]
 
 common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/subsurface_scattering/quality=2
+quality/voxel_cone_tracing/high_quality=true

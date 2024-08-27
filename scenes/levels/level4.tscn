@@ -1565,6 +1565,7 @@ position = Vector2( -330, 31 )
 [node name="spike" type="AnimatedSprite" parent="LevelDesign/Traps"]
 position = Vector2( -560, 208 )
 frames = SubResource( 63 )
+frame = 1
 playing = true
 
 [node name="Area2D" parent="LevelDesign/Traps/spike" instance=ExtResource( 37 )]
@@ -1580,381 +1581,375 @@ shape = SubResource( 76 )
 [node name="spike2" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 33, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike3" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 66, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike28" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( -673, 1 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike29" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( -640, 2 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike30" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( -606, 2 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike31" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( -571, 1 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike32" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( -536, 2 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike4" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 101, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike5" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 135, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike6" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 322, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike7" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 355, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike8" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 388, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike23" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 291, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike24" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 258, 0 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike25" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 226, 0 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike26" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 194, 0 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike27" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 164, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike60" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 786, 1 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike61" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 820, 1 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike62" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 911, 1 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike63" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 879, 1 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike64" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 849, 1 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike9" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 423, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike10" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 457, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike11" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 489, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike12" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 522, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike33" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1449, 1 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike34" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1482, 1 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike35" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1515, 1 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike36" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1418, 1 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike37" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1385, 1 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike38" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1550, 1 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike39" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1931, 98 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike40" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1963, 98 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike41" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1996, 98 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike42" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2093, 97 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike43" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2126, 97 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike44" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2159, 97 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike45" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2062, 97 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike46" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2029, 97 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike47" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2194, 97 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike48" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2228, 97 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike49" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2260, 97 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike50" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2293, 97 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike65" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2325, 97 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike66" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2357, 97 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike67" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2390, 97 )
 frames = SubResource( 67 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="spike68" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2487, 98 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike69" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2520, 97 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike70" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2553, 97 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike71" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2456, 97 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike72" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2423, 97 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike73" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2588, 97 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike74" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2622, 96 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike75" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2654, 96 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike76" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 2687, 96 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike80" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 3315, 97 )
 frames = SubResource( 67 )
+frame = 1
 playing = true
 
 [node name="spike13" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1056, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike14" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1089, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike15" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1122, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike16" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1157, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike17" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1191, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike18" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1223, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike19" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1256, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike20" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1290, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike21" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1322, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="spike22" type="AnimatedSprite" parent="LevelDesign/Traps/spike"]
 position = Vector2( 1355, 0 )
 frames = SubResource( 67 )
-frame = 2
 playing = true
 
 [node name="Area2D" type="Area2D" parent="LevelDesign/Traps"]
@@ -2600,7 +2595,7 @@ playing = true
 position = Vector2( 246.286, 519.714 )
 scale = Vector2( 0.5, 0.5 )
 z_index = -1
-frame = 5
+frame = 3
 
 [node name="Layer5" type="ParallaxLayer" parent="LevelDesign/Background"]
 z_index = -1
