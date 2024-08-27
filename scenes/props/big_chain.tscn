@@ -46,5 +46,5 @@ animations = [ {
 z_index = 1
 frames = SubResource( 9 )
 animation = "idle"
-frame = 5
+frame = 2
 playing = true

@@ -569,7 +569,7 @@ tracks/2/keys = {
 [node name="PinkStar" instance=ExtResource( 1 )]
 collision_layer = 8
 script = ExtResource( 8 )
-damage = 3
+damage = 1
 speed = 75
 enemy_exp = 9
 gravity_speed = 150

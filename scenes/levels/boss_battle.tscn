@@ -533,13 +533,15 @@ tile_data = PoolIntArray( 65515, 1, 0, 65516, 1, 1, 65517, 1, 1, 65518, 1, 1, 65
 
 [node name="SmallChain" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 193, 170 )
-frame = 7
+frame = 3
 
 [node name="SmallChain3" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( -139, 174 )
+frame = 4
 
 [node name="SmallChain4" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( 414, 293 )
+frame = 4
 
 [node name="Candle" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 9 )]
 position = Vector2( -193, 129 )
@@ -571,26 +573,27 @@ frame = 0
 
 [node name="Window" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( 194, 143 )
-frame = 64
+frame = 2
 
 [node name="SmallChain2" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( -150, 504 )
-frame = 7
+frame = 3
 
 [node name="Window10" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( -148, 490 )
-frame = 64
+frame = 2
 
 [node name="Window2" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( -139, 145 )
-frame = 64
+frame = 2
 
 [node name="SmallChain9" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 12 )]
 position = Vector2( -367, 445 )
+frame = 4
 
 [node name="Window8" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 10 )]
 position = Vector2( -367, 416 )
-frame = 64
+frame = 2
 
 [node name="helmet" parent="LevelDesign/Terrain/Decoration" instance=ExtResource( 11 )]
 position = Vector2( 166, 522 )
@@ -609,7 +612,7 @@ texture = ExtResource( 20 )
 
 [node name="Window8" parent="LevelDesign/Terrain/Decoration/BarrelIdle2" instance=ExtResource( 10 )]
 position = Vector2( 208, 256 )
-frame = 27
+frame = 39
 
 [node name="Terrain" type="TileMap" parent="LevelDesign/Terrain" groups=["tile"]]
 z_index = 1

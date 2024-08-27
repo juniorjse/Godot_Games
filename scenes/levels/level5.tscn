@@ -2239,36 +2239,42 @@ tile_data = PoolIntArray( -458807, 3, 0, -458806, 3, 1, -458805, 3, 1, -458804, 
 position = Vector2( -1680, 236 )
 scale = Vector2( 1, 1.25 )
 frames = SubResource( 95 )
+frame = 1
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="LevelDesign/Terrain/water"]
 position = Vector2( -1776, 236 )
 scale = Vector2( 1, 1.25 )
 frames = SubResource( 95 )
+frame = 1
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="LevelDesign/Terrain/water"]
 position = Vector2( -1872, 236 )
 scale = Vector2( 1, 1.25 )
 frames = SubResource( 95 )
+frame = 1
 playing = true
 
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="LevelDesign/Terrain/water"]
 position = Vector2( -1968, 236 )
 scale = Vector2( 1, 1.25 )
 frames = SubResource( 95 )
+frame = 1
 playing = true
 
 [node name="AnimatedSprite5" type="AnimatedSprite" parent="LevelDesign/Terrain/water"]
 position = Vector2( -2064, 236 )
 scale = Vector2( 1, 1.25 )
 frames = SubResource( 95 )
+frame = 1
 playing = true
 
 [node name="AnimatedSprite6" type="AnimatedSprite" parent="LevelDesign/Terrain/water"]
 position = Vector2( -2160, 236 )
 scale = Vector2( 1, 1.25 )
 frames = SubResource( 95 )
+frame = 1
 playing = true
 
 [node name="Decoration" type="Node2D" parent="LevelDesign"]
@@ -2286,107 +2292,107 @@ tile_data = PoolIntArray( 327635, 14, 0, 327637, 14, 0, 327639, 14, 0, 262184, 1
 
 [node name="front_palm" parent="LevelDesign/Decoration/palm/front" instance=ExtResource( 9 )]
 z_index = 6
-frame = 2
+frame = 3
 
 [node name="front_palm2" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( -1232, 142 )
 z_index = 6
 frames = SubResource( 78 )
+frame = 1
 playing = true
 
 [node name="front_palm3" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( -1008, 142 )
 z_index = 6
 frames = SubResource( 78 )
+frame = 1
 playing = true
 
 [node name="front_palm4" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( -751, 174 )
 z_index = 6
 frames = SubResource( 78 )
+frame = 1
 playing = true
 
 [node name="front_palm18" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( -593, 174 )
 z_index = 6
 frames = SubResource( 78 )
-frame = 3
 playing = true
 
 [node name="front_palm5" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( -336, 142 )
 z_index = 6
 frames = SubResource( 78 )
-frame = 3
 playing = true
 
 [node name="front_palm6" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( -81, 174 )
 z_index = 6
 frames = SubResource( 78 )
-frame = 3
 playing = true
 
 [node name="front_palm7" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( 144, 142 )
 z_index = 6
 frames = SubResource( 78 )
-frame = 3
 playing = true
 
 [node name="front_palm19" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( 399, 142 )
 z_index = 6
 frames = SubResource( 78 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="front_palm8" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( 496, 174 )
 z_index = 6
 frames = SubResource( 78 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="front_palm9" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( 816, 142 )
 z_index = 6
 frames = SubResource( 78 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="front_palm10" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( 1040, 175 )
 z_index = 6
 frames = SubResource( 78 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="front_palm11" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( 1424, 142 )
 z_index = 6
 frames = SubResource( 78 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="front_palm20" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( 1264, 142 )
 z_index = 6
 frames = SubResource( 78 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="front_palm12" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( 1840, 110 )
 z_index = 6
 frames = SubResource( 78 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="front_palm14" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/front"]
 position = Vector2( 2671, 110 )
 z_index = 6
 frames = SubResource( 78 )
+frame = 1
 playing = true
 
 [node name="palm_tree" parent="LevelDesign/Decoration/palm/front" instance=ExtResource( 34 )]
@@ -2404,195 +2410,196 @@ z_index = 1
 position = Vector2( -1155, 160 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 3
 playing = true
 
 [node name="tipo6" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( -1035, 162 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 3
 playing = true
 
 [node name="tipo5" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( -1096, 128 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="tipo7" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( -936, 121 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="tipo8" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( -716, 160 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="tipo9" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( -648, 120 )
 z_index = -1
 frames = SubResource( 83 )
+frame = 1
 playing = true
 
 [node name="tipo10" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( -412, 160 )
 z_index = -1
 frames = SubResource( 83 )
+frame = 1
 playing = true
 
 [node name="tipo11" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( -264, 121 )
 z_index = -1
 frames = SubResource( 83 )
+frame = 1
 playing = true
 
 [node name="tipo12" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( -179, 161 )
 z_index = -1
 frames = SubResource( 83 )
+frame = 1
 playing = true
 
 [node name="tipo13" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 71, 162 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 3
 playing = true
 
 [node name="tipo14" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 216, 120 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="tipo15" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 288, 161 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="tipo16" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 344, 120 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="tipo17" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 686, 162 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="tipo18" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 760, 120 )
 z_index = -1
 frames = SubResource( 83 )
+frame = 1
 playing = true
 
 [node name="tipo19" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 878, 162 )
 z_index = -1
 frames = SubResource( 83 )
+frame = 1
 playing = true
 
 [node name="tipo20" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 952, 120 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 3
 playing = true
 
 [node name="tipo21" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 1339, 132 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 3
 playing = true
 
 [node name="tipo22" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 1752, 89 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 3
 playing = true
 
 [node name="tipo23" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 1898, 130 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="tipo24" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 1976, 88 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="tipo25" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 2435, 129 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="tipo26" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 2520, 88 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="tipo27" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 2609, 130 )
 z_index = -1
 frames = SubResource( 83 )
+frame = 1
 playing = true
 
 [node name="tipo28" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( 2744, 88 )
 z_index = -1
 frames = SubResource( 83 )
+frame = 1
 playing = true
 
 [node name="tipo2" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( -1512, 120 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="tipo3" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( -1406, 129 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="tipo4" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( -1321, 104 )
 z_index = -1
 frames = SubResource( 83 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="direita" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( -1229, 147 )
 z_index = -1
 frames = SubResource( 89 )
-frame = 3
 playing = true
 flip_h = true
 
@@ -2600,7 +2607,6 @@ flip_h = true
 position = Vector2( -595, 208 )
 z_index = -1
 frames = SubResource( 89 )
-frame = 3
 playing = true
 flip_h = true
 
@@ -2608,7 +2614,7 @@ flip_h = true
 position = Vector2( -74, 211 )
 z_index = -1
 frames = SubResource( 89 )
-frame = 2
+frame = 3
 playing = true
 flip_h = true
 
@@ -2616,7 +2622,7 @@ flip_h = true
 position = Vector2( 500, 208 )
 z_index = -1
 frames = SubResource( 89 )
-frame = 1
+frame = 2
 playing = true
 flip_h = true
 
@@ -2624,7 +2630,7 @@ flip_h = true
 position = Vector2( 1042, 215 )
 z_index = -1
 frames = SubResource( 89 )
-frame = 1
+frame = 2
 playing = true
 flip_h = true
 
@@ -2632,6 +2638,7 @@ flip_h = true
 position = Vector2( 1421, 186 )
 z_index = -1
 frames = SubResource( 89 )
+frame = 1
 playing = true
 flip_h = true
 
@@ -2639,21 +2646,20 @@ flip_h = true
 position = Vector2( 1259, 187 )
 z_index = -1
 frames = SubResource( 89 )
-frame = 3
 playing = true
 
 [node name="direita3" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( -756, 206 )
 z_index = -1
 frames = SubResource( 89 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="direita4" type="AnimatedSprite" parent="LevelDesign/Decoration/palm/back"]
 position = Vector2( -463, 190 )
 z_index = -1
 frames = SubResource( 89 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="Env" parent="LevelDesign" instance=ExtResource( 21 )]
@@ -2710,14 +2716,14 @@ motion_mirroring = Vector2( 1080, 0 )
 position = Vector2( 346, 522 )
 scale = Vector2( 0.4, 0.4 )
 frames = SubResource( 20 )
-frame = 9
+frame = 2
 playing = true
 
 [node name="ship" parent="LevelDesign/Background/Layer6" instance=ExtResource( 39 )]
 position = Vector2( 246.286, 519.714 )
 scale = Vector2( 0.5, 0.5 )
 z_index = -1
-frame = 0
+frame = 3
 
 [node name="Layer5" type="ParallaxLayer" parent="LevelDesign/Background"]
 z_index = -1
@@ -2729,7 +2735,7 @@ position = Vector2( 148.049, 551.159 )
 rotation = -0.00218014
 scale = Vector2( 1.17636, 1.12527 )
 frames = SubResource( 5 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="water2" type="AnimatedSprite" parent="LevelDesign/Background/Layer5"]
@@ -2738,7 +2744,7 @@ position = Vector2( 548.149, 550.796 )
 rotation = -0.00218014
 scale = Vector2( 1.17706, 1.11795 )
 frames = SubResource( 5 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="water3" type="AnimatedSprite" parent="LevelDesign/Background/Layer5"]
@@ -2747,7 +2753,7 @@ position = Vector2( 948.107, 550 )
 rotation = -0.00218014
 scale = Vector2( 1.17586, 1.09782 )
 frames = SubResource( 5 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="water4" type="AnimatedSprite" parent="LevelDesign/Background/Layer5"]
@@ -2756,7 +2762,7 @@ position = Vector2( 1347.92, 550.005 )
 rotation = -0.00218014
 scale = Vector2( 1.17591, 1.11961 )
 frames = SubResource( 5 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="water5" type="AnimatedSprite" parent="LevelDesign/Background/Layer5"]
@@ -2765,7 +2771,7 @@ position = Vector2( 1747.65, 550.026 )
 rotation = -0.00218014
 scale = Vector2( 1.17645, 1.08584 )
 frames = SubResource( 5 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="Mask" parent="LevelDesign/Background" instance=ExtResource( 17 )]
@@ -2828,6 +2834,7 @@ anims/bottom_ship = SubResource( 38 )
 
 [node name="DialogIcon" parent="Interactable/Ship" instance=ExtResource( 6 )]
 frames = SubResource( 39 )
+frame = 2
 
 [node name="AuxAnimation" type="AnimationPlayer" parent="Interactable/Ship"]
 autoplay = "idle"
@@ -2870,6 +2877,7 @@ anims/RESET = SubResource( 98 )
 anims/bottom_ship = SubResource( 99 )
 
 [node name="DialogIcon" parent="Interactable/Ship2" instance=ExtResource( 6 )]
+frame = 2
 
 [node name="AuxAnimation" type="AnimationPlayer" parent="Interactable/Ship2"]
 autoplay = "idle"

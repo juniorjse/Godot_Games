@@ -420,82 +420,82 @@ color = Color( 0.917647, 0.815686, 0.764706, 1 )
 
 [node name="Window" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( -106, 322 )
-frame = 39
+frame = 42
 
 [node name="Window2" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 183, 452 )
-frame = 29
+frame = 32
 
 [node name="Window3" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 91, 452 )
-frame = 17
+frame = 20
 
 [node name="Window4" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( -10, 452 )
-frame = 5
+frame = 8
 
 [node name="Window5" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 669, 316 )
-frame = 71
+frame = 0
 
 [node name="Window6" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 503, 316 )
-frame = 31
+frame = 34
 
 [node name="Window7" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 581, 316 )
-frame = 20
+frame = 23
 
 [node name="Window8" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 208, 256 )
-frame = 7
+frame = 10
 
 [node name="Window9" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 308, 255 )
-frame = 68
+frame = 71
 
 [node name="Window10" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 105, 257 )
-frame = 58
+frame = 61
 
 [node name="Chains" type="Node" parent="LevelDesign/Decoration"]
 
 [node name="SmallChain" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 6 )]
 position = Vector2( -10, 480 )
-frame = 7
+frame = 4
 
 [node name="SmallChain2" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 6 )]
 position = Vector2( 182, 481 )
-frame = 5
+frame = 2
 
 [node name="SmallChain3" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 6 )]
 position = Vector2( 581, 345 )
 z_index = 0
-frame = 5
+frame = 2
 
 [node name="SmallChain4" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 6 )]
 position = Vector2( 307, 283 )
-frame = 7
+frame = 4
 
 [node name="BigChain" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( -241, 318 )
-frame = 0
+frame = 2
 
 [node name="BigChain2" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( 435, 283 )
-frame = 6
+frame = 0
 
 [node name="BigChain3" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( -56, 445 )
-frame = 4
+frame = 6
 
 [node name="BigChain4" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( 53, 222 )
-frame = 4
+frame = 6
 
 [node name="BigChain5" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( 260, 219 )
-frame = 4
+frame = 6
 
 [node name="Other Objects" type="Node" parent="LevelDesign/Decoration"]
 
