@@ -1,8 +1,9 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://scenes/enemies/enemy_template.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/enemies/normal_pig/pig.gd" type="Script" id=2]
 [ext_resource path="res://scripts/enemies/normal_pig/texture.gd" type="Script" id=3]
+[ext_resource path="res://assets/sounds/sfx/attack_enemies.mp3" type="AudioStream" id=4]
 
 [sub_resource type="StreamTexture" id=15]
 load_path = "res://.import/pig_all.png-d134e709353646b000bd63977ad186a1.stex"
@@ -354,3 +355,7 @@ enabled = true
 
 [node name="Position2D" type="Position2D" parent="." index="7"]
 position = Vector2( -60, 8 )
+
+[node name="attack" type="AudioStreamPlayer2D" parent="." index="9"]
+stream = ExtResource( 4 )
+volume_db = -19.349

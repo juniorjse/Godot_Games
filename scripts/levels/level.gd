@@ -6,10 +6,10 @@ onready var level_height: Node2D = get_node("LevelLimit")
 onready var interface: CanvasLayer = get_node("LevelDesign/Interface")
 
 var can_process_height: bool = true
-var current_level_path: String = "res://scenes/levels/level9.tscn"
+var current_level_path: String = "res://scenes/levels/level.tscn"
 
 func _ready() -> void:
-	
+	$LevelDesign/sound_back.play()
 	DataManagement.score -= score
 	DataManagement.data_dictionary["score"] = score
 	DataManagement.save_data()

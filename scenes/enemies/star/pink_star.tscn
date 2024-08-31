@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://scenes/enemies/enemy_template.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/enemies/pink_star/idle.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/enemies/pink_star/attack.png" type="Texture" id=7]
 [ext_resource path="res://scripts/enemies/pink_star/pink_star.gd" type="Script" id=8]
 [ext_resource path="res://scripts/enemies/pink_star/pink_star_texture.gd" type="Script" id=9]
+[ext_resource path="res://assets/sounds/sfx/pig.mp3" type="AudioStream" id=10]
 
 [sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 9, 12 )
@@ -625,3 +626,7 @@ anims/run = SubResource( 3 )
 position = Vector2( -16, 0 )
 enabled = true
 cast_to = Vector2( 0, 20 )
+
+[node name="attack" type="AudioStreamPlayer2D" parent="." index="8"]
+stream = ExtResource( 10 )
+volume_db = -19.349

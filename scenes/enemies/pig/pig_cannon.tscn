@@ -1,10 +1,11 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scenes/enemies/enemy_template.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/enemies/pig_cannon/pig_cannon.gd" type="Script" id=2]
 [ext_resource path="res://assets/enemies/pig_all_frames/pig_all.png" type="Texture" id=3]
 [ext_resource path="res://assets/enemies/pig_all_frames/cannon_pig/cannon.png" type="Texture" id=4]
 [ext_resource path="res://scenes/enemies/projeteis_enemys/cannon_ball.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/sounds/sfx/explosion_cannon.mp3" type="AudioStream" id=6]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends EnemyTexture
@@ -20,53 +21,37 @@ func animate(velocity: Vector2) -> void:
 		
 func action_behavior() -> void:
 	if enemy_ref.can_die:
-
 		animation.play(\"dead\")
 		enemy_ref.can_hit = false
 		enemy_ref.can_attack = false
-		
 	elif enemy_ref.can_hit:
 		animation.play(\"hit\")
 		enemy_ref.can_attack = false
-		
-		
-		
 	elif enemy_ref.can_attack:
-		
-	
 		animation.play(\"attack\")
-		
 		enemy_ref.set_physics_process(false)
-		
+		yield(get_tree().create_timer(1.0), \"timeout\")  # Atraso de 1 segundo
+		$\"../attack\".play()
+
 		
 func move_behavior(velocity: Vector2) -> void:
 	if velocity.x != 0:
-		
 		animation.play(\"run\")
-		
 	else:
-		
 		animation.play(\"idle\")
 		
 		
 func on_animation_finished(anim_name: String) -> void:
 	match anim_name:
-#		\"attack_left\":
-#			enemy_ref.can_attack = false
-#			enemy_ref.set_physics_process(true)
-			
 		\"attack\":
 			enemy_ref.can_attack = false
 			enemy_ref.set_physics_process(true)
-			
 		\"hit\":
 			enemy_ref.can_hit = false
 			enemy_ref.set_physics_process(true)
-			
 		\"dead\":
 			DataManagement.score += score
 			enemy_ref.kill_enemy()
-			
 		\"kill\":
 			enemy_ref.queue_free()
 "
@@ -382,3 +367,7 @@ enabled = true
 
 [node name="Position2D" type="Position2D" parent="." index="7"]
 position = Vector2( -60, 8 )
+
+[node name="attack" type="AudioStreamPlayer2D" parent="." index="9"]
+stream = ExtResource( 6 )
+volume_db = -19.349

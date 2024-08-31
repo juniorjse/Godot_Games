@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/explosion_cannon.mp3-25d6a9060b632844e74c59cb5e6025fb.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/sfx/explosion_cannon.mp3"
+dest_files=[ "res://.import/explosion_cannon.mp3-25d6a9060b632844e74c59cb5e6025fb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

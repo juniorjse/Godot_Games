@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://scenes/enemies/enemy_template.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/enemies/crabbyimg/idle.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/enemies/crabbyimg/attack.png" type="Texture" id=6]
 [ext_resource path="res://scripts/enemies/crabby/crabby_texture.gd" type="Script" id=7]
 [ext_resource path="res://scripts/enemies/crabby/crabby.gd" type="Script" id=8]
+[ext_resource path="res://assets/sounds/sfx/attack_enemies.mp3" type="AudioStream" id=9]
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 10, 8.5 )
@@ -544,8 +545,7 @@ position = Vector2( 0, -2.5 )
 shape = SubResource( 7 )
 
 [node name="CollisionArea" parent="." index="3"]
-health = 8
-invulnerability_timer = 1.2
+health = 4
 
 [node name="Collision" parent="CollisionArea" index="0"]
 visible = false
@@ -572,3 +572,8 @@ visible = false
 position = Vector2( -16, 0 )
 enabled = true
 cast_to = Vector2( 0, 20 )
+
+[node name="attack" type="AudioStreamPlayer2D" parent="." index="8"]
+stream = ExtResource( 9 )
+volume_db = -19.953
+attenuation = 1.36604

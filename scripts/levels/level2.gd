@@ -7,6 +7,8 @@ func _ready():
 	player.set_physics_process(false)
 	$Interactable/Ship/Camera.current = true
 	$LevelDesign/cutscene.play("cut")
+	$LevelDesign/sound_back
+	
 
 func _on_cutscene_animation_finished(anim_name):
 	if anim_name == "cut":

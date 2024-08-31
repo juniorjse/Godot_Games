@@ -42,6 +42,8 @@ func _on_cutscene_animation_finished(anim_name):
 		get_tree().call_group("hud", "normal_state")
 		boss.set_physics_process(true)
 		player.set_physics_process(true)
+		#$LevelDesign/sound_back.play()
+		
 	if anim_name == "final":
 		boss.set_physics_process(true)
 		DataManagement.data_dictionary["current_level_path"] = target_level

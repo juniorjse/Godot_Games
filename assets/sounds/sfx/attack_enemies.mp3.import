@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/attack_enemies.mp3-246a6860de148a51f922b42357050391.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/sfx/attack_enemies.mp3"
+dest_files=[ "res://.import/attack_enemies.mp3-246a6860de148a51f922b42357050391.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

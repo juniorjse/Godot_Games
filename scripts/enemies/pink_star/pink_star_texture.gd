@@ -53,3 +53,4 @@ func on_animation_finished(anim_name: String) -> void:
 			
 		"attack_anticipation":
 			animation.play("attack" + enemy_ref.attack_animation_suffix)
+			$"../attack".play()

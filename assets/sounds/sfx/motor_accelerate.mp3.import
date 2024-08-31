@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/motor_accelerate.mp3-0e60605eeff4a7907ac9807e4397e586.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/sfx/motor_accelerate.mp3"
+dest_files=[ "res://.import/motor_accelerate.mp3-0e60605eeff4a7907ac9807e4397e586.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

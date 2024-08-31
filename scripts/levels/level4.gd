@@ -4,6 +4,7 @@ export(Vector2) var player_position
 
 
 func _ready():
+	
 	get_tree().call_group("hud", "hide_containers")
 	player.set_physics_process(false)
 	$Interactable/Ship/Camera.current = true

@@ -7,6 +7,7 @@ var normal_attack: bool = false
 
 var shield_off: bool = true
 var crouching_off: bool = true
+var is_jumping = false
 
 var sufix: String = "_right"
 
@@ -29,8 +30,10 @@ func animate(velocity: Vector2) -> void:
 	
 	if player_ref.on_hit or player_ref.dead or player_ref.can_hide:
 		hit_behavior()
+		$"../hit".play()
 	elif (player_ref.attacking or player_ref.defending or player_ref.crouching or player_ref.next_to_wall()) != false:
 		action_behavior()
+		$"../attack".play()
 	elif velocity.y != 0:
 		vertical_behavior(velocity)
 	else:
@@ -63,13 +66,17 @@ func action_behavior() -> void:
 		animation.play("crouch")
 		
 		
+
 func vertical_behavior(velocity: Vector2) -> void:
 	if velocity.y > 0:
 		player_ref.landing = true
 		animation.play("fall")
-	elif velocity.y < 0:
-		(animation.play("jump")) and ($"../Jump".play())
-		
+		is_jumping = false  # Reseta o estado ao aterrissar
+	elif velocity.y < 0 and not is_jumping:
+		is_jumping = true
+		$"../jump".play()
+		animation.play("jump")
+
 		
 func horizontal_behavior(velocity: Vector2) -> void:
 	if velocity.x != 0:

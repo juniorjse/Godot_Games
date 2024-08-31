@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/PirateBoss.mp3-6513d7225b1b13646cefc99031b1ef06.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/sfx/PirateBoss.mp3"
+dest_files=[ "res://.import/PirateBoss.mp3-6513d7225b1b13646cefc99031b1ef06.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://scenes/player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/tile/terrain/ship_floor_autotile.png" type="Texture" id=2]
@@ -10,7 +10,7 @@
 [ext_resource path="res://assets/props/Barrels and Bottles/Other objects/Blue Bottle.png" type="Texture" id=8]
 [ext_resource path="res://assets/props/Barrels and Bottles/Other objects/Green Bottle.png" type="Texture" id=9]
 [ext_resource path="res://scenes/props/interactable/general/hud.tscn" type="PackedScene" id=10]
-[ext_resource path="res://scripts/levels/level.gd" type="Script" id=11]
+[ext_resource path="res://scripts/levels/end_game.gd" type="Script" id=11]
 [ext_resource path="res://assets/props/Door/Closing/1.png" type="Texture" id=12]
 [ext_resource path="res://assets/props/Barrels and Bottles/Other objects/Table.png" type="Texture" id=13]
 [ext_resource path="res://assets/props/Barrels and Bottles/Other objects/Chair.png" type="Texture" id=14]
@@ -24,6 +24,7 @@
 [ext_resource path="res://scenes/enemies/pirate/captain.tscn" type="PackedScene" id=22]
 [ext_resource path="res://scenes/enemies/pirate/pirate.tscn" type="PackedScene" id=23]
 [ext_resource path="res://scenes/enviroment/collision_platforms.tscn" type="PackedScene" id=24]
+[ext_resource path="res://assets/sounds/sfx/PirateBoss.mp3" type="AudioStream" id=25]
 [ext_resource path="res://scenes/enviroment/barrel_impulse.tscn" type="PackedScene" id=26]
 [ext_resource path="res://scenes/props/interactable/coletaveis/heart.tscn" type="PackedScene" id=29]
 [ext_resource path="res://assets/props/interactable/stats/background/map_back_3_map.png" type="Texture" id=30]
@@ -405,7 +406,8 @@ position = Vector2( -51, 0 )
 [node name="Interface" parent="LevelDesign" instance=ExtResource( 10 )]
 
 [node name="sound_back" type="AudioStreamPlayer" parent="LevelDesign"]
-volume_db = -25.0
+stream = ExtResource( 25 )
+volume_db = -36.685
 pitch_scale = 1.59
 
 [node name="Mask" parent="LevelDesign" instance=ExtResource( 17 )]
@@ -420,82 +422,80 @@ color = Color( 0.917647, 0.815686, 0.764706, 1 )
 
 [node name="Window" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( -106, 322 )
-frame = 42
+frame = 2
 
 [node name="Window2" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 183, 452 )
-frame = 32
+frame = 66
 
 [node name="Window3" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 91, 452 )
-frame = 20
+frame = 54
 
 [node name="Window4" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( -10, 452 )
-frame = 8
+frame = 42
 
 [node name="Window5" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 669, 316 )
-frame = 0
+frame = 34
 
 [node name="Window6" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 503, 316 )
-frame = 34
+frame = 68
 
 [node name="Window7" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 581, 316 )
-frame = 23
 
 [node name="Window8" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 208, 256 )
-frame = 10
+frame = 44
 
 [node name="Window9" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 308, 255 )
-frame = 71
+frame = 31
 
 [node name="Window10" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 105, 257 )
-frame = 61
+frame = 21
 
 [node name="Chains" type="Node" parent="LevelDesign/Decoration"]
 
 [node name="SmallChain" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 6 )]
 position = Vector2( -10, 480 )
-frame = 4
+frame = 6
 
 [node name="SmallChain2" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 6 )]
 position = Vector2( 182, 481 )
-frame = 2
+frame = 4
 
 [node name="SmallChain3" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 6 )]
 position = Vector2( 581, 345 )
-z_index = 0
-frame = 2
+frame = 4
 
 [node name="SmallChain4" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 6 )]
 position = Vector2( 307, 283 )
-frame = 4
+frame = 6
 
 [node name="BigChain" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( -241, 318 )
-frame = 2
+frame = 3
 
 [node name="BigChain2" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( 435, 283 )
-frame = 0
+frame = 1
 
 [node name="BigChain3" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( -56, 445 )
-frame = 6
+frame = 7
 
 [node name="BigChain4" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( 53, 222 )
-frame = 6
+frame = 7
 
 [node name="BigChain5" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( 260, 219 )
-frame = 6
+frame = 7
 
 [node name="Other Objects" type="Node" parent="LevelDesign/Decoration"]
 
