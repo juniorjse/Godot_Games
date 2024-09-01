@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://scenes/player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/tile/terrain/ship_floor_autotile.png" type="Texture" id=2]
@@ -26,10 +26,16 @@
 [ext_resource path="res://scenes/enviroment/collision_platforms.tscn" type="PackedScene" id=24]
 [ext_resource path="res://assets/sounds/sfx/PirateBoss.mp3" type="AudioStream" id=25]
 [ext_resource path="res://scenes/enviroment/barrel_impulse.tscn" type="PackedScene" id=26]
+[ext_resource path="res://scenes/props/door/Door2.tscn" type="PackedScene" id=27]
+[ext_resource path="res://scenes/props/door/Transition.tscn" type="PackedScene" id=28]
 [ext_resource path="res://scenes/props/interactable/coletaveis/heart.tscn" type="PackedScene" id=29]
 [ext_resource path="res://assets/props/interactable/stats/background/map_back_3_map.png" type="Texture" id=30]
 [ext_resource path="res://assets/props/interactable/stats/background/map_back_2_map.png" type="Texture" id=31]
 [ext_resource path="res://assets/props/interactable/stats/background/map_back_1_map.png" type="Texture" id=32]
+[ext_resource path="res://scenes/props/interactable/game_screen/end_screen.tscn" type="PackedScene" id=33]
+
+[sub_resource type="RectangleShape2D" id=39]
+extents = Vector2( 14.5, 24 )
 
 [sub_resource type="Animation" id=31]
 length = 0.001
@@ -422,85 +428,83 @@ color = Color( 0.917647, 0.815686, 0.764706, 1 )
 
 [node name="Window" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( -106, 322 )
-frame = 2
+frame = 15
 
 [node name="Window2" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 183, 452 )
-frame = 66
+frame = 5
 
 [node name="Window3" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 91, 452 )
-frame = 54
+frame = 67
 
 [node name="Window4" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( -10, 452 )
-frame = 42
+frame = 55
 
 [node name="Window5" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
-position = Vector2( 669, 316 )
-frame = 34
+position = Vector2( 583, 316 )
+frame = 47
 
 [node name="Window6" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
-position = Vector2( 503, 316 )
-frame = 68
+position = Vector2( 417, 316 )
+frame = 7
 
 [node name="Window7" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
-position = Vector2( 581, 316 )
+position = Vector2( 495, 316 )
+frame = 70
 
 [node name="Window8" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 208, 256 )
-frame = 44
 
 [node name="Window9" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 308, 255 )
-frame = 31
+frame = 44
 
 [node name="Window10" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 105, 257 )
-frame = 21
+frame = 34
 
 [node name="Chains" type="Node" parent="LevelDesign/Decoration"]
 
 [node name="SmallChain" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 6 )]
 position = Vector2( -10, 480 )
-frame = 6
+frame = 5
 
 [node name="SmallChain2" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 6 )]
 position = Vector2( 182, 481 )
-frame = 4
 
 [node name="SmallChain3" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 6 )]
-position = Vector2( 581, 345 )
-frame = 4
+position = Vector2( 495, 345 )
 
 [node name="SmallChain4" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 6 )]
 position = Vector2( 307, 283 )
-frame = 6
+frame = 5
 
 [node name="BigChain" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( -241, 318 )
-frame = 3
+frame = 7
 
 [node name="BigChain2" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( 435, 283 )
-frame = 1
+frame = 5
 
 [node name="BigChain3" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( -56, 445 )
-frame = 7
+frame = 3
 
 [node name="BigChain4" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( 53, 222 )
-frame = 7
+frame = 3
 
 [node name="BigChain5" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( 260, 219 )
-frame = 7
+frame = 3
 
 [node name="Other Objects" type="Node" parent="LevelDesign/Decoration"]
 
 [node name="BlueBottle" type="Sprite" parent="LevelDesign/Decoration/Other Objects"]
-position = Vector2( 599, 351 )
+position = Vector2( 513, 351 )
 rotation = -1.55878
 scale = Vector2( 0.4375, 0.595238 )
 z_index = 1
@@ -513,26 +517,26 @@ scale = Vector2( 0.76, 0.84 )
 texture = ExtResource( 12 )
 
 [node name="Barrel" type="Sprite" parent="LevelDesign/Decoration/Other Objects"]
-position = Vector2( 691, 375 )
+position = Vector2( 605, 375 )
 scale = Vector2( 0.452381, 0.477273 )
 texture = ExtResource( 15 )
 
 [node name="Chair" type="Sprite" parent="LevelDesign/Decoration/Other Objects"]
-position = Vector2( 542, 363 )
+position = Vector2( 456, 363 )
 scale = Vector2( 0.76, 0.825808 )
 texture = ExtResource( 14 )
 
 [node name="Table" type="Sprite" parent="LevelDesign/Decoration/Other Objects"]
-position = Vector2( 594, 369 )
+position = Vector2( 508, 369 )
 texture = ExtResource( 13 )
 
 [node name="RedBottle" type="Sprite" parent="LevelDesign/Decoration/Other Objects"]
-position = Vector2( 566, 348 )
+position = Vector2( 480, 348 )
 scale = Vector2( 0.44, 0.4 )
 texture = ExtResource( 16 )
 
 [node name="GreenBottle" type="Sprite" parent="LevelDesign/Decoration/Other Objects"]
-position = Vector2( 629, 382 )
+position = Vector2( 543, 382 )
 rotation = 1.58153
 scale = Vector2( 0.428571, 0.375 )
 texture = ExtResource( 9 )
@@ -543,7 +547,7 @@ scale = Vector2( 0.754736, 0.877143 )
 texture = ExtResource( 18 )
 
 [node name="Chair2" type="Sprite" parent="LevelDesign/Decoration/Other Objects"]
-position = Vector2( 663, 374 )
+position = Vector2( 577, 374 )
 rotation = -1.57642
 scale = Vector2( 0.76, 0.825808 )
 texture = ExtResource( 14 )
@@ -604,6 +608,19 @@ rotation = -1.57642
 scale = Vector2( 0.76, 0.825808 )
 texture = ExtResource( 14 )
 flip_v = true
+
+[node name="Door2" parent="LevelDesign/Decoration/Other Objects" instance=ExtResource( 27 )]
+position = Vector2( -108, 349 )
+scale = Vector2( 0.63315, 0.759998 )
+
+[node name="Transition" parent="LevelDesign/Decoration/Other Objects" instance=ExtResource( 28 )]
+position = Vector2( -107, 356 )
+collision_layer = 1
+target_level = ExtResource( 33 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelDesign/Decoration/Other Objects/Transition"]
+position = Vector2( 6.5, 2 )
+shape = SubResource( 39 )
 
 [node name="map_back" type="CanvasLayer" parent="LevelDesign"]
 
@@ -667,7 +684,7 @@ speed = 75
 attack_cooldown = 0.5
 
 [node name="Captain" parent="Enemies" instance=ExtResource( 22 )]
-position = Vector2( 587, 351 )
+position = Vector2( 501, 351 )
 z_index = 1
 damage = 3
 speed = 75

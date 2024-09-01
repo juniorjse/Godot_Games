@@ -5,7 +5,7 @@ onready var level_height: Node2D = get_node("LevelLimit")
 onready var interface: CanvasLayer = get_node("LevelDesign/Interface")
 
 var can_process_height: bool = true
-var current_level_path: String = "res://scenes/levels/level9.tscn"
+var current_level_path: String = "res://scenes/levels/end_game.tscn"
 
 func _ready() -> void:
 	$LevelDesign/sound_back.play()

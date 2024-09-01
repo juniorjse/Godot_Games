@@ -29,4 +29,5 @@ animations = [ {
 [node name="palmtree" type="AnimatedSprite"]
 position = Vector2( 80, 79 )
 frames = SubResource( 47 )
+frame = 3
 playing = true
