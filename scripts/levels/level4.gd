@@ -4,7 +4,7 @@ export(Vector2) var player_position
 
 
 func _ready():
-	
+	$LevelDesign/sound_back.play()
 	get_tree().call_group("hud", "hide_containers")
 	player.set_physics_process(false)
 	$Interactable/Ship/Camera.current = true

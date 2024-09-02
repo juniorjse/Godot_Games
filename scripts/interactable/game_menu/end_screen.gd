@@ -3,7 +3,7 @@ extends Control
 
 func _ready() -> void:
 	var _start: bool = TransitionScreen.connect("start", self, "start_game")
-	
+	#$transition_fade/AnimationPlayer2.play("fade_in")
 	
 func start_game() -> void:
 	$GameMenu/Animation.play("show_container")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=2]
+[gd_scene load_steps=77 format=2]
 
 [ext_resource path="res://scripts/enviroment/background.gd" type="Script" id=1]
 [ext_resource path="res://assets/particles/water/water_noite.png" type="Texture" id=2]
@@ -33,6 +33,7 @@
 [ext_resource path="res://assets/props/interactable/stats/background/map_back_2_map.png" type="Texture" id=31]
 [ext_resource path="res://assets/props/interactable/stats/background/map_back_1_map.png" type="Texture" id=32]
 [ext_resource path="res://scenes/props/interactable/ship.tscn" type="PackedScene" id=33]
+[ext_resource path="res://assets/sounds/soundtrack/pirate_clash.mp3" type="AudioStream" id=34]
 
 [sub_resource type="ConvexPolygonShape2D" id=104]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -1210,7 +1211,7 @@ tile_data = PoolIntArray( 131175, 12, 0, 131177, 12, 0, 131179, 12, 0, 131181, 1
 
 [node name="MapBack1Map" type="Sprite" parent="LevelDesign/map_back"]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 405, 13 )
+position = Vector2( 403, 19 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 32 )
 offset = Vector2( -250, 0 )
@@ -1239,10 +1240,6 @@ anims/mostrarmapa3 = SubResource( 34 )
 [node name="Mask" parent="LevelDesign" instance=ExtResource( 17 )]
 position = Vector2( 51, 0 )
 color = Color( 0.917647, 0.815686, 0.764706, 1 )
-
-[node name="sound_back" type="AudioStreamPlayer" parent="LevelDesign"]
-volume_db = -25.0
-pitch_scale = 1.59
 
 [node name="Water" type="Node2D" parent="LevelDesign"]
 position = Vector2( 51, 0 )
@@ -2112,6 +2109,11 @@ margin_top = -46.0
 margin_right = 514.0
 margin_bottom = 270.0
 color = Color( 0, 0, 0, 0 )
+
+[node name="sound_back" type="AudioStreamPlayer" parent="LevelDesign"]
+stream = ExtResource( 34 )
+volume_db = -42.069
+pitch_scale = 1.05
 
 [node name="Player" parent="." instance=ExtResource( 8 )]
 position = Vector2( -4821, 178 )

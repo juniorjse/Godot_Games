@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://scenes/player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/tile/terrain/ship_floor_autotile.png" type="Texture" id=2]
@@ -33,6 +33,7 @@
 [ext_resource path="res://assets/props/interactable/stats/background/map_back_2_map.png" type="Texture" id=31]
 [ext_resource path="res://assets/props/interactable/stats/background/map_back_1_map.png" type="Texture" id=32]
 [ext_resource path="res://scenes/props/interactable/game_screen/end_screen.tscn" type="PackedScene" id=33]
+[ext_resource path="res://scenes/props/interactable/coletaveis/map.tscn" type="PackedScene" id=34]
 
 [sub_resource type="RectangleShape2D" id=39]
 extents = Vector2( 14.5, 24 )
@@ -428,42 +429,43 @@ color = Color( 0.917647, 0.815686, 0.764706, 1 )
 
 [node name="Window" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( -106, 322 )
-frame = 15
+frame = 69
 
 [node name="Window2" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 183, 452 )
-frame = 5
+frame = 59
 
 [node name="Window3" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 91, 452 )
-frame = 67
+frame = 47
 
 [node name="Window4" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( -10, 452 )
-frame = 55
+frame = 35
 
 [node name="Window5" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 583, 316 )
-frame = 47
+frame = 27
 
 [node name="Window6" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 417, 316 )
-frame = 7
+frame = 61
 
 [node name="Window7" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 495, 316 )
-frame = 70
+frame = 50
 
 [node name="Window8" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 208, 256 )
+frame = 37
 
 [node name="Window9" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 308, 255 )
-frame = 44
+frame = 24
 
 [node name="Window10" parent="LevelDesign/Decoration/Windows" instance=ExtResource( 5 )]
 position = Vector2( 105, 257 )
-frame = 34
+frame = 14
 
 [node name="Chains" type="Node" parent="LevelDesign/Decoration"]
 
@@ -483,23 +485,20 @@ frame = 5
 
 [node name="BigChain" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( -241, 318 )
-frame = 7
+frame = 6
 
 [node name="BigChain2" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( 435, 283 )
-frame = 5
+frame = 4
 
 [node name="BigChain3" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( -56, 445 )
-frame = 3
 
 [node name="BigChain4" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( 53, 222 )
-frame = 3
 
 [node name="BigChain5" parent="LevelDesign/Decoration/Chains" instance=ExtResource( 7 )]
 position = Vector2( 260, 219 )
-frame = 3
 
 [node name="Other Objects" type="Node" parent="LevelDesign/Decoration"]
 
@@ -610,11 +609,11 @@ texture = ExtResource( 14 )
 flip_v = true
 
 [node name="Door2" parent="LevelDesign/Decoration/Other Objects" instance=ExtResource( 27 )]
-position = Vector2( -108, 349 )
+position = Vector2( 673, 349 )
 scale = Vector2( 0.63315, 0.759998 )
 
 [node name="Transition" parent="LevelDesign/Decoration/Other Objects" instance=ExtResource( 28 )]
-position = Vector2( -107, 356 )
+position = Vector2( 674, 356 )
 collision_layer = 1
 target_level = ExtResource( 33 )
 
@@ -703,6 +702,46 @@ z_index = -1
 
 [node name="heart2" parent="Collectable" instance=ExtResource( 29 )]
 position = Vector2( -180, 316 )
+
+[node name="map" parent="Collectable" instance=ExtResource( 34 )]
+position = Vector2( -13, 473 )
+scale = Vector2( 0.52, 0.56 )
+
+[node name="map2" parent="Collectable" instance=ExtResource( 34 )]
+position = Vector2( 275, 312 )
+scale = Vector2( 0.48, 0.48 )
+
+[node name="map3" parent="Collectable" instance=ExtResource( 34 )]
+position = Vector2( 522, 374 )
+scale = Vector2( 0.52, 0.56 )
+
+[node name="heart3" parent="Collectable" instance=ExtResource( 29 )]
+position = Vector2( 119, 383 )
+z_index = -1
+
+[node name="heart4" parent="Collectable" instance=ExtResource( 29 )]
+position = Vector2( 119, 383 )
+z_index = -1
+
+[node name="heart5" parent="Collectable" instance=ExtResource( 29 )]
+position = Vector2( 68, 311 )
+z_index = -1
+
+[node name="heart6" parent="Collectable" instance=ExtResource( 29 )]
+position = Vector2( 339, 375 )
+z_index = -1
+
+[node name="heart7" parent="Collectable" instance=ExtResource( 29 )]
+position = Vector2( 339, 375 )
+z_index = -1
+
+[node name="heart8" parent="Collectable" instance=ExtResource( 29 )]
+position = Vector2( 339, 375 )
+z_index = -1
+
+[node name="heart9" parent="Collectable" instance=ExtResource( 29 )]
+position = Vector2( 339, 375 )
+z_index = -1
 
 [node name="Platform" type="Node" parent="."]
 

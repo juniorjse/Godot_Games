@@ -9,7 +9,6 @@ var can_process_height: bool = true
 var current_level_path: String = "res://scenes/levels/level.tscn"
 
 func _ready() -> void:
-	$LevelDesign/sound_back.play()
 	DataManagement.score -= score
 	DataManagement.data_dictionary["score"] = score
 	DataManagement.save_data()

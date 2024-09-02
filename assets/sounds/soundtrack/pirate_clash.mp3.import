@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pirate_clash.mp3-80ec7c57ae02f9c0dcb271f6edcc09a3.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/soundtrack/pirate_clash.mp3"
+dest_files=[ "res://.import/pirate_clash.mp3-80ec7c57ae02f9c0dcb271f6edcc09a3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

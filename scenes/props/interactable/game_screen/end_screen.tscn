@@ -1122,12 +1122,13 @@ tile_data = PoolIntArray( 131074, 1073741832, 0, 131075, 8, 0, 196611, 8, 0 )
 
 [node name="palmtree" parent="ScreenDesign/Decoration" instance=ExtResource( 8 )]
 position = Vector2( 82, 62 )
+frame = 1
 
 [node name="palmtree2" type="AnimatedSprite" parent="ScreenDesign/Decoration"]
 position = Vector2( 112, 43 )
 scale = Vector2( 1.25075, 1.24321 )
 frames = SubResource( 47 )
-frame = 1
+frame = 3
 playing = true
 
 [node name="Background" type="ParallaxBackground" parent="ScreenDesign"]
@@ -1218,19 +1219,19 @@ anims/wall_slide = SubResource( 63 )
 position = Vector2( 152, 108 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 112 )
-frame = 2
+frame = 4
 playing = true
 
 [node name="water5" type="AnimatedSprite" parent="."]
 position = Vector2( 369, 166 )
 frames = SubResource( 15 )
-frame = 1
+frame = 3
 playing = true
 
 [node name="water4" type="AnimatedSprite" parent="."]
 position = Vector2( 273, 166 )
 frames = SubResource( 15 )
-frame = 3
+frame = 1
 playing = true
 
 [node name="GameMenu" type="CanvasLayer" parent="."]

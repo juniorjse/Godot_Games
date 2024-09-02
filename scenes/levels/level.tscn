@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=2]
+[gd_scene load_steps=71 format=2]
 
 [ext_resource path="res://scenes/player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/enviroment/background.tscn" type="PackedScene" id=2]
@@ -23,7 +23,7 @@
 [ext_resource path="res://scenes/enviroment/world_env.tscn" type="PackedScene" id=21]
 [ext_resource path="res://assets/tile/decoration/Front Palm Bottom and Grass (32x32).png" type="Texture" id=22]
 [ext_resource path="res://assets/tile/terrain/floor_back.png" type="Texture" id=23]
-[ext_resource path="res://scenes/enemies/pig/pig.tscn" type="PackedScene" id=24]
+[ext_resource path="res://scenes/enemies/crabby/crabby2.tscn" type="PackedScene" id=24]
 [ext_resource path="res://scenes/props/interactable/coletaveis/diamond.tscn" type="PackedScene" id=25]
 [ext_resource path="res://scenes/enviroment/barrel_impulse.tscn" type="PackedScene" id=26]
 [ext_resource path="res://scenes/props/interactable/coletaveis/rubi.tscn" type="PackedScene" id=27]
@@ -35,6 +35,7 @@
 [ext_resource path="res://scenes/enemies/star/pink_star.tscn" type="PackedScene" id=33]
 [ext_resource path="res://scenes/enviroment/palm_tree_impulse.tscn" type="PackedScene" id=34]
 [ext_resource path="res://scenes/enviroment/spike.tscn" type="PackedScene" id=35]
+[ext_resource path="res://assets/props/interactable/keys_controller/e.png" type="Texture" id=36]
 
 [sub_resource type="AtlasTexture" id=104]
 atlas = ExtResource( 6 )
@@ -430,7 +431,7 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -793, 140 )
+position = Vector2( -859, 145 )
 jump_speed = -200
 
 [node name="LevelCamera" parent="Player" index="9"]
@@ -457,8 +458,14 @@ atrás deles e recuperar o mapa !" ]
 position = Vector2( -1.70001, -4.70001 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 9 )
-frame = 5
+frame = 1
 playing = true
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Interactable/Sign"]
+position = Vector2( 158, 40 )
+scale = Vector2( 6, 4.5625 )
+normal = ExtResource( 36 )
+action = "interact"
 
 [node name="LevelDesign" type="Node2D" parent="."]
 position = Vector2( -51, 0 )
@@ -467,7 +474,7 @@ position = Vector2( -51, 0 )
 
 [node name="sound_back" type="AudioStreamPlayer" parent="LevelDesign"]
 stream = ExtResource( 28 )
-volume_db = -52.586
+volume_db = -43.237
 pitch_scale = 1.05
 
 [node name="Mask" parent="LevelDesign" instance=ExtResource( 17 )]
@@ -516,7 +523,7 @@ playing = true
 script = ExtResource( 8 )
 
 [node name="colisao" type="CollisionShape2D" parent="LevelDesign/Traps/spike/Area2D"]
-position = Vector2( 685.5, 8 )
+position = Vector2( 674, 14 )
 shape = SubResource( 14 )
 
 [node name="spike2" type="AnimatedSprite" parent="LevelDesign/Traps"]
@@ -840,34 +847,38 @@ frame = 2
 [node name="Background" parent="LevelDesign" instance=ExtResource( 2 )]
 layer_speed = [ 0, 15, 10, 0 ]
 
-[node name="EnemiesSpawnerList" type="Node2D" parent="."]
+[node name="Enemies" type="Node2D" parent="."]
+position = Vector2( -11, 0 )
 
-[node name="pig_cannon" parent="EnemiesSpawnerList" instance=ExtResource( 16 )]
+[node name="pig_cannon" parent="Enemies" instance=ExtResource( 16 )]
 position = Vector2( -422, 153 )
 
-[node name="pig2" parent="EnemiesSpawnerList" instance=ExtResource( 24 )]
-position = Vector2( -16, 152 )
-
-[node name="pig3" parent="EnemiesSpawnerList" instance=ExtResource( 24 )]
-position = Vector2( 128, 87 )
-
-[node name="pig4" parent="EnemiesSpawnerList" instance=ExtResource( 24 )]
-position = Vector2( 291, 152 )
-
-[node name="pig7" parent="EnemiesSpawnerList" instance=ExtResource( 24 )]
-position = Vector2( 1002, 152 )
-
-[node name="pig8" parent="EnemiesSpawnerList" instance=ExtResource( 24 )]
-position = Vector2( 1116, 152 )
-
-[node name="PinkStar" parent="EnemiesSpawnerList" instance=ExtResource( 33 )]
+[node name="PinkStar" parent="Enemies" instance=ExtResource( 33 )]
 position = Vector2( -54, 145 )
 
-[node name="PinkStar2" parent="EnemiesSpawnerList" instance=ExtResource( 33 )]
+[node name="PinkStar2" parent="Enemies" instance=ExtResource( 33 )]
 position = Vector2( 640, 83 )
 
-[node name="PinkStar3" parent="EnemiesSpawnerList" instance=ExtResource( 33 )]
+[node name="PinkStar3" parent="Enemies" instance=ExtResource( 33 )]
 position = Vector2( 1233, 144 )
+
+[node name="Crabby" parent="Enemies" instance=ExtResource( 24 )]
+position = Vector2( -365, 150 )
+
+[node name="Crabby2" parent="Enemies" instance=ExtResource( 24 )]
+position = Vector2( 4, 150 )
+
+[node name="Crabby3" parent="Enemies" instance=ExtResource( 24 )]
+position = Vector2( 125, 86 )
+
+[node name="Crabby4" parent="Enemies" instance=ExtResource( 24 )]
+position = Vector2( 289, 150 )
+
+[node name="Crabby5" parent="Enemies" instance=ExtResource( 24 )]
+position = Vector2( 978, 150 )
+
+[node name="Crabby6" parent="Enemies" instance=ExtResource( 24 )]
+position = Vector2( 1115, 150 )
 
 [node name="Collectable" type="Node2D" parent="."]
 

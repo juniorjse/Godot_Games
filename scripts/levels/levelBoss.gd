@@ -23,6 +23,8 @@ func _on_cutscene_animation_finished(anim_name):
 		$Player/LevelCamera.current = true
 		$Player.set_physics_process(true)
 		$Whale.set_physics_process(true)
+		$sound_back.play()
+		
 
 
 func _on_primeiracoliso_body_entered(body):

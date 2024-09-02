@@ -8,6 +8,8 @@ export(Vector2) var player_position
 func _ready():
 	player.set_physics_process(false)
 	$cutscene.play("inicial")
+	$LevelDesign/sound_back.play()
+	
 
 
 func _on_teleport_body_entered(body):

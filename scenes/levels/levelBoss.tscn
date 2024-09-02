@@ -1,4 +1,4 @@
-[gd_scene load_steps=113 format=2]
+[gd_scene load_steps=114 format=2]
 
 [ext_resource path="res://scenes/enviroment/back_tarde.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/tile/terrain/Terrain (32x32).png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://assets/tile/tile/normal_size_decoration.tres" type="TileSet" id=4]
 [ext_resource path="res://assets/props/interactable/npcs/portrait_marujo.png" type="Texture" id=5]
 [ext_resource path="res://scripts/levels/levelBoss.gd" type="Script" id=6]
+[ext_resource path="res://assets/sounds/sfx/Pirate's Joy.mp3" type="AudioStream" id=7]
 [ext_resource path="res://scenes/player/levelcamera.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/props/interactable/general/hud.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/player/ship.tscn" type="PackedScene" id=11]
@@ -2379,10 +2380,6 @@ anims/mostrarmapa1 = SubResource( 132 )
 anims/mostrarmapa2 = SubResource( 133 )
 anims/mostrarmapa3 = SubResource( 134 )
 
-[node name="sound_back" type="AudioStreamPlayer" parent="."]
-volume_db = -25.0
-pitch_scale = 1.59
-
 [node name="player2" type="KinematicBody2D" parent="." groups=["player"]]
 position = Vector2( -389, -80 )
 collision_layer = 4
@@ -3893,6 +3890,11 @@ anims/RESET = SubResource( 115 )
 anims/RESET = SubResource( 117 )
 anims/final1 = SubResource( 118 )
 anims/final2 = SubResource( 119 )
+
+[node name="sound_back" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -42.069
+pitch_scale = 1.05
 
 [connection signal="animation_finished" from="player2/Animation" to="player2/Texture" method="on_animation_finished"]
 [connection signal="animation_finished" from="cutscene" to="." method="_on_cutscene_animation_finished"]
